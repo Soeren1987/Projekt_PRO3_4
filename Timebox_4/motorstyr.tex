@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{listings}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz} %til kredsløb
+\usetikzlibrary{fit} % til kredsløb, positioning, calc libraries may also be useful
+\usepackage[siunitx,european,american]{circuitikz} %til kredsløb
+\usepackage{fullpage}
+\usepackage{subfiles}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+
+\author{Simon Mylius Rasmussen}
+
+\title{Til timebox 4}
+
+\begin{document}
+\maketitle
+
+\section{Analyse motorstyring}
+\label{sec:motorstyring}
+
+Motorstyringen vil tage udgangspunkt i vinkel af joystick som indikerer hastigheden. Dette vil tage udgangspunkt i et.
+
+\begin{itemize}
+\item proportinalt forhold: At den aktuelle forskel mellem den ønskede vinkel af spjældet og den aktuelle vinkel tilrettes.
+\item integralt forhold: At de tidligere fejl mellem ønsket position af spjæld og reelle kan korrigeres på baggrund af kendskabet til fejl.
+\item derivereret forhold: At pludselige ændringer i spjældets position kan afhjælpes.
+\end{itemize}
+
+Teoretisk er dette udtrykt ved:
+\begin{equation}
+  \label{eq:1}
+  u(t)=k_Pe(t)+k_I \int_0^t e(\tau)\mathrm{d}\tau + k_D\frac{\mathrm{d}e(t)}{\mathrm{d}t}
+\end{equation}
+
+hvor $e(t)$ er fejl som funktion af tiden, $e(\tau)$ er fejl som funktion af den akkumulerede tid og $k_P$, $k_I$ og $k_D$ er konstanter svarende til henholdsvis det proportionale, integrede og deriverede forhold.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{motstr.pdf}
+  \caption{Motorstyring, blokdiagram}
+  \label{fig:motorstyr}
+\end{figure}
+
+Et karakteristisk program flow kunne være:
+
+\begin{lstlisting}[basicstyle=\ttfamily,language = C]
+  while(1){
+    error = theorical_value - actual_value;
+    integral = integral + (error*iteration_time);
+    derivative = (error - error_prior)/iteration_time;
+    output = KP*error + KI*integral + KD*derivative;
+    error_prior = error;
+    sleep(iteration_time);
+    }
+\end{lstlisting}
+
+\section{Mangler}
+\label{sec:mangler}
+
+\begin{itemize}
+\item Der mangler at finde præcision af konstanterne $k_P$, $k_I$ og $k_D$.
+\item Det er muligt at jeg vil lave et simuleringsmiljø idet konstanterne kan ``tunes'' på plads. Under tuning verificerer man om systemet er stabilt.
+\item Jeg vil gerne undersøge muligheden for at benytte bl.a. interrupts.
+\item Der mangler udformning af diagram for program flow.
+\item Til næste timebox vil jeg gerne om analysetrinnet kan sættes på hos mig igen idet jeg gerne vil kunne læse mig endnu mere ind på teorien og udarbejde et ordentligt teoretisk grundlag for simuleringstrin.
+\end{itemize}
+
+\end{document}

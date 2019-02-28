@@ -1,0 +1,84 @@
+\section{Motorstyring - analyse}
+\label{sec:motorstyring-analyse}
+Målet med dette afsnit er at opstille en kravsspecifikation for motorstyringen samt at færdiggøre analysen af motorstyringen og lægge op til hvordan en test af motorstyring kan udformes for at præcisere PID-algoritme samt at opfylde krav.
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+\subsection{Kravsspecifikation}
+\label{sec:kravsspecifikation}
+Med baggrund i Fjare\cite{pid1}
+\begin{itemize}
+\item Overshoot skal ikke være mere en 197 rpm.
+\item Justeringstiden må max være 8,8 sekunder.
+\item Ifm. et step respons skal 90 \% af målet være opnået i mindre end 3 sekunder.
+\item Det skal være muligt at vedligeholde en konstant hastighed over længere tid (dvs. mere end 5 minutter).
+\end{itemize}
+
+\subsubsection{Overordnet mål og baggrund}
+\label{sec:overordnet-mal}
+
+Endeligt formål er at finde de optimale værdier af $K_P$, $K_i$ og $K_d$ i PID-reguleringen. For et givent sæt af K-værdier, udvælges en række forskellige typer af trinvise ændringer i hastigheden. Der måles på hvor lang tid det tager for ændringen at indfinde sig, samt hvor store udsving dette gør sig ud i.
+
+Som udgangspunkt er det tidligere vist(\cite{pid1}) at $K_p=0,065$ og $K_i=0,000005$ har været optimale, samt at $K_d$ helt blev droppet eftersom det ikke var en gavnlig parameter.
+
+Fra Fjare\cite{pid1} kunne et eksempel på et program være:
+\begin{lstlisting}[language=C,basicstyle=\ttfamily]
+  void velPID ( ) {
+    lowpassSpeed = alpha * lastLowpassSpeed + (1−alpha ) * measuredSpeed;
+    K1 = kp * setpointWeight * (setpointSpeed − lastSetpointSpeed) + kp * (lastMeasuredSpeed − lowpassSpeed);
+    K2 = ki * (setpointSpeed − lowpassSpeed);
+    K3 = kd * (2 * lastMeasuredSpeed − lowpassSpeed − lastLastMeasuredSpeed);
+    output = lastOutput − K1 − K2 − K3;
+    throttlePos = floor(output + 0.5);
+    if(throttlePos<throttleopen){
+      output = (double) throttleopen;
+      throttlePos=throttleopen;
+    }
+    if(throttlePos>throttlesafe){
+      output = ( double )throttlesafe;
+      throttlePos=throttlesafe;
+    }
+    lastLowpassSpeed = lowpassSpeed;
+    lastLastMeasuredSpeed = lastMeasuredSpeed;
+    lastMeasuredSpeed = lowpassSpeed;
+    lastSetpointSpeed = setpointSpeed;
+    lastOutput = output;
+    throttle.writeMicroseconds(throttlePos);
+  }
+  
+\end{lstlisting}
+
+\subsection{Testsetup}
+\label{sec:tests}
+
+Det skal være muligt at
+\begin{itemize}
+\item servomotoren kan reguleres 
+\item motoren kan startes
+\item omdrejningerne kan måles
+\end{itemize}
+
+Et testprogram kan køres via microcontroller som foretager PID-reguleringen og optage motorens omdrejninger ved forskellige skift mellem hastigheder. Disse gentages for forskellige værdier af $K_p$ og $K_i$.

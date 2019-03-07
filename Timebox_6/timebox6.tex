@@ -267,7 +267,7 @@ For at verificere dette er der lavet et test setup, hvor det er muligt at måle 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.45\textwidth]{testsetup.JPG}
+  \includegraphics[angle=-90,width=0.35\textwidth]{testsetup.JPG}
   \caption{Foto af testsetup, hvor outputtet på én af generatorens faser måles med oscilloskop}
   \label{fig:testsetup}
 \end{figure}
@@ -295,19 +295,41 @@ Proceduren for testen vil være som følgende:
 \item Sluk forsyningen til CDI tændingen, hvorved forbrændingsmotor stopper.
 \end{enumerate}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.45\textwidth]{testsetup2.JPG}
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+  \includegraphics[angle=-90,width=0.8\linewidth]{testsetup2.JPG}
   \caption{Foto af sammenkoblingen af generator og load (3 x 5 $\Omega$ effektmodstande i stjernekobling)}
   \label{fig:testsetup2}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.45\textwidth]{loadstjernekobling.JPG}
+        % \includegraphics[width=0.3\linewidth, height=0.15\textheight]{prob1_6_2}
+        % \caption{$dt=0.1$}
+        % \label{fig:prob1_6_2}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+  \includegraphics[angle=90,width=0.8\linewidth]{loadstjernekobling.JPG}
   \caption{Foto af placering af måleprobe}
   \label{fig:testsetup2}
+        % \includegraphics[width=0.3\linewidth, height=0.15\textheight]{prob1_6_1}
+        % \caption{$dt =$}
+        % \label{fig:prob1_6_1}
+    \end{minipage}
 \end{figure}
+
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[angle=-90,width=0.35\textwidth]{testsetup2.JPG}
+%   \caption{Foto af sammenkoblingen af generator og load (3 x 5 $\Omega$ effektmodstande i stjernekobling)}
+%   \label{fig:testsetup2}
+% \end{figure}
+
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[angle=90,width=0.35\textwidth]{loadstjernekobling.JPG}
+%   \caption{Foto af placering af måleprobe}
+%   \label{fig:testsetup2}
+% \end{figure}
 
 Figur~\ref{fig:scope1} viser et skærmbillede af grafen for målingen af outputtet af én af generatorens tre faser.  
 Som det ses, er der med forbrændingsmotoren kørende i tomgang en spænding på 11.4 Volt (peak) på udgangen af generatoren. 

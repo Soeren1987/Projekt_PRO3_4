@@ -1,5 +1,13 @@
-\BOOKMARK [1][-]{section.1}{Strategy and planning \(alle\)}{}% 1
-\BOOKMARK [1][-]{section.2}{Design af teststand til analyse af PID \(Simon\)}{}% 2
-\BOOKMARK [1][-]{section.3}{Test af krav til ensretter \(Thomas\)}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Konklusion}{section.3}% 4
-\BOOKMARK [1][-]{section.4}{Deployment \(Alle\)}{}% 5
+\BOOKMARK [1][-]{section.1}{Strategy and planning \(S\370ren, Jacob, Simon\)}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Ensretter \(S\370ren\)}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Sp\346ndingsregulator \(Jacob\)}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Motorstyring \(Simon\)}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Design af teststand til analyse af PID \(Simon\)}{}% 5
+\BOOKMARK [1][-]{section.3}{Test af krav til ensretter \(Thomas\)}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Konklusion}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Sp\346ndingsregulatoren \(Jacob\)}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Structural analysis}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Behavorial Design Test}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Testresultater}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Konklusion}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Deployment \(Alle\)}{}% 13

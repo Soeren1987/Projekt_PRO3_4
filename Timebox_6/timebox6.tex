@@ -287,6 +287,14 @@ For at verificere dette er der lavet et test setup, hvor det er muligt at måle 
 
 \begin{figure}[h]
   \centering
+  \includegraphics[width=0.45\textwidth]{blokdia.png}
+  \caption{Blokdiagram over test setuppet}
+  \label{fig:testsetup2}
+\end{figure}
+
+
+\begin{figure}[h]
+  \centering
   \includegraphics[width=0.45\textwidth]{testsetup.JPG}
   \caption{Foto af testsetup, hvor outputtet på én af generatorens faser måles med oscilloskop}
   \label{fig:testsetup}
@@ -310,7 +318,7 @@ Proceduren for testen vil være som følgende:
 \item Tænd 5 Volts forsyningen til DCI tændningen.
 \item Start forbrændingsmotoren vha. el-start (PWM signal fra oscilloskop med frekvens på 50 Hz og dutycycle på 1.25 ms sender ind i ESC’en).
 \item Når forbrændingsmotor kører i tomgang, tilkobles generatorens tre faser til de tre 5 ohms effektmodstande i stjernekoblingen.
-\item Tilkoble oscilloskopets måleprobe over én af de tre effektmodstande.
+\item Tilkoble oscilloskopets måleprobe over én af de tre effektmodstande (se blokdiagram - figur~\ref{fig:testsetup2}).
 \item Aflæs/gem graf over outputspændingen fra oscilloskopet.
 \item Sluk forsyningen til CDI tændingen, hvorved forbrændingsmotor stopper.
 \end{enumerate}
@@ -339,14 +347,14 @@ Som det ses, er der med forbrændingsmotoren kørende i tomgang en spænding på
   \label{fig:scope1}
 \end{figure}
 
-Når outputspændingen for tomgangsdrift kendes, vil det det nu være muligt at beregne, hvor mange rpm. forbrændingsmotoren kører med i tomgang.
+% Når outputspændingen for tomgangsdrift kendes, vil det det nu være muligt at beregne, hvor mange rpm. forbrændingsmotoren kører med i tomgang.
 
 \begin{equation}
   \label{eq:1}
   \mathrm{rpm}_{tomgang}=\frac{1400kv\cdot 11,4V}{3,75}=4256 \mathrm{rpm}
 \end{equation}
 
-4256 rpm. i tomgang er højt. Denne forhøjede tomgangsdrift i forbrændingsmotoren skyldes formentlig manglende inerti i svinghjulet (gearingen) samt den ekstra kraft det kræver at få generatoren til at rotere.
+% 4256 rpm. i tomgang er højt. Denne forhøjede tomgangsdrift i forbrændingsmotoren skyldes formentlig manglende inerti i svinghjulet (gearingen) samt den ekstra kraft det kræver at få generatoren til at rotere.
 
 \subsection{Konklusion}
 \label{sec:konklusion}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.8.3)  10 MAR 2019 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.8.3)  17 MAR 2019 10:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2045,19 +2045,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 274.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 274.
-<testsetup.JPG, id=138, 3276.24pt x 2457.18pt>
+<blokdia.png, id=138, 891.33pt x 449.68pt>
+File: blokdia.png Graphic file (type png)
+<use blokdia.png>
+Package pdftex.def Info: blokdia.png  used on input line 290.
+(pdftex.def)             Requested size: 211.38832pt x 106.64229pt.
+<testsetup.JPG, id=140, 3276.24pt x 2457.18pt>
 File: testsetup.JPG Graphic file (type jpg)
 <use testsetup.JPG>
-Package pdftex.def Info: testsetup.JPG  used on input line 290.
+Package pdftex.def Info: testsetup.JPG  used on input line 298.
 (pdftex.def)             Requested size: 211.38832pt x 158.5225pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 310.
  [4
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
@@ -2065,190 +2070,200 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.313 \item T
-             ilkoble oscilloskopets måleprobe over én af de tre effektmods...
- <./testsetup.JPG>]
-<testsetup2.JPG, id=146, 3276.24pt x 2457.18pt>
+l.310 \item O
+             scilloskop til generering af PWM signal til el-start, samt til ...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.310 \item O
+             scilloskop til generering af PWM signal til el-start, samt til ...
+ <./blokdia.png> <./testsetup.JPG>]
+<testsetup2.JPG, id=150, 3276.24pt x 2457.18pt>
 File: testsetup2.JPG Graphic file (type jpg)
 <use testsetup2.JPG>
-Package pdftex.def Info: testsetup2.JPG  used on input line 320.
+Package pdftex.def Info: testsetup2.JPG  used on input line 328.
 (pdftex.def)             Requested size: 211.38832pt x 158.5225pt.
-<loadstjernekobling.JPG, id=147, 3276.24pt x 2457.18pt>
+<loadstjernekobling.JPG, id=151, 3276.24pt x 2457.18pt>
 File: loadstjernekobling.JPG Graphic file (type jpg)
 <use loadstjernekobling.JPG>
-Package pdftex.def Info: loadstjernekobling.JPG  used on input line 327.
+Package pdftex.def Info: loadstjernekobling.JPG  used on input line 335.
 (pdftex.def)             Requested size: 211.38832pt x 158.5225pt.
-<scope0.png, id=149, 803.0pt x 504.88625pt>
-File: scope0.png Graphic file (type png)
-<use scope0.png>
-Package pdftex.def Info: scope0.png  used on input line 337.
-(pdftex.def)             Requested size: 211.38832pt x 132.90825pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<scope0.png, id=153, 803.0pt x 504.88625pt>
+File: scope0.png Graphic file (type png)
+<use scope0.png>
+Package pdftex.def Info: scope0.png  used on input line 345.
+(pdftex.def)             Requested size: 211.38832pt x 132.90825pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 350.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 350.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 350.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 350.
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+(babel)             in language  on input line 365.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 365.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 365.
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.350 
-       <./testsetup2.JPG> <./loadstjernekobling.JPG>]
+l.365 \clearpage
+                 <./testsetup2.JPG>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 357.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 357.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 357.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 357.
+(babel)             in language  on input line 365.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.357 \clearpage
-                 <./scope0.png (PNG copy)>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 358.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 358.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 361.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 361.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 374.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 374.
-<srcirc.png, id=170, 755.82375pt x 286.06876pt>
-File: srcirc.png Graphic file (type png)
-<use srcirc.png>
-Package pdftex.def Info: srcirc.png  used on input line 381.
-(pdftex.def)             Requested size: 305.33789pt x 115.56474pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 385.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 385.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 385.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 385.
- [7
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
+l.365 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.385 \clearpage
-                 <./srcirc.png>]
-<srreal.jpg, id=182, 772.38562pt x 1029.8475pt>
-File: srreal.jpg Graphic file (type jpg)
-<use srreal.jpg>
-Package pdftex.def Info: srreal.jpg  used on input line 390.
-(pdftex.def)             Requested size: 150.32504pt x 200.43445pt.
-<varme.jpg, id=184, 772.38562pt x 1029.8475pt>
-File: varme.jpg Graphic file (type jpg)
-<use varme.jpg>
-Package pdftex.def Info: varme.jpg  used on input line 399.
-(pdftex.def)             Requested size: 150.32504pt x 200.43445pt.
+l.365 \clearpage
+                 <./loadstjernekobling.JPG> <./scope0.png (PNG copy)>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 403.
- [8
+(babel)             in language  on input line 369.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 382.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 382.
+<srcirc.png, id=175, 755.82375pt x 286.06876pt>
+File: srcirc.png Graphic file (type png)
+<use srcirc.png>
+Package pdftex.def Info: srcirc.png  used on input line 389.
+(pdftex.def)             Requested size: 305.33789pt x 115.56474pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 393.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 393.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 393.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 393.
+ [7
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.403 \clearpage
-                pdfTeX warning (ext4): destination with the same identifier (na
-me{figure.8}) has been already used, duplicate ignored
+l.393 \clearpage
+                 <./srcirc.png>]
+<srreal.jpg, id=187, 772.38562pt x 1029.8475pt>
+File: srreal.jpg Graphic file (type jpg)
+<use srreal.jpg>
+Package pdftex.def Info: srreal.jpg  used on input line 398.
+(pdftex.def)             Requested size: 150.32504pt x 200.43445pt.
+<varme.jpg, id=189, 772.38562pt x 1029.8475pt>
+File: varme.jpg Graphic file (type jpg)
+<use varme.jpg>
+Package pdftex.def Info: varme.jpg  used on input line 407.
+(pdftex.def)             Requested size: 150.32504pt x 200.43445pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 411.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 411.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 411.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 411.
+ [8
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.403 \clearpage
-                 <./srreal.jpg> <./varme.jpg>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 404.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 404.
-<osc1.png, id=192, 1146.08176pt x 549.85425pt>
-File: osc1.png Graphic file (type png)
-<use osc1.png>
-Package pdftex.def Info: osc1.png  used on input line 411.
-(pdftex.def)             Requested size: 258.36668pt x 123.95517pt.
-<osc2.png, id=194, 1146.684pt x 550.4565pt>
-File: osc2.png Graphic file (type png)
-<use osc2.png>
-Package pdftex.def Info: osc2.png  used on input line 421.
-(pdftex.def)             Requested size: 258.36668pt x 124.02374pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 426.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 426.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 431.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 431.
-
-Overfull \hbox (14.99998pt too wide) in paragraph at lines 438--454
-[]$[]$$[]$ 
- []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 456.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 456.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 456.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 456.
-[9
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.456 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.10}) has been already used, duplicate ignored
+l.411 \clearpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.456 \end{document}
+l.411 \clearpage
+                 <./srreal.jpg> <./varme.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 412.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 412.
+<osc1.png, id=197, 1146.08176pt x 549.85425pt>
+File: osc1.png Graphic file (type png)
+<use osc1.png>
+Package pdftex.def Info: osc1.png  used on input line 419.
+(pdftex.def)             Requested size: 258.36668pt x 123.95517pt.
+<osc2.png, id=198, 1146.684pt x 550.4565pt>
+File: osc2.png Graphic file (type png)
+<use osc2.png>
+Package pdftex.def Info: osc2.png  used on input line 429.
+(pdftex.def)             Requested size: 258.36668pt x 124.02374pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 434.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 434.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 439.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 439.
+
+Overfull \hbox (14.99998pt too wide) in paragraph at lines 446--462
+[]$[]$$[]$ 
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 464.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 464.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 464.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 464.
+[9
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.464 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.464 \end{document}
                      <./osc1.png> <./osc2.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 464.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
  (./timebox6.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
 Package rerunfilecheck Info: File `timebox6.out' has not changed.
 (rerunfilecheck)             Checksum: 1D99F7C4FAE53103B683BEF578E1A73A;906.
 
@@ -2260,10 +2275,10 @@ Package logreq Info: Writing requests to 'timebox6.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55779 strings out of 492648
- 1293693 string characters out of 6132016
+ 55785 strings out of 492648
+ 1293776 string characters out of 6132016
  1768979 words of memory out of 5000000
- 58793 multiletter control sequences out of 15000+600000
+ 58797 multiletter control sequences out of 15000+600000
  608167 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,11n,96p,10464b,2016s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2280,10 +2295,10 @@ e/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fon
 ts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on timebox6.pdf (10 pages, 8384815 bytes).
+Output written on timebox6.pdf (10 pages, 8438095 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

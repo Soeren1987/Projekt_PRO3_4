@@ -7,10 +7,10 @@
 \contentsline {subsection}{\numberline {1.4}Generelt}{1}{subsection.1.4}
 \contentsline {section}{\numberline {2}Design af teststand til analyse af PID (Simon)}{1}{section.2}
 \contentsline {section}{\numberline {3}Test af krav til ensretter (Thomas)}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Konklusion}{6}{subsection.3.1}
-\contentsline {section}{\numberline {4}Sp\IeC {\ae }ndingsregulatoren (Jacob)}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Structural analysis}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Behavorial Design Test}{8}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Testresultater}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Konklusion}{10}{subsection.4.4}
-\contentsline {section}{\numberline {5}Deployment (Alle)}{10}{section.5}
+\contentsline {subsection}{\numberline {3.1}Konklusion}{8}{subsection.3.1}
+\contentsline {section}{\numberline {4}Sp\IeC {\ae }ndingsregulatoren (Jacob)}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Structural analysis}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Behavorial Design Test}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Testresultater}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Konklusion}{11}{subsection.4.4}
+\contentsline {section}{\numberline {5}Deployment (Alle)}{11}{section.5}

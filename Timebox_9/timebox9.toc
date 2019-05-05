@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {danish}
+\contentsline {section}{\numberline {1}Strategy and planning (Jacob)}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Strategy}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Planning}{1}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}PID-regulering}{1}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Ensretter}{1}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Sp\IeC {\ae }ndingsregulator }{1}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Fuldt system }{1}{subsubsection.1.2.4}
+\contentsline {section}{\numberline {2}Sp\IeC {\ae }ndingsregulator (Jacob) }{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Testen }{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Resultater og konklusion }{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Afl\IeC {\ae }sning af RPM (S\IeC {\o }ren)}{3}{section.3}
+\contentsline {section}{\numberline {4}Funktionalitetstest af aktiv ensretter. (Thomas)}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}St\IeC {\o }rre load}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Konklusion}{10}{subsection.4.2}
+\contentsline {section}{\numberline {5}Tuning af PID-koefficienter}{11}{section.5}
+\contentsline {section}{\numberline {6}Deployment (Alle)}{12}{section.6}

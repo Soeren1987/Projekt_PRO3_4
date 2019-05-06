@@ -57,7 +57,7 @@ void init_read_rpm() {
 
 }
 int get_rpm() {
-	int data = 0;
+	static int data = 0;
 	if (state != set_data) {
 		printf("rpm is: %d \n", rpm);
 		state = wait;

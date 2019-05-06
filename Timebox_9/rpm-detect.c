@@ -1,4 +1,4 @@
-/*
+﻿/*
  * rpm_detect.c
  *
  *  Created on: 25. apr. 2019
@@ -12,7 +12,7 @@
 enum {
 	wait, set_data
 } state;
-volatile int count;
+volatile int count, rpm;
 void TPM1_IRQHandler() {
 	static uint32_t overflows = 0;
 	static uint32_t prev_count = 0;
@@ -24,9 +24,11 @@ void TPM1_IRQHandler() {
 
 	if (TPM1->STATUS & TPM_STATUS_CH0F_MASK) {
 		timer_val = TPM1->CONTROLS[TPM_CH].CnV;
+		//if we have a overflow then we have to add
 		timer_val |= (overflows << 16);
 		count = timer_val - prev_count;
 		prev_count = timer_val;
+		rpm = 60 * 375000 / count;
 		state = set_data;
 	}
 	// reset all flags
@@ -56,12 +58,12 @@ void init_read_rpm() {
 }
 int get_rpm() {
 	int data = 0;
-	while (state != set_data)
-		;
-	// 60 sek * frekvens 375000/input capture værdien
-	data = 60 * 375000 / count;
-	printf("rpm is: %d and count is : %d \n", data, count);
-	state = wait;
+	if (state != set_data) {
+		printf("rpm is: %d \n", rpm);
+		state = wait;
+		data = rpm;
+	}
 
 	return data;
 }
+

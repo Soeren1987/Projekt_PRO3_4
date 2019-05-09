@@ -7,6 +7,23 @@
 \author{Team 2}
 
 \begin{document}
+\lstset{language=Matlab,%
+  % basicstyle=\color{red},
+    inputencoding=latin1,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
 
 \lstset{language=C,%
   % basicstyle=\color{red},
@@ -632,7 +649,7 @@ Når data plottes for et kort tidsrum ses støj omkring 5 volt
 \end{figure}
 
 Data processeres nu med følgende Matlab-script:
-\begin{lstlisting}
+\begin{lstlisting}[language=Matlab]
 close all
 data = stepdata5;
 t = data.second;
@@ -710,7 +727,7 @@ Ved plot at tp udregnet som rpm og plottet overfor tid fås:
 \end{figure}
 \clearpage
 Scopet der har målt data gemmer også data op til stepresponset. Stepresponset ses ved tiden 0.
-Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900. 
+Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900, med start fra 7600, dvs 1300. 
 
 \begin{figure}[h]
   \centering
@@ -728,20 +745,20 @@ Ved at applicere et midlingsfilter på 10 fås et indtryk af en 1. grads overfø
   \label{fig:mo5}
 \end{figure}
 
-Måles at steady-state er opnået ved 0,19 sekunder. Dvs. $0.81 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
+Det måles at steady-state er opnået ved 0,19 sekunder. Dvs. $0.81 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
 
 Hermed kan overføringsfunktionen sættes som
 \begin{equation}
   \label{eq:1}
-G(s) = \frac{8900}{0,04s+1}  
+G(s) = \frac{1300}{0,04s+1}  
 \end{equation}
 \clearpage
 \section{Deployment (Alle)}
 \label{sec:deployment}
+I denne timebox deployes valg af LM317-T til og design af spændingsregulator. Herudover deployes PCB design af den aktive ensretter og fund af overføringsfunktion for motorstyring.
+Hermed godkender kunderne, Morten Oppbrud Jakobsen og Jan Møller Nielsen, ovenstående i timebox 8.
 
-Hermed godkender kunderne, Morten Oppbrud Jakobsen og Jan Møller Nielsen, ovenstående i timebox 7.
-
-Mandag den 29/4-2019
+Mandag den 13/5-2019
 
 \begin{minipage}{.5\textwidth}
   \begin{center}

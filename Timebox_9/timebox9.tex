@@ -385,7 +385,7 @@ Dette vil blive testet og redegjort for i næste timebox. Den endelige test af m
     
 \clearpage
 
-\section{Tuning af PID-koefficienter}
+\section{Tuning af PID-koefficienter (Simon)}
 \label{sec:tuning-af-pid}
 
 I sidste timebox fandtes overføringsfunktionen
@@ -402,7 +402,7 @@ I Simulink oprettes følgende:
   \label{fig:sbil1}
 \end{figure}
 
-Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $P=0,00015$, $I=0,00751$, $D=-2.1832$ og følgende respons:
+Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $P=0,0010$, $I=0,0514$, $D=-1,4946$ og følgende respons:
 
 \begin{figure}[h]
   \centering
@@ -416,9 +416,11 @@ I næste timebox implementeres og justeres PID-reguleringen.
 \section{Deployment (Alle)}
 \label{sec:deployment}
 
+I denne timebox deployes en opnået spændingsregulering fra 22 V til 5,3 V. Herudover deployes udkast til kode der skal aflæse omdrejningstal fra forbrændingsmotoren og desuden deployes de tunede PID-koefficienter.
+
 Hermed godkender kunderne, Morten Oppbrud Jakobsen og Jan Møller Nielsen, ovenstående i timebox 9.
 
-Mandag den 6/5-2019
+Mandag den 13/5-2019
 
 \begin{minipage}{.5\textwidth}
   \begin{center}

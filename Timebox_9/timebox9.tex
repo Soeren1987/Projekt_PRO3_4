@@ -248,6 +248,71 @@ Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyni
 
 Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det kan fungere. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
 \clearpage
+\section{Ammendment til TB8}
+\label{sec:ammendment-til-tb8}
+
+\subsection{Intro}
+\label{sec:intro}
+
+Efter forespørgsel fra kunden, følger hermed et par tilføjelser til afsnittet om spændingsregulatoren i Timebox 8. 
+Kundne har forespurgt på prisen på de specifikke komponenter, samt en beregning af udviklingen af varme fra LM317. 
+
+\subsection{Priserne}
+\label{sec:priserne}
+
+I tidligere timebox, blev priserne på elementer der allerede var tilgængelige angivet til DKR 0,-. Herunder følger den opdaterede prisliste.
+
+\begin{table}[h]
+  \centering
+% BEGIN RECEIVE ORGTBL tabel1
+\begin{tabular}{ll}
+\hline
+Komponent & Pris i DKR \\
+\hline
+LM317-T (erstatter LM117-HVH) & 3,4 \\
+\hline
+Kondensator & 0,15 \\
+\hline
+Variabel modstand & 5,95 \\
+\hline
+Modstand & 0,65 \\
+\hline
+Diode & 0,36 \\
+\hline
+IALT & 10,51 \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL tabel1
+  \caption{Kompenenter}
+  \label{tab:komp}
+\end{table}
+
+\subsection{Varmeudvikling}
+\label{sec:varmeudvikling}
+
+Ligeledes efterspørges en beregning af varmeudviklingen fra LM317. Beregningen følger herunder. 
+Da spændingsregulatoren på nuværende tidspunkt er installeret i systemet og derfor ikke er mig tilgængeligt, tages der udgangspunkt i nedenstående simulering. Simuleringen bruges til at estimere effekttabet i LM317. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{jbilx.png}
+  \caption{}
+  \label{fig:jbilx}
+\end{figure}
+
+Som det ses af ovenstående billede, afsættes der 119 mW i komponenten.
+
+Af datashettetet\footnote{http://www.ti.com/lit/ds/symlink/lm317.pdf} fremgår det, at $R_(\theta(JA))$ for vores pakke (TO-220) LM317KCT er 37,9 $^\circ C/W$. Vi afsætter cirka 119 mW, og dermed bliver varmeudledningen som følger: 
+
+\begin{equation}
+  \label{eq:3}
+  \Delta \tau = R_{\theta (JA)}\cdot P = 37,9 \frac{^\circ C}{W}\cdot 119mW\approx 4,5101 ^\circ C
+\end{equation}
+
+Af beregningen fremgår det altså, at temperaturen stiger minimalt. 
+Dette stemmer meget godt overens med, at jeg ikke kunne føle nogen forskel i temperaturen på komponenten, efter regulatoren havde kørt i 30 minutter kontinuert. 
+
+\clearpage
 \section{Aflæsning af RPM (Søren)}
 \label{sec:aflasning-af-rpm}
 
@@ -258,7 +323,7 @@ For at afkode dette signal, bruges der input capture, der er implementeret i TPM
 Ved formlen: $\frac{\mathrm{60\ sek}\cdot\mathrm{frekvens}}{input\ capture\ værdien} = RPM$.
 
 Selve koden er vist her forneden, hvor vi bruger interrupts, til at opfange overflows og når vi får et rising edge, gemmer den værdi i CNV-registeret.
-\clearpage
+
 \lstinputlisting[firstline=37,lastline=56]{rpm-detect.c}
 
 Her initialiseres vores TPM1 modul. Vores frekvens der bruges til at tælle op med, bliver nedskaleret, til 375 kHz. Dvs. imellem hver overflows går der 5,75 Hz, hvilket passer med vores måle område (17 - 167 Hz) vi arbejder i. 

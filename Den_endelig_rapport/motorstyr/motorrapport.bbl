@@ -1,0 +1,45 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{pid1}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=FPD}{%
+         family={Fjare},
+         familyi={F\bibinitperiod},
+         given={Paul\bibnamedelima D.},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FPD1}
+    \strng{fullhash}{FPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Feedback Speed Control of a Small Two-Stroke Internal
+  Combustion Engine that Propels an Unmanned Aerial Vehicle}
+    \list{institution}{1}{%
+      {University of Nevada, Las Vegas}%
+    }
+    \field{type}{mathesis}
+    \field{month}{01}
+    \field{year}{2014}
+  \endentry
+\enddatalist
+\endinput

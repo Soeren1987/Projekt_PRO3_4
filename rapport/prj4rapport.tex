@@ -96,7 +96,7 @@ EUDP er inddelt i fire faser, hvor det største arbejde ligger i realiseringsfas
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/ij1.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/ij1.png}
   \caption{Udviklingsprocessen}
   \label{fig:ij1}
 \end{figure}
@@ -145,7 +145,7 @@ Herunder ses vores Rich Picture, som en konstrueret lige efter opgaven er blevet
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/int1.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/int1.png}
   \caption{Rich Picture}
   \label{fig:int1}
 \end{figure}
@@ -207,7 +207,7 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/int2.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/int2.png}
   \caption{Blokdiagram}
   \label{fig:int2}
 \end{figure}
@@ -238,7 +238,7 @@ I stedet kan der anvendes IC (\textit{Ideal Diode Controller}), som har til form
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/prens1.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/prens1.png}
   \caption{Passiv vs. aktiv ensretning}
   \label{fig:prens1}
 \end{figure}
@@ -249,7 +249,7 @@ En generel udfordringen ved AC/DC konvertering er \textit{ripples} på output si
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/prens2.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/prens2.png}
   \caption{Graf over ripple spænding på output signal som funktion af tid. Stiplet linje = ensrettet enkeltfase
 AC-signal. Rød linje = ripple på kredsløb med kondensator parallelt på load. Kilde: Wikimedia Commons}
   \label{fig:prens2}
@@ -270,7 +270,7 @@ Dette skyldes bl.a., at den er designet specifikt til luftbårne strømforsyning
 \begin{figure}[htb]
   \begin{minipage}{\textwidth}
     \centering
-    \includegraphics[width=0.8\textwidth]{./figurer/prens3.png}
+    \includegraphics[width=0.5\textwidth]{./figurer/prens3.png}
     \caption{Varmeudvikling. Passiv vs. LT4320\protect\footnotemark}
     \label{fig:prens3}
     \footnotetext{Fra databladet til LT4320-1. \url{https://www.analog.com/media/en/technical-documentation/data-sheets/4320fb.pdf}}
@@ -284,17 +284,17 @@ Leverandøren af LT-4320-1, foreslår kredsløbet\footnote{url{https://www.analo
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/prens4.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/prens4.png}
   \caption{Kredsløb til realiseringen af ensretteren}
   \label{fig:prens2}
 \end{figure}
 
 Vi valgte at arbejde videre med den opstilling. De næste afsnit indeholder en opsummering af simulering, realiseringen og test af kredsløbet.
-
+\clearpage
 \subsection{Spændingsregulator (Jacob)}
 \label{sec:spandingsforstarker}
 
-Som en del af det samlede produkt har vi behov for en spændingsregulator. Det skyldes, at dronen opererer ved 22 V, hvilket også er udgangsspændingen fra generatoren. Men da vores motorstyring skal forsynes med 5 V DC, skal vi have spændingen reguleret ned. 
+Som en del af det samlede produkt har vi behov for en spændingsregulator. Dette skyldes, at batteriet har en spændings på 22 V, som skal konvereteres til 5 V for at kunne forsyne microcontroller, servomotor samt tændspole.%, hvilket også er udgangsspændingen fra generatoren. Men da vores motorstyring skal forsynes med 5 V DC, skal vi have spændingen reguleret ned. 
 Den kommende del omfatter kravspecifikation, analyse, design, implementering og verifikation af vores spændingsregulator. 
 
 \subsubsection{Kravsspecifikation}
@@ -322,12 +322,12 @@ Spændingsregulatoren vil være koblet til batteripakken i den ene ende og de lo
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j1.png}
-  \caption{Strømmens gang i systemet.}
+  \includegraphics[width=0.5\textwidth]{./figurer/j1.png}
+  \caption{Interface analysis}
   \label{fig:j1}
 \end{figure}
 
-Figur \ref{fig:j1} viser strømmens gang i systemet.
+Figur \ref{fig:j1} viser interface analysis.
 
 \myparagraph{Dimensionering}
 \label{sec:generel-analyse-1}
@@ -343,7 +343,7 @@ Spændingsregulatoren skal være vejrbestandig, da dronen skal kunne være udend
 
 
 
-
+\clearpage
 \subsection{Motorstyring (Simon)}
 \label{sec:motorstyring}
 
@@ -458,7 +458,7 @@ For at verificere dette blev der konstrueret et testsetup, hvor det var muligt a
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/prens5.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/prens5.png}
   \caption{Blokdiagram til test af outout spænding på en fase af generator}
   \label{fig:prens5}
 \end{figure}
@@ -492,7 +492,7 @@ Den oprindelig stand med påmonteret forbrændingsmotor og generator benyttes ti
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{./figurer/nt1.png}
+  \includegraphics[angle=90,width=0.6\textwidth]{./figurer/nt1.png}
   \caption{Foto af teststand til produktion af tre-faset spænding.}
   \label{fig:nt1}
 \end{figure}
@@ -517,7 +517,7 @@ Figur \ref{fig:prens7} viser et skærmbillede fra målingen med oscilloskop af d
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/prens7.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/prens7.png}
   \caption{Nedskaleret realisering på breadboard. Gul: $V_{out}$. Grøn, blå og rød: $V_{in}$ (3 faser)}
   \label{fig:prens7}
 \end{figure}
@@ -536,7 +536,7 @@ Spændingstabet er forårsaget af MOSFET transistorens \textit{on resistance}, $
 
 % \begin{figure}[h]
 %   \centering
-%   \includegraphics[width=0.8\textwidth]{./figurer/prens8.png}
+%   \includegraphics[width=0.5\textwidth]{./figurer/prens8.png}
 %   \caption{Måling af gate- vs. source spænding}
 %   \label{fig:prens8}
 % \end{figure}
@@ -568,46 +568,46 @@ Figur \ref{fig:nt3} og \ref{fig:nt4} viser et skærmbillede af det færdige PCB 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt3.png}
+  \includegraphics[angle=90,width=0.5\textwidth]{./figurer/nt3.png}
   \caption{PCB print. Top lag}
   \label{fig:nt3}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt4.png}
+  \includegraphics[angle=90,width=0.5\textwidth]{./figurer/nt4.png}
   \caption{PCB print. Bund lag}
   \label{fig:nt4}
 \end{figure}
 
 
-\subsection{Resultat}\footnote{Se bilag, Timebox 9-10, for yderligere information.}
+\subsubsection{Implementering}\footnote{Se bilag, Timebox 9-10, for yderligere information.}
 \label{sec:result-bilag-timeb}
 
 Efter konstruktionen af PCB printet til den aktive ensretter, var det tid til at teste kredsløbet \textit{full scale}. Indledningsvist besluttede vi os dog for at lave en nedskaleret test på samme måde som på breadboardet. Altså med en load-modstand på 1 k$\Omega$.
 
-\subsubsection{Nedskaleret test af PCB}
+\myparagraph{Nedskaleret test af PCB}
 \label{sec:nedskaleret-test-af}
 
 Figur \ref{fig:nt5} og \ref{fig:nt6} viser resultatet af den nedskalerede test af PCB printet.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt5.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/nt5.png}
   \caption{Første måling ($V_{in}$ = 14.613 V, $V_{out}$ = 14.528 V)}
   \label{fig:nt5}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt6.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/nt6.png}
   \caption{Anden måling ($V_{in}$ = 10.050 V, $V_{out}$ = 9.648 V)}
   \label{fig:nt6}
 \end{figure}
 
 Som det ses ud fra begge plots i figur 4 og 5, er der et spændingstab på udgangen af ensretteren i forhold til indgangen. Spændingstabene for målingerne er i Matlab udregnet til:
 
-\begin{tabular}{p{1cm}l}
+\begin{tabular}{p{2cm}l}
   1. måling: &$V_{delta1}$ = 0.0967 volt.\\
   2. måling: &$V_{delta2}$ = 0.3497 volt.\\
 \end{tabular}
@@ -615,14 +615,14 @@ Som det ses ud fra begge plots i figur 4 og 5, er der et spændingstab på udgan
 Printet ser ud til at have den ønskede funktionalitet. Der ses dog en ujævnhed i spændingstabet gennem kredsløbet i de to målinger, hvilket vi ikke umiddelbart kunne forklare.
 
 
-\subsubsection{Større load}
+\myparagraph{Større load}
 \label{sec:storre-load}
 
 For at teste om kredsløbet kunne leve op til de store strømme (ca. 80 A peak), som det færdige HPP system teoretisk set kan komme til at trække, blev der anskaffet en effektmodstand på ca. 12 m$\Omega$. Denne effektmodstand kan håndtere op til 25 A. Kredsløbet kan ikke testes fuldt ud med denne modstand, men det vil give en indikation af, hvordan kredsløbet reagerer ved en større belastning.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt7.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/nt7.png}
   \caption{Foto af testopstilling med load modstand på 12 m$\Omega$.}
   \label{fig:nt7}
 \end{figure}
@@ -653,7 +653,7 @@ Ud fra datasheet’et til FDP61N20 ses det, at de maksimalt kan håndtere 150 $^
 
 Vi var derfor nødt til enten at finde nye transistorer med en lavere intern modstand og/eller påmontere en \textit{heatzink}. Vi blev efter denne test ligeledes bekymret for, at kredsløbet ikke fungerede optimalt, da vi begyndte at se en del uregelmæssigheder.
 
-\subsubsection{Fejlsøgning}
+\myparagraph{Fejlsøgning}
 \label{sec:fejlsogning}
 
 Indledningsvist blev der indkøbt følgende MOSFET transistorer med en lavere intern modstand:
@@ -674,7 +674,7 @@ Testen resulterede dog i en defekt transistor.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt8.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/nt8.png}
   \caption{Defekt transistor. Markeret med rød firkant.}
   \label{fig:nt8}
 \end{figure}
@@ -685,7 +685,7 @@ Figur \ref{fig:nt9} viser målingen af gate spændingen på de tre transistorer,
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/nt9.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/nt9.png}
   \caption{Gatespænding. Grøn: fase 1+, blå: fase 2+, gul: fase 3+, rød: $V_{out}$}
   \label{fig:nt9}
 \end{figure}
@@ -693,7 +693,7 @@ Her ses, at gate spændingerne ikke har samme niveau. Peak værdier varierer mel
 
 På baggrund af denne måling, og da vi ikke havde mere tid til rådighed, var vi desværre nødsaget til at stoppe udviklingen af den aktive ensretter. 
 
-
+\clearpage
 \subsection{Spændingsregulator (Jacob)}
 \label{sec:spand-jacob}
 
@@ -727,7 +727,7 @@ Denne type af system er altså yderst ineffektivt, da der afsættes en stor mæn
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j2.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j2.png}
   \caption{Diagram}
   \label{fig:j2}
 \end{figure}
@@ -739,7 +739,7 @@ Herunder ses en simulering af opsætningen af en spændingsregulator på baggrun
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j3.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j3.png}
   \caption{Diagram til simulering}
   \label{fig:j3}
 \end{figure}
@@ -755,7 +755,7 @@ I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spændi
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j4.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j4.png}
   \caption{WEBBENCH}
   \label{fig:j4}
 \end{figure}
@@ -764,7 +764,7 @@ Værktøjet indeholder også et analyseværktøj. For at bekræfte, at kredsløb
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j5.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j5.png}
   \caption{Måling af spænding}
   \label{fig:j5}
 \end{figure}
@@ -780,7 +780,7 @@ Efter analysen kan vi konkludere, at LM78xx-serien er en ineffektiv og ringe lø
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j6.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j6.png}
   \caption{Opstilling realiseret}
   \label{fig:j6}
 \end{figure}
@@ -792,7 +792,7 @@ Prisen på alle komponenter er billig. Det dyreste er LM317 til cirka 11 kroner 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j7.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j7.png}
   \caption{LM317 output}
   \label{fig:j7}
 \end{figure}
@@ -802,7 +802,7 @@ I figur \ref{fig:j7} ses outputtet fra LM317-systemet. Som vi kan se, ligger sp�
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j8.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j8.png}
   \caption{Spænding efter varmeudsættelse}
   \label{fig:j8}
 \end{figure}
@@ -816,7 +816,7 @@ I figur \ref{fig:j9} ses implementeringen af BUCK-konverteren. Ligesom med tidli
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j9.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j9.png}
   \caption{Testopstilling af BUCK-konverter}
   \label{fig:j9}
 \end{figure}
@@ -825,7 +825,7 @@ Herunder ses resultater for testen. Først under almindelige omstændigheder.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j10.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j10.png}
   \caption{Test af BUCK-konverter}
   \label{fig:j10}
 \end{figure}
@@ -836,7 +836,7 @@ Efter påvirkning af varme ændrede outputtet sig imidlertid ret dramatisk. Dett
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/j11.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j11.png}
   \caption{Ændring af output}
   \label{fig:j11}
 \end{figure}
@@ -846,7 +846,61 @@ Som det ses i figur \ref{fig:j11}, ændrer outputtet sig væsentligt!
 
 For at være sikker på, at komponenterne ikke var brændt af ved påvirkningen fra lighteren, køres en test cirka 15 minutter efter, hvor outputtet igen var standardiseret. 
 
+For at kunne vælge endeligt imellem spændingsregulatorerne, opsættes følgende pointsystem
+\begin{itemize}
+\item Driftssikker, også ved påvirkning af varme - 2 P
+\item Skal være den billigste, brugbare løsning - 2 P
+\item Minimal ripple på output - 1 P
+\item Minimal størrelse og vægt - 1 P
+\end{itemize}
 
+Pointfordelingen er som følger herunder, hvilket giver en klar sejr til LM317-systemet. Dette bygges på PCB og testes.
+\begin{table}[h]
+  \centering
+% BEGIN RECEIVE ORGTBL jtab
+\begin{tabular}{l|r|r}
+\textbf{Kriterie} & \textbf{TPS5410} & \textbf{LM317-T} \\
+\hline
+Varmepåvirkning & 0 & 2 \\
+Billigste løsning & 0 & 2 \\
+Minimal ripple & 0 & 1 \\
+Minimal størrelse & 1 & 0 \\
+\hline
+\textbf{Ialt} & \textbf{1} & \textbf{5} \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL jtab
+  \caption{Point tabel}
+  \label{tab:pointj}
+\end{table}
+\begin{comment}
+#+ORGTBL: SEND jtab orgtbl-to-latex :splice nil :skip 0
+| Kriterie          | TPS5410 | LM317-T |
+|-------------------+---------+---------|
+| Varmepåvirkning   |       0 |       2 |
+| Billigste løsning |       0 |       2 |
+| Minimal ripple    |       0 |       1 |
+| Minimal størrelse |       1 |       0 |
+|-------------------+---------+---------|
+| Ialt              |       1 |       5 |
+|-------------------+---------+---------|
+\end{comment}
+
+\subsubsection{Endelig test}
+\label{sec:endelig-test}
+
+Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyning som input og tilslutte et voltmeter, for at måle udgangsspændingen. Opstillingen kan ses her. Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det accepteres. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
+
+Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. Dette er en forglemmelse, og vi må antage, at vi stadig kan trække den fornødne strøm. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./figurer/j12.png}
+  \caption{Endelig test}
+  \label{fig:j12}
+\end{figure}
+
+\clearpage
 \subsection{Motorstyring}
 \label{sec:motorstyring-1}
 
@@ -874,28 +928,44 @@ Ved at opsætte analog Discovery til på pin PTD3, vises at vores init funktion 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/mots4.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/mots4.png}
   \caption{Test af init-funktion}
   \label{fig:mots4}
 \end{figure}
 
 Herefter har vi implementeret en funktion til at styre vores servo motor. Den tager et argument, som er i procent, hvor meget den skal dreje, i forhold til om den skal give fuld gas (100\%) eller bare kører i tomgang (0\%). Men da vi fik monteret servo motor, fik vi testet at ved 1,4 ms signal til servo, at dette var fuldgas, dette blev derefter tilpasset i koden. Så vores max værdien der kunne sendes ud er 1,4 ms.
 
-\begin{figure}[!htb]
-    \centering
-    \begin{minipage}{.5\textwidth}
-        \centering
-  \lstinputlisting[language=c,firstline=102,lastline=107,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}
-  \label{fig:kodes2}
-    \end{minipage}%
-    \begin{minipage}{0.5\textwidth}
-        \centering
-        \includegraphics[width=0.8\linewidth]{./figurer/mots5.png}
-        \label{fig:mots5}
-    \end{minipage}
-    \caption{Kode til at styre gasspjældet}
-  \end{figure}
+% \begin{figure}[!htb]
+%     \centering
+%     \begin{minipage}{.5\textwidth}
+%         \centering
+%   \lstinputlisting[language=c,firstline=102,lastline=107,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}
+%   \label{fig:kodes2}
+%     \end{minipage}%
+%     \begin{minipage}{0.5\textwidth}
+%         \centering
+%         \includegraphics[width=0.5\linewidth]{./figurer/mots5.png}
+%         \label{fig:mots5}
+%     \end{minipage}
+%     \caption{Kode til at styre gasspjældet}
+%   \end{figure}
 
+\begin{figure}[h]
+  \centering
+  \lstinputlisting[language=c,firstline=102,lastline=107,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}
+  \caption{Servomotor monteret på gasspjæld}
+  \label{fig:kodes2}
+\end{figure}
+
+  
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./figurer/mots5.png}
+  \caption{Servomotor monteret på gasspjæld}
+  \label{fig:mots5}
+\end{figure}
+
+  
 \subsubsection{Start af motoren}
 \label{sec:start-af-motoren}
 
@@ -913,14 +983,14 @@ Flow for opstart af motor, ved funktionen \lstinline{start()}:
 
 \begin{figure}[h]
   \centering
-  \lstinputlisting[language=c,firstline=132,lastline=153,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}  
+  \lstinputlisting[language=c,firstline=132,lastline=154,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}  
   \caption{Kode til \lstinline{start()}}
   \label{fig:kodes3}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/mots6.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/mots6.png}
   \caption{BLDC-motor forbundet til motoren med en tandrem}
   \label{fig:mots6}
 \end{figure}
@@ -952,8 +1022,10 @@ PID-koefficienterne skal defineres udfra en overføringsfunktion for vores syste
 
 % Et testprogram kan køres via microcontroller som foretager PID-reguleringen og optage motorens omdrejninger ved forskellige skift mellem hastigheder. Disse gentages for forskellige værdier af $K_p$ og $K_i$.
 
-Som udgangspunkt skulle det interessante for dronecopteren være at % I en teststand vil formålet være at test forskellige værdier af koefficienterne og i forskellige kombinationer. Målet med PID-reguleringen er at
-strømmen fra batteri til dronens propelmotorer er konstant. Tilgengæld skal spjældet til forbrændingsmotoren konstant reguleres. Derfor vil en teststand som udgangspunkt have følgende:
+Som udgangspunkt vil strømmen fra dronecopteren til batteri være variende.%skal forholdet mellem dronens hastighed og %skulle det interessante for dronecopteren være at % I en teststand vil formålet være at test forskellige værdier af koefficienterne og i forskellige kombinationer. Målet med PID-reguleringen er at
+%strømmen fra batteri til dronens propelmotorer være konstant.
+
+Tilgengæld skal spjældet til forbrændingsmotoren konstant reguleres. Derfor vil en teststand som udgangspunkt have følgende:
 \begin{itemize}
 \item input: strøm fra batteri til drone
 \item output: regulering af spjæld via servomotor
@@ -1151,7 +1223,7 @@ Ved at applicere et midlingsfilter på 10 fås et indtryk af en 1. grads overfø
   \label{fig:mo5}
 \end{figure}
 
-Det måles at steady-state er opnået ved 0,19 sekunder. Dvs. $0.81 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
+Det måles at steady-state er opnået ved 0,19 sekunder. Dvs. $0.19 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
 
 Hermed kan overføringsfunktionen sættes som
 \begin{equation}
@@ -1291,59 +1363,8 @@ Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når de
 \subsection{Spændingsregulator}
 \label{sec:spandingsregulator}
 
-For at kunne vælge endeligt imellem spændingsregulatorerne, opsættes følgende pointsystem
-\begin{itemize}
-\item Driftssikker, også ved påvirkning af varme - 2 P
-\item Skal være den billigste, brugbare løsning - 2 P
-\item Minimal ripple på output - 1 P
-\item Minimal størrelse og vægt - 1 P
-\end{itemize}
 
-Pointfordelingen er som følger herunder, hvilket giver en klar sejr til LM317-systemet. Dette bygges på PCB og testes.
-\begin{table}[h]
-  \centering
-% BEGIN RECEIVE ORGTBL jtab
-\begin{tabular}{l|r|r}
-\textbf{Kriterie} & \textbf{TPS5410} & \textbf{LM317-T} \\
-\hline
-Varmepåvirkning & 0 & 2 \\
-Billigste løsning & 0 & 2 \\
-Minimal ripple & 0 & 1 \\
-Minimal størrelse & 1 & 0 \\
-\hline
-\textbf{Ialt} & \textbf{1} & \textbf{5} \\
-\hline
-\end{tabular}
-% END RECEIVE ORGTBL jtab
-  \caption{Point tabel}
-  \label{tab:pointj}
-\end{table}
-\begin{comment}
-#+ORGTBL: SEND jtab orgtbl-to-latex :splice nil :skip 0
-| Kriterie          | TPS5410 | LM317-T |
-|-------------------+---------+---------|
-| Varmepåvirkning   |       0 |       2 |
-| Billigste løsning |       0 |       2 |
-| Minimal ripple    |       0 |       1 |
-| Minimal størrelse |       1 |       0 |
-|-------------------+---------+---------|
-| Ialt              |       1 |       5 |
-|-------------------+---------+---------|
-\end{comment}
 
-\subsubsection{Endelig test}
-\label{sec:endelig-test}
-
-Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyning som input og tilslutte et voltmeter, for at måle udgangsspændingen. Opstillingen kan ses her. Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det accepteres. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
-
-Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. Dette er en forglemmelse, og vi må antage, at vi stadig kan trække den fornødne strøm. 
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.6\textwidth]{./figurer/j12.png}
-  \caption{Endelig test}
-  \label{fig:j12}
-\end{figure}
 
 
 \subsection{Motorstyring}

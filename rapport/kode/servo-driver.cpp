@@ -101,8 +101,8 @@ void init_pwm() {
 }
 void angle_throttle(unsigned int procent) {
 
-	if (procent > 0 && procent < 100) {
-		int res = (MIN_VAL_SERVO * procent) / 100;
+	if (procent >= 0 && procent <= 100) {
+		int res = (1200 * procent) / 100;
 		TPM0->CONTROLS[PWM_CH_SERVO].CnV = MIN_VAL_SERVO + res;
 	}
 
@@ -141,6 +141,7 @@ void start() {
 			while (i != 30 && PTD->PDIR != (0UL << START_BTN))
 				;
 			__disable_irq();
+                        i = 0;
 			//Sætter vores pwm signal puls til 1 ms, hvilket stopper Starteren
 			TPM0->CONTROLS[PWM_CH_ESC].CnV = MIN_VAL_SERVO;
 			break;

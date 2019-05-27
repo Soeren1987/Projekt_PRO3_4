@@ -75,12 +75,36 @@ Denne projektrapport sammenfatter vores arbejde, igennem PRO3 og PRO4, med at by
 
 Projektet har været at bygge et system, som kan kobles på en drone for at forlænge flyvetiden. Problemstillingen består i, at de fleste moderne droner, har en meget kort flyveradius, da batterierne er meget tunge i forhold til energikapacitet. Den begrænsede flyvetid gør dronerne uegnede til opgaver som pakkelevering, flyvning med blodprøver og andet leveringsarbejde, som man ellers har spået, kunne automatiseres med dronerne.
 
-Da energitætheden i benzin er væsentlig højere, end i et lithiumbatteri, bygges en HDPP der baseres med en brændselsmotor med tilhørende generator. På denne måde har vi mulighed for at lade batterierne mens vi flyver. 
+Da energitætheden i benzin er væsentlig højere, end i et lithiumbatteri, bygges en HDPP der baseres med en brændselsmotor med tilhørende generator. På denne måde har vi mulighed for at lade batterierne mens vi flyver.
 
-Nedenfor følger de krav, som er sat op af kunden, henholdsvis de krav som vi har specificeret for det færdige produkt.
+Rapporten er opbygget, så den første introducerer projektet og udviklingsmetoden. Heriblandt er der inddraget enkelte elementer fra vores preprojekt. Der er kun udvalgt få elementer, som giver det bedste indblik i, hvad ideen for projektet er, og hvorfor produktet har en eksistensberettigelse, samt et generelt overblik over det færdige system. 
+
+Hernæst er der en gennemgang af de 3 vigtigste subsystemer. Først gennemgås baggrundsviden for alle produkter under afsnittet ’Baggrund’, hernæst følger udviklingsmetoderne - herunder analyse, simulering og implementering - i afsnittet ’Metoder’. Efterfølgende resultater, og argumentation for endeligt valg af subsystem, i afsnittet ’Resultater’, som altså primært beskriver resultaterne om det endeligt udfærdigede subsystem. 
+
+Rapporten afsluttes med en evaluering af såvel produktet som processen, samt en endelig konklusion på arbejdet. 
+
+Alle figurer er kontinuert nummererede i rapporten, og der skelnes ikke mellem billeder, figurer, grafer og tabeller. Alle fodnoter er placeret i sidefoden, hvor der også findes referencer til relevant læsestof. En samlet bibliografi findes efter rapportens bilag. 
+Hele rapportens layout og opsætning, herunder figurnumre og -tekster, bibliografi, indholdsfortegnelse des lige, er udfærdiget af Simon Mylius Rasmussen. 
+
+\subsubsection{Om udviklingsprocessen}
+\label{sec:om-udvikl}
+
+Hele udviklingsprocessen har fulgt strukturen af EUDP. EUDP er en udviklingsmetode til udvikling af produkter, der kombinerer mekanisk, elektronik og programmering. En af ideerne i EUDP er, at man skal have et meget tæt samarbejde med kunden, hele processen igennem. Derfor har vi arbejdet i timeboxes af 2 ugers varighed. I enden af hver timebox blev der afholdt et møde med kunden, for at få godkendt det arbejde, som hidtil er udfærdiget. 
+En af de store fordele ved EUDP er, at effektiviteten bliver målbar, da der er opsat nogle meget specifikke stadier igennem processen. EUDP adskiller sig fra mange andre strukturerede udviklingsprocesser ved at være meget simpel at følge. 
+Igennem teamets ugentlige møder, har vi kunnet følge op på, hvor langt vi var i udviklingsprocessen, ofte ved brug af vores Development Plan. 
+EUDP er inddelt i fire faser, hvor det største arbejde ligger i realiseringsfasen. Denne fase er cirkulær, og ofte kan der diskuteres flere løsninger med kunden, førend systemet endeligt godkendes. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/ij1.png}
+  \caption{Udviklingsprocessen}
+  \label{fig:ij1}
+\end{figure}
 
 \subsection{Kundens (undervisers) krav}
 \label{sec:kravsspecifikation-1}
+Nedenfor følger de krav, som er sat op af kunden, henholdsvis de krav som vi har specificeret for det færdige produkt.
+
 
 \subsubsection{Funktionelle}
 \label{sec:funktionelle}
@@ -131,7 +155,7 @@ Herunder ses vores Rich Picture, som en konstrueret lige efter opgaven er blevet
 
 På baggrund af ovenstående begyndte vi at opstille specifikke, tekniske krav til produktet - blandt andet på baggrund af de af underviserne stillede krav,. I en kravsanalyse specificeres de krav, der er til det færdige produkt eller produktets enkelte komponenter.En udbytterig kravsanalyse indebærer at kunden inddrages.Kravene er nedenfor opstillet efter EARS-princippet (EARS:Easy to Approach Requirements Syntax).
 
-Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (event-driven), driftsorienterede(state-driven) og fejlorienterede krav (unwanted behaviour). EARS-princippet muliggør således en prioritering af kravene.
+Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (event-driven), driftsorienterede (state-driven) og fejlorienterede krav (unwanted behaviour). EARS-princippet muliggør således en prioritering af kravene.
 
 \myparagraph{Ubiquitous}
 \label{sec:kravspecifikation-1}
@@ -190,6 +214,11 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 % \subsection{Hypotese}
 % \label{sec:hypotese}
 
+Da projektet er en videreførelse af et projekt fra tidligere BDE-studerende, der aldrig blev funktionelt, er der visse elementer der allerede foreligger. Forbrændingsmotoren, gearing og generatoren er allerede indkøbt. For at mindske omkostningerne ved projektet, har det været vores overbevisning, at vi ville bygge resten af projektet op om disse elementer. 
+
+Da det ikke har været teknisk muligt at frakoble dronens allerede eksisterende batteri, har vi også været nødsaget til at bygge systemet op omkring dette. 
+
+De vigtigste hovedelementer af systemet bliver således spændingsregulatoren, motorstyringen, og den aktive ensretter, hvilket også er de elementer der er beskrevet herunder.
 
 \clearpage
 \section{Baggrund}
@@ -264,6 +293,54 @@ Vi valgte at arbejde videre med den opstilling. De næste afsnit indeholder en o
 
 \subsection{Spændingsregulator (Jacob)}
 \label{sec:spandingsforstarker}
+
+Som en del af det samlede produkt har vi behov for en spændingsregulator. Det skyldes, at dronen opererer ved 22 V, hvilket også er udgangsspændingen fra generatoren. Men da vores motorstyring skal forsynes med 5 V DC, skal vi have spændingen reguleret ned. 
+Den kommende del omfatter kravspecifikation, analyse, design, implementering og verifikation af vores spændingsregulator. 
+
+\subsubsection{Kravsspecifikation}
+\label{sec:kravsspecifikation-2}
+
+\myparagraph{Uniquitous Requirements}
+\label{sec:kravsspecifikation-3}
+
+\begin{itemize}
+\item Spændingsregulatoren skal kunne regulere en spænding fra 22 V ned til 5 V, med en pålydende strøm af 1 A. 
+\item Spændingsregulatoren skal være vejrbestandig.
+\end{itemize}
+
+Efter research af forskellige muligheder for spændingsregulering, kom vi frem til tre reelle muligheder. Én baserer sig på LM78xx-serien, én baseret på LM317 og én baseret på en BUCK-converter.
+
+\subsubsection{Generel analyse}
+\label{sec:generel-analyse-}
+
+Den generelle analyse omhandler udelukkende den sammenhæng, som spændingsregulatoren skal sidde i.
+
+\myparagraph{Interface Analysis and Design}
+\label{sec:generel-analyse}
+
+Spændingsregulatoren vil være koblet til batteripakken i den ene ende og de logiske kredsløb i den anden ende. Som både indgang og udgang til spændingsregulatoren, vil der være forbundet almindelige ledere - 1 kvadrat som indgang og 0,5 kvadrat som udgang.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j1.png}
+  \caption{Strømmens gang i systemet.}
+  \label{fig:j1}
+\end{figure}
+
+Figur \ref{fig:j1} viser strømmens gang i systemet.
+
+\myparagraph{Dimensionering}
+\label{sec:generel-analyse-1}
+
+Da spændingsregulatoren er en blivende del af systemet, er vi afhængige af, at holdbarheden er god, og som minimum lever op til kvaliteten af de resterende dele af produktet.
+
+Ét af de problemer vi kan støde på under spændingsregulering af temperaturforøgelse, der kan brænde komponenten af.
+
+\myparagraph{Structural Analysis}
+\label{sec:generel-analyse-2}
+
+Spændingsregulatoren skal være vejrbestandig, da dronen skal kunne være udendørs i alle slags vejr. For at spændingsregulatoren kan blive det, skal den pakkes ind i en boks, der sikres efter IP66 standard. Problemet med dette er, at regulatoren udvikler en hel del varme. Derfor skal spændingsregulatoren være i en kasse for sig, hvor heatsink monteres udvendigt på kassen.
+
 
 
 
@@ -370,11 +447,11 @@ Fra Fjare\autocite{pid1} kunne et eksempel på et program være skrevet i pseudo
 \subsubsection{Test af generators output spænding}
 \label{sec:test-af-generators}
 
-Inden vi anskaffede os IC’erne til kredsløbet, skulle det sikres, at forbrændingsmotor og generator i tomgangsdrift som minimum producerede 9 V (peak). Dette var nødvendigt for, at IC’erne var funktionsdygtige. \textcolor{red}{Der opstilles som følge af ovenstående konstatering et krav til den aktive ensretter.}\\
+Inden vi anskaffede os IC’erne til kredsløbet, skulle det sikres, at forbrændingsmotor og generator i tomgangsdrift som minimum producerede 9 V (peak). Dette var nødvendigt for, at IC’erne var funktionsdygtige. \textcolor{red}{Der opstilles som følge af ovenstående konstatering et krav til den aktive ensretter.}
 
 \begin{tabular}{p{1cm}l}
-  \textcolor{red}{2.1.3.9}&\textcolor{red}{Der skal som minimum være 9 Volt (peak) på udgangen af generatoren, inden denne tilkobles}\\
-  & \textcolor{red}{den aktive ensretter}\\
+  \textcolor{red}{2.1.3.9}&\textcolor{red}{Der skal som minimum være 9 Volt (peak) på udgangen af generatoren,}\\
+  & \textcolor{red}{inden denne tilkobles den aktive ensretter}
 \end{tabular}
 
 For at verificere dette blev der konstrueret et testsetup, hvor det var muligt at måle output spændingen på én af generatorens tre faser. Et blokdiagram over testsetuppet kan ses i figur \ref{fig:prens5}.
@@ -468,7 +545,7 @@ Spændingstabet er forårsaget af MOSFET transistorens \textit{on resistance}, $
 
 % Spændingstabet er forårsaget af MOSFET transistorens on resistance, RDS(on), som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre RDS(on), hvilket teoretisk vil forbedre kredsløbet yderligere.\footnote{Se bilag, Timebox 7, for yderligere information}
 
-\subsubsection{PCB print\footnote{Se bilag, Timebox 8, for yderligere information.}}
+\subsubsection{PCB print}\footnote{Se bilag, Timebox 8, for yderligere information.}
 \label{sec:pcb-printf-bilag}
 
 Under realiseringen af den nedskalerede version af kredsløbet, fik vi konstateret, at kredsløbet havde den ønskede funktionalitet, hvorfor vi designede et PCB print med programmet, Eagle. Da printet var færdigt, blev følgende komponenter loddet på:
@@ -504,7 +581,7 @@ Figur \ref{fig:nt3} og \ref{fig:nt4} viser et skærmbillede af det færdige PCB 
 \end{figure}
 
 
-\subsection{Resultat\footnote{Se bilag, Timebox 9-10, for yderligere information.}}
+\subsection{Resultat}\footnote{Se bilag, Timebox 9-10, for yderligere information.}
 \label{sec:result-bilag-timeb}
 
 Efter konstruktionen af PCB printet til den aktive ensretter, var det tid til at teste kredsløbet \textit{full scale}. Indledningsvist besluttede vi os dog for at lave en nedskaleret test på samme måde som på breadboardet. Altså med en load-modstand på 1 k$\Omega$.
@@ -619,6 +696,155 @@ På baggrund af denne måling, og da vi ikke havde mere tid til rådighed, var v
 
 \subsection{Spændingsregulator (Jacob)}
 \label{sec:spand-jacob}
+
+\subsubsection{Analyse af LM78xx-serien}
+\label{sec:analyse-af-lm78xx}
+
+Én af mulighederne for at lave en spændingsregulator er, at bruge en LM7805 IC til opgaven. 
+Fordelen ved en implementering af denne type er, at spændingsregulatoren er simpel, billig og kan laves på meget lidt plads. 
+Ét af de problemer vi kan støde på under spændingsreguleringen, er temperaturforøgelse, der kan brænde komponenten af. Bruges der blot en LM7805 til at regulere fra 22 V til 5 V, med en strøm på 1 A, vil der være et effekttab på 17 W.\footnote{Effekten fås ved $P=V\cdot A$}
+
+Af dataarket for LM7805\footnote{(FAIRCHILD, 2006)} opgives det, at temperaturforøgelsen i IC’en er 65 grader celsius per watt der forbruges i IC’en. Altså vil vi, udregnet i grader, få en temperaturforøgelse på:
+
+\begin{equation}
+  \label{eq:3}
+  \Delta T = I \cdot \Delta V \cdot R_{\theta (JA)}=1 A \cdot (22V-5V)\cdot 65 \frac{^\circ C}{W} = 1105^\circ C
+\end{equation}
+
+En sådan temperaturstigning er selvfølgelig langt fra acceptabel. 
+Monteres der en heatsink i de passende dimensioner, falder $R_{\theta J}$ til 5 $\frac{^\circ C}{W}$. Dermed ser beregningen således ud: 
+
+\begin{equation}
+  \label{eq:3}
+  \Delta T = I \cdot \Delta V \cdot R_{\theta (JA)}=1 A \cdot (22V-5V)\cdot 5 \frac{^\circ C}{W} = 85^\circ C
+\end{equation}
+
+Dette er indenfor et acceptabelt område, da $T_{OPR} \in  [-40 ^\circ C;125 ^\circ C]$. Dog skal det nævnes, at temperatursvingningerne er den største udfordring for holdbarheden på en IC. Endvidere vil det forøge størrelsen og vægten af systemet meget væsentligt.
+
+Hvad angår strømmen kan LM78xx serien klare op til 2,2 A peak og levere en outputstrøm på op til 1 A. Da vores krav var 1 A på udgangen, går serien lige an, hvad angår strømstyrke. 
+
+Denne type af system er altså yderst ineffektivt, da der afsættes en stor mængde energi til termisk energi. Problemerne med holdbarheden på IC’erne kan løses ved at sætte 2 forskellige IC’er i serie. Eksempelvis kunne der laves et system som det der vises her. Det løser dog ikke problemerne med ineffektivitet, hvorfor denne mulighed afskrives allerede efter analysefasen.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j2.png}
+  \caption{Diagram}
+  \label{fig:j2}
+\end{figure}
+
+\subsubsection{Analyse af LM317 }
+\label{sec:analyse-af-lm317}
+
+Herunder ses en simulering af opsætningen af en spændingsregulator på baggrund af en LM117. Opstillingen er lavet på baggrund af 1 af standardopstillingerne i datasheetet for LM117/LM317T.\footnote{(TI, 2018)}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j3.png}
+  \caption{Diagram til simulering}
+  \label{fig:j3}
+\end{figure}
+
+Som det ses af simuleringen, opnås den ønskede spænding, og den effekt der afsættes i LM117 er meget acceptabel. Dette effekttab vil give en temperaturstigning i LM117 på 22,1 grader, hvilket følger af de temperaturkarakteristika der gælder for LM117 iflg. dataarket. Ulempen ved denne løsning er, at den er væsentligt dyrere end en løsning der bygger på LM78xx-serien.
+
+\subsubsection{Analyse af BUCK-konverter}
+\label{sec:analyse-af-buck}
+
+En anden mulighed for konvertering af spændingen er med en BUCK converter. Opstillingen herunder kommer fra et designværktøj udviklet af Texas Instruments, kaldet WEBENCH.\footnote{(Instruments, 2019)}
+
+I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spænding, hvorefter der tegnes forskellige mulige kredsløb, som man kan vælge imellem. På baggrund af effektivitet og kostpris, valgtes følgende. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j4.png}
+  \caption{WEBBENCH}
+  \label{fig:j4}
+\end{figure}
+
+Værktøjet indeholder også et analyseværktøj. For at bekræfte, at kredsløbet giver den ønskede outputspænding, har jeg kigget på karakteristikken i steady state.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j5.png}
+  \caption{Måling af spænding}
+  \label{fig:j5}
+\end{figure}
+
+Som det ses af billedet, opnås den ønskede spændingen. Billedet viser en del ripple, men denne er underordnet, så længe den ikke har større udsving end det vises her. Effektiviteten for ovenstående konverter er på 86,1\%, og effekttabet i ICén udregnes af programmet til 208 mW. Dette giver, i forhold til de i dataarket  oplyste temperaturkarakteristika, en temperaturstigning på 22,02 grader, hvilket er acceptabelt, også uden heatsink. 
+
+Endvidere er denne løsning væsentlig billigere da ét styk TPS5410DR kan erhverves for cirka 20 kr. 
+
+Efter analysen kan vi konkludere, at LM78xx-serien er en ineffektiv og ringe løsning til vores system. På baggrund af analyse og simulering af LM317 og BUCK-konverteren kan det ikke afgøres, hvilken opsætning der er bedst i vores system. Derfor bygges begge systemer på breadboard, for at teste dem.
+
+\subsubsection{Implementering af LM317}
+\label{sec:impl-af-lm317}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j6.png}
+  \caption{Opstilling realiseret}
+  \label{fig:j6}
+\end{figure}
+
+I figur \ref{fig:j6} ses opstillingen realiseret. 
+
+Som det også ses af billedet har opstillingen en meget beskeden størrelse og vægt, hvilket er en stor fordel for vores vedkommende, som det også fremgår af de overordnede krav for projektet.
+Prisen på alle komponenter er billig. Det dyreste er LM317 til cirka 11 kroner stykket. Samlet pris for hele systemet beløber sig til cirka 19 kroner. Efter første test, blev systemet udsat for varme, fra en lighter, for at se udsving.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j7.png}
+  \caption{LM317 output}
+  \label{fig:j7}
+\end{figure}
+
+
+I figur \ref{fig:j7} ses outputtet fra LM317-systemet. Som vi kan se, ligger spændingen lige omkring 5 V som påkrævet. Selvom der ikke er zoomet voldsomt meget ind, ses også et acceptabelt niveau af ripple. Potentiometeret blev udmålt til 538 ohm, hvilket også stemmer meget godt overens med vores simulering. Der blev målt en strøm på 1024 mA på systemet, hvilket kun er en smule over det krævede niveau. Efter datasheetet burde vi kunne opnå 1,5 A. Strømmen blev målt ved at forbinde regulatoren med en load-modstand.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j8.png}
+  \caption{Spænding efter varmeudsættelse}
+  \label{fig:j8}
+\end{figure}
+
+I figur \ref{fig:j8} ses spændingen efter vi havde udsat systemet for lighteren i 30 sekunder. Spændingen falder en smule, men indenfor det acceptable, og ripple forøges ikke.
+
+\subsubsection{Test af BUCK-konverteren}
+\label{sec:test-af-buck}
+
+I figur \ref{fig:j9} ses implementeringen af BUCK-konverteren. Ligesom med tidligere test, bliver systemet her også udsat for varme og en load-modstand. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j9.png}
+  \caption{Testopstilling af BUCK-konverter}
+  \label{fig:j9}
+\end{figure}
+
+Herunder ses resultater for testen. Først under almindelige omstændigheder.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j10.png}
+  \caption{Test af BUCK-konverter}
+  \label{fig:j10}
+\end{figure}
+
+Som det ses, leveres en spænding omkring de 5 V. Denne spænding er acceptabel, om end vi ser en lille smule ripple. Denne kan skyldes den måde BUCK-konverteren virker på. Filteret der sidder efter konverteren, kan afvige en smule i praksis fra de teoretiske værdier. Det er dog stadig vigtigt at understrege, at dette output er acceptabelt. Strømmen måles til 1,3 A med loadmodstand.
+
+Efter påvirkning af varme ændrede outputtet sig imidlertid ret dramatisk. Dette kan skyldes, at både dioden og TPS5410 er påvirkelige af varme, ligesom den induktive reaktans påvirkes i spolen. Her ses outputtet efter varmepåvirkningen har stået på i 30 sekunder. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/j11.png}
+  \caption{Ændring af output}
+  \label{fig:j11}
+\end{figure}
+
+
+Som det ses i figur \ref{fig:j11}, ændrer outputtet sig væsentligt! 
+
+For at være sikker på, at komponenterne ikke var brændt af ved påvirkningen fra lighteren, køres en test cirka 15 minutter efter, hvor outputtet igen var standardiseret. 
 
 
 \subsection{Motorstyring}
@@ -1061,6 +1287,63 @@ int main(void) {
 Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til kravet om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen. 
 
 Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gates varierede meget, hvorefter vi måtte stoppe udviklingen på grund af manglende tid.  
+
+\subsection{Spændingsregulator}
+\label{sec:spandingsregulator}
+
+For at kunne vælge endeligt imellem spændingsregulatorerne, opsættes følgende pointsystem
+\begin{itemize}
+\item Driftssikker, også ved påvirkning af varme - 2 P
+\item Skal være den billigste, brugbare løsning - 2 P
+\item Minimal ripple på output - 1 P
+\item Minimal størrelse og vægt - 1 P
+\end{itemize}
+
+Pointfordelingen er som følger herunder, hvilket giver en klar sejr til LM317-systemet. Dette bygges på PCB og testes.
+\begin{table}[h]
+  \centering
+% BEGIN RECEIVE ORGTBL jtab
+\begin{tabular}{l|r|r}
+\textbf{Kriterie} & \textbf{TPS5410} & \textbf{LM317-T} \\
+\hline
+Varmepåvirkning & 0 & 2 \\
+Billigste løsning & 0 & 2 \\
+Minimal ripple & 0 & 1 \\
+Minimal størrelse & 1 & 0 \\
+\hline
+\textbf{Ialt} & \textbf{1} & \textbf{5} \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL jtab
+  \caption{Point tabel}
+  \label{tab:pointj}
+\end{table}
+\begin{comment}
+#+ORGTBL: SEND jtab orgtbl-to-latex :splice nil :skip 0
+| Kriterie          | TPS5410 | LM317-T |
+|-------------------+---------+---------|
+| Varmepåvirkning   |       0 |       2 |
+| Billigste løsning |       0 |       2 |
+| Minimal ripple    |       0 |       1 |
+| Minimal størrelse |       1 |       0 |
+|-------------------+---------+---------|
+| Ialt              |       1 |       5 |
+|-------------------+---------+---------|
+\end{comment}
+
+\subsubsection{Endelig test}
+\label{sec:endelig-test}
+
+Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyning som input og tilslutte et voltmeter, for at måle udgangsspændingen. Opstillingen kan ses her. Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det accepteres. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
+
+Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. Dette er en forglemmelse, og vi må antage, at vi stadig kan trække den fornødne strøm. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./figurer/j12.png}
+  \caption{Endelig test}
+  \label{fig:j12}
+\end{figure}
 
 
 \subsection{Motorstyring}

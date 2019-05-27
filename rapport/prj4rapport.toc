@@ -41,13 +41,3 @@
 \contentsline {section}{\numberline {4}Resultater}{26}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aktiv ensretter}{26}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Motorstyring}{26}{subsection.4.2}
-\contentsline {section}{Bilag}{27}{subsection.4.2}
-\contentsline {section}{Timebox 1}{27}{subsection.4.2}
-\contentsline {section}{Timebox 2}{29}{subsection.4.2}
-\contentsline {section}{Timebox 3}{30}{subsection.4.2}
-\contentsline {section}{Timebox 4}{31}{subsection.4.2}
-\contentsline {section}{Timebox 5}{32}{subsection.4.2}
-\contentsline {section}{Timebox 6}{33}{subsection.4.2}
-\contentsline {section}{Timebox 7}{34}{subsection.4.2}
-\contentsline {section}{Timebox 8}{35}{subsection.4.2}
-\contentsline {section}{Timebox 9}{36}{subsection.4.2}

@@ -1,4 +1,4 @@
-\input{../preamble.tex}
+\input{../../preamble.tex}
 % \bibliographystyle{plain} % Style BST file (bmc-mathphys, vancouver, spbasic).
 % \bibliographystyle{unsrt} % Style BST file (bmc-mathphys, vancouver, spbasic).
 % \bibliography{pubs.bib}      % Bibliography 
@@ -121,7 +121,7 @@ Herunder ses vores Rich Picture, som en konstrueret lige efter opgaven er blevet
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{int1.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/int1.png}
   \caption{Rich Picture}
   \label{fig:int1}
 \end{figure}
@@ -183,7 +183,7 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{int2.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/int2.png}
   \caption{Blokdiagram}
   \label{fig:int2}
 \end{figure}
@@ -198,18 +198,18 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 \subsection{Aktive ensretter (Søren og Thomas)}
 \label{sec:aktive-ensretter}
 
-Ét af HPP’s primære subsystemer er blokken, der skal stå for ensretningen af den tre-fasede strøm/spænding, der genereres fra forbrændingsmotoren og generatoren. Der har i processen været mange essentielle dilemmaer og prioriteter, der skulle afklares for at få den mest optimale løsning. Da der foreligger et grundlæggende ønske om at holde den samlede vægt på HPP nede på et acceptabelt niveau, var det nærliggende at forsøge at realisere ensretningen aktivt. Hvad dette vil sige, berøres i det efterfølgende afsnit.
+Ét af HPP’s primære subsystemer er blokken, der skal stå for ensretningen af den tre-fasede strøm/spænding, som genereres fra forbrændingsmotoren og generatoren. Der har i processen været mange essentielle dilemmaer og prioriteter, der skulle afklares for at få den mest optimale løsning. Da der foreligger et grundlæggende ønske om at holde den samlede vægt på HPP nede på et acceptabelt niveau, var det nærliggende at forsøge at realisere ensretningen aktivt. Hvad dette vil sige, berøres i det efterfølgende afsnit.
 
 \subsubsection{Passiv vs. aktiv ensretning}
 \label{sec:passiv-vs.-aktiv}
 
-I en typisk ensretter (en passiv ensretter) anvendes en diodekonstruktion, som tillader et AC-signals positive cyklus at passere til outputtet, for derefter at invertere den negative del af cyklussen. Resultatet er et udelukkende positivt signal, med en variabel spændingsamplitude. Da vi forventer at lede ca. 110 A gennem systemet, er dioder ikke anvendelige. Spændingsfaldet over dioder ligger typisk i omegnen af 0.3-0.7V, og det vil betyde et effektab, som motoren skal kompensere for via flere omdrejninger.
+I en typisk ensretter (en passiv ensretter) anvendes en diodekonstruktion, som tillader et AC-signals positive cyklus at passere til outputtet, for derefter at invertere den negative del af cyklussen. Resultatet er et udelukkende positivt signal, med en variabel spændingsamplitude. Da vi forventer at lede ca. op til max. 100 A\footnote{Se bilag, Timebox 1 og 2, for yderligere information.} (peak) gennem systemet, er dioder ikke anvendelige. Spændingsfaldet over dioder ligger typisk i omegnen af 0.3-0.7 V, og det vil betyde et effektab, som motoren skal kompensere for via flere omdrejninger.
 
-I stedet anvendes en “Ideal Diode Controller”, som har til formål at levere spænding til gate-terminalen på MOSFET transistorer. En MOSFET har i cut-off tilstand en diodelignende opførsel, men når de leder optimalt, er modstanden i transistoren meget lav (helt ned til få m$\Omega$). Parallelkobles transistorer kan modstand sænkes yderligere. IC’en styrer, hvornår transistorerne åbner og lukker, og kontrollerer dermed AC-signalets passage gennem ensretteren, så output-signalet er positivt, ligesom ved en almindelig diode-ensretter. Denne styring gør, at ensretteren defineres som en aktiv ensretter.
+I stedet kan der anvendes IC (\textit{Ideal Diode Controller}), som har til formål at levere spænding til gate-terminalen på MOSFET transistorer. En MOSFET har i \textit{cut-off} tilstand en diodelignende opførsel, men når de leder optimalt, er modstanden i transistoren meget lav (helt ned til få m$\Omega$). Parallelkobles transistorerne kan modstand sænkes yderligere. IC’en styrer, hvornår transistorerne åbner og lukker, og kontrollerer dermed AC-signalets passage gennem ensretteren, så output-signalet er positivt, ligesom ved en almindelig diode-ensretter. Denne styring gør, at ensretteren defineres som en aktiv ensretter.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens1.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens1.png}
   \caption{Passiv vs. aktiv ensretning}
   \label{fig:prens1}
 \end{figure}
@@ -220,7 +220,7 @@ En generel udfordringen ved AC/DC konvertering er \textit{ripples} på output si
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens2.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens2.png}
   \caption{Graf over ripple spænding på output signal som funktion af tid. Stiplet linje = ensrettet enkeltfase
 AC-signal. Rød linje = ripple på kredsløb med kondensator parallelt på load. Kilde: Wikimedia Commons}
   \label{fig:prens2}
@@ -241,7 +241,7 @@ Dette skyldes bl.a., at den er designet specifikt til luftbårne strømforsyning
 \begin{figure}[htb]
   \begin{minipage}{\textwidth}
     \centering
-    \includegraphics[width=0.8\textwidth]{prens3.png}
+    \includegraphics[width=0.8\textwidth]{./figurer/prens3.png}
     \caption{Varmeudvikling. Passiv vs. LT4320\protect\footnotemark}
     \label{fig:prens3}
     \footnotetext{Fra databladet til LT4320-1. \url{https://www.analog.com/media/en/technical-documentation/data-sheets/4320fb.pdf}}
@@ -251,11 +251,11 @@ Dette skyldes bl.a., at den er designet specifikt til luftbårne strømforsyning
 \subsubsection{Kredsløbet}
 \label{sec:kredslobet}
 
-Leverandøren af LT-4320-1, foreslår kredsløbet\footnote{url{https://www.analog.com/en/products/lt4320.html}} set på figur, som en yderst energieffektiv tre-faset aktiv ensretter.
+Leverandøren af LT-4320-1, foreslår kredsløbet\footnote{url{https://www.analog.com/en/products/lt4320.html}} set på figur \ref{fig:prens2}, som en yderst energieffektiv tre-faset aktiv ensretter.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens4.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens4.png}
   \caption{Kredsløb til realiseringen af ensretteren}
   \label{fig:prens2}
 \end{figure}
@@ -377,11 +377,11 @@ Inden vi anskaffede os IC’erne til kredsløbet, skulle det sikres, at forbræn
   & \textcolor{red}{den aktive ensretter}\\
 \end{tabular}
 
-For at verificere dette blev der konstrueret et testsetup, hvor det var muligt at måle output spændingen på én af generatorens tre faser. Et blokdiagram over testsetuppet kan ses i nedenstående figur.
+For at verificere dette blev der konstrueret et testsetup, hvor det var muligt at måle output spændingen på én af generatorens tre faser. Et blokdiagram over testsetuppet kan ses i figur \ref{fig:prens5}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens5.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens5.png}
   \caption{Blokdiagram til test af outout spænding på en fase af generator}
   \label{fig:prens5}
 \end{figure}
@@ -393,19 +393,43 @@ Testen viste, at der var en spænding på 11.4 V (peak)\footnote{Se bilag, Timeb
 
 Inden vi påbegyndte opbygningen af den aktive ensretter, blev funktionaliteten simuleret vha. programmet, LT-spice, som er leveret af IC’ens producent, \textit{Linear Technology}.
 
-Figur\ref{fig:prens6} viser et skærmbillede af simuleringen. Det fremgår tydeligt, at outputtet (lyseblå) er ensrettet i forhold til faserne (grøn, rød og blå) til et tilnærmelsesvist DC niveau. 
+Figur\ref{fig:prens6} viser et skærmbillede af simuleringen. Det fremgår tydeligt, at outputtet (\textit{lyseblå}) er ensrettet i forhold til faserne (\textit{grøn, rød og blå}) til et tilnærmelsesvist DC niveau. 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\textwidth]{prens6.png}
+  \includegraphics[width=0.9\textwidth]{./figurer/prens6.png}
   \caption{Resultat af simuleringen. \textcolor{cyan}{$V_{out}$: Målingen over load modstanden}, \textcolor{green}{$V_{fase1}$: Målingen af fase 1}, \textcolor{blue}{$V_{fase2}$: Målingen af fase 2}, \textcolor{red}{$V_{fase1}$: Målingen af fase 1}}
   \label{fig:prens6}
 \end{figure}
 
-Det skal nævnes, at skaleringen af komponenter i det simulerede kredsløb ikke er identisk med det tiltænkte. Simuleringen er udført for at konstatere kredsløbets teoretiske funktionalitet.   
-
+Det skal nævnes, at skaleringen af komponenter i det simulerede kredsløb ikke er identisk med det tiltænkte. Simuleringen er udført for at konstatere kredsløbets teoretiske funktionalitet.
 
 Ud fra resultatet\footnote{Se bilag, Timebox 7, for yderligere information.} i simuleringen var vi overbevist om, at kredsløbet i teorien kunne leve op til den ønskede funktionalitet. Næste del af processen var derfor at opbygge kredsløbet på et breadboard i en nedskaleret version.
+
+\subsubsection{Teststand}
+\label{sec:teststand}
+
+Da der var behov for at have et setup, hvor der problemløst kunne genereres en trefaset spænding til at teste den aktive ensretter, besluttede vi, at det ikke var sikkerhedsmæssigt forsvarligt indtil videre at benytte forbrændingsmotoren til at drive generatoren. Vi har fra start af været i besiddelse af en ekstra BLDC motor, og hvis denne forbindes med den oprindelige generator, vil det derved være muligt at generere en trefaset spænding.
+
+Den oprindelig stand med påmonteret forbrændingsmotor og generator benyttes til den nye teststand. Tandremmen mellem forbrændingsmotor og generatoren afmonteres, hvorefter standen boltes fast til en træ reglar med dimensionerne, 5x10x45 cm. Den ekstra BLDC motor boltes fast til en jernplade med to stålklemmer, hvorefter jernpladen påmonteres træ reglaren i passende afstand til den oprindelige BLDC motor. Herefter forbindes akslen på de to motorer med en ny tandrem. I figur \ref{fig:nt1} og \ref{fig:nt2} ses billeder af den færdige teststand.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./figurer/nt1.png}
+  \caption{Foto af teststand til produktion af tre-faset spænding.}
+  \label{fig:nt1}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./figurer/nt2.png}
+  \caption{Foto af teststand til produktion af tre-faset spænding.}
+  \label{fig:nt2}
+\end{figure}
+
+Ved hjælp af den tidligere benyttede ESC, vil det nu være muligt at starte den drivende motor med forskellige frekvenser, hvilket vil give et tilsvarende output på den nye generator. Dette output kan tilkobles den aktive ensretter, således det er muligt at teste dens funktionalitet uden forbrændingsmotoren. 
+
+Denne teststand blev benyttet til at producere en tre-faset spænding under samtlige test af den aktive ensretter.
 
 \subsubsection{Realisering på breadboard (nedskaleret)}
 \label{sec:real-pa-breadb}
@@ -416,27 +440,182 @@ Figur \ref{fig:prens7} viser et skærmbillede fra målingen med oscilloskop af d
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens7.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens7.png}
   \caption{Nedskaleret realisering på breadboard. Gul: $V_{out}$. Grøn, blå og rød: $V_{in}$ (3 faser)}
   \label{fig:prens7}
 \end{figure}
 
 Her ses det, at outputtet er jævnt ensrettet i forhold til de tre faser, hvorved vi kunne konstatere, at det nedskalerede kredsløb fungerede efter hensigten.  
 
-For yderligere at bevise, at den aktive ensretter var væsentlig mere effektiv end en standard diodebro, foretog vi en måling af spændingen på én af MOSFET transistorernes gate pin i forhold til fasen på transistorens \textit{source} pin.
+Der er dog et spændingstab fra input til output på maks. 400 mV, hvilket er en tydelig forbedring ift. en passiv diodebro. 
 
-Figur \ref{fig:prens8} viser et skærmbillede af resultatet af målingen. 
+Spændingstabet er forårsaget af MOSFET transistorens \textit{on resistance}, $R_{DS(on)}$, som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre $R_{DS(on)}$, hvilket teoretisk vil forbedre kredsløbet yderligere\footnote{Se bilag, Timebox 7, for yderligere information.}.  
+
+
+
+% For yderligere at bevise, at den aktive ensretter var væsentlig mere effektiv end en standard diodebro, foretog vi en måling af spændingen på én af MOSFET transistorernes gate pin i forhold til fasen på transistorens \textit{source} pin.
+
+% Figur \ref{fig:prens8} viser et skærmbillede af resultatet af målingen. 
+
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{./figurer/prens8.png}
+%   \caption{Måling af gate- vs. source spænding}
+%   \label{fig:prens8}
+% \end{figure}
+
+% Her ses det, at der er et spændingsfald på 212.5 mV fra gate til source, hvilket er en klar forbedring i forhold til en diodes forward spænding på 700 mV.
+
+% Spændingstabet er forårsaget af MOSFET transistorens on resistance, RDS(on), som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre RDS(on), hvilket teoretisk vil forbedre kredsløbet yderligere.\footnote{Se bilag, Timebox 7, for yderligere information}
+
+\subsubsection{PCB print\footnote{Se bilag, Timebox 8, for yderligere information.}}
+\label{sec:pcb-printf-bilag}
+
+Under realiseringen af den nedskalerede version af kredsløbet, fik vi konstateret, at kredsløbet havde den ønskede funktionalitet, hvorfor vi designede et PCB print med programmet, Eagle. Da printet var færdigt, blev følgende komponenter loddet på:
+
+\begin{itemize}
+\item 6 stk. MOSFET transistorer.
+  \begin{itemize}
+  \item Fairchild, FDP61N20, N-channel\footnote{Datasheet: http://213.114.131.21/_pdf/FD/FDP61N20.pdf}.
+  \item Max drain strøm: 61 A.
+  \item Max drain-source spænding: 200 V.
+  \item $R_{DS(on)}$: 41 m$\Omega$.
+  \item $R_{thJA}$: 62.5 $^\circ$C/W
+\end{itemize}
+\item 6 stk. 100 k$\Omega$’s modstande (1\% tolerance).
+\item 9 stk. dioder, 1N4148.
+\item 3 stk. IC, LT4320-1 
+\end{itemize}
+
+Figur \ref{fig:nt3} og \ref{fig:nt4} viser et skærmbillede af det færdige PCB print.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{prens8.png}
-  \caption{Måling af gate- vs. source spænding}
-  \label{fig:prens8}
+  \includegraphics[width=0.8\textwidth]{./figurer/nt3.png}
+  \caption{PCB print. Top lag}
+  \label{fig:nt3}
 \end{figure}
 
-Her ses det, at der er et spændingsfald på 212.5 mV fra gate til source, hvilket er en klar forbedring i forhold til en diodes forward spænding på 700 mV.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt4.png}
+  \caption{PCB print. Bund lag}
+  \label{fig:nt4}
+\end{figure}
 
-Spændingstabet er forårsaget af MOSFET transistorens on resistance, RDS(on), som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre RDS(on), hvilket teoretisk vil forbedre kredsløbet yderligere.\footnote{Se bilag, Timebox 7, for yderligere information}
+
+\subsection{Resultat\footnote{Se bilag, Timebox 9-10, for yderligere information.}}
+\label{sec:result-bilag-timeb}
+
+Efter konstruktionen af PCB printet til den aktive ensretter, var det tid til at teste kredsløbet \textit{full scale}. Indledningsvist besluttede vi os dog for at lave en nedskaleret test på samme måde som på breadboardet. Altså med en load-modstand på 1 k$\Omega$.
+
+\subsubsection{Nedskaleret test af PCB}
+\label{sec:nedskaleret-test-af}
+
+Figur \ref{fig:nt5} og \ref{fig:nt6} viser resultatet af den nedskalerede test af PCB printet.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt5.png}
+  \caption{Første måling ($V_{in}$ = 14.613 V, $V_{out}$ = 14.528 V)}
+  \label{fig:nt5}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt6.png}
+  \caption{Anden måling ($V_{in}$ = 10.050 V, $V_{out}$ = 9.648 V)}
+  \label{fig:nt6}
+\end{figure}
+
+Som det ses ud fra begge plots i figur 4 og 5, er der et spændingstab på udgangen af ensretteren i forhold til indgangen. Spændingstabene for målingerne er i Matlab udregnet til:
+
+\begin{tabular}{p{1cm}l}
+  1. måling: &$V_{delta1}$ = 0.0967 volt.\\
+  2. måling: &$V_{delta2}$ = 0.3497 volt.\\
+\end{tabular}
+
+Printet ser ud til at have den ønskede funktionalitet. Der ses dog en ujævnhed i spændingstabet gennem kredsløbet i de to målinger, hvilket vi ikke umiddelbart kunne forklare.
+
+
+\subsubsection{Større load}
+\label{sec:storre-load}
+
+For at teste om kredsløbet kunne leve op til de store strømme (ca. 80 A peak), som det færdige HPP system teoretisk set kan komme til at trække, blev der anskaffet en effektmodstand på ca. 12 m$\Omega$. Denne effektmodstand kan håndtere op til 25 A. Kredsløbet kan ikke testes fuldt ud med denne modstand, men det vil give en indikation af, hvordan kredsløbet reagerer ved en større belastning.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt7.png}
+  \caption{Foto af testopstilling med load modstand på 12 m$\Omega$.}
+  \label{fig:nt7}
+\end{figure}
+
+Effektmodstanden er designet således, at der løber 25 A gennem den, hvis der er et spændingsfald på 300 mV over modstanden.
+
+\begin{tabular}{p{1cm}l}
+  1. måling: &Generatoren blev drevet således, der løb ca. 25 A gennem load modstanden.\\
+\end{tabular}
+
+Efter få sekunder kunne vi konstatere, at de seks MOSFET transistorer på printet blev meget varme, hvorfor testen blev stoppet.
+
+Hvis det antages, at der i værste fald er et spændingsfald på de tidligere beregnede 0.3497 V fra source til drain på hver af de 6 transistorer, vil dette resultere i et effekttab på:
+
+\begin{equation}
+  \label{eq:2}
+  P = \frac{0.3497^2V}{0.041 \Omega}=2.87 W
+\end{equation}
+
+Og dette vil aflede en stigning i temperaturen i transistorerne på:
+
+\begin{equation}
+  \label{eq:3}
+  T=P\cdot R_{thJA} = 2.87 W \cdot 62.5 \frac{^\circ C}{W}=179.2 ^\circ C
+\end{equation}
+
+Ud fra datasheet’et til FDP61N20 ses det, at de maksimalt kan håndtere 150 $^\circ C$.
+
+Vi var derfor nødt til enten at finde nye transistorer med en lavere intern modstand og/eller påmontere en \textit{heatzink}. Vi blev efter denne test ligeledes bekymret for, at kredsløbet ikke fungerede optimalt, da vi begyndte at se en del uregelmæssigheder.
+
+\subsubsection{Fejlsøgning}
+\label{sec:fejlsogning}
+
+Indledningsvist blev der indkøbt følgende MOSFET transistorer med en lavere intern modstand:
+
+\begin{itemize}
+\item $OptiMOS^{TM}5$ Power-transistor
+  \begin{itemize}
+  \item Max drain strøm: 100 A.
+  \item Max drain-source spænding: 100 V.
+  \item $R_{DS(on)}$: 3.9 m$\Omega$.
+  \item $R_{thJA}$: 62 $^\circ$C/W
+  \end{itemize}
+\end{itemize}
+
+Disse MOSFET transistorer blev monteret på PCB printet, hvorefter samme testprocedure som tidligere blev gennemført.  
+
+Testen resulterede dog i en defekt transistor.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt8.png}
+  \caption{Defekt transistor. Markeret med rød firkant.}
+  \label{fig:nt8}
+\end{figure}
+
+Årsagen til defekten var på daværende tidpunkt uafklaret, hvorfor det blev besluttet at måle gate spændingerne på samtlige transistorer i forhold til stel, da vi havde en mistanke om, at der var ubalance i kredsløbet. Ubalance kunne muligvis være årsagen til defekten af den ene transistor. 
+
+Figur \ref{fig:nt9} viser målingen af gate spændingen på de tre transistorer, der håndterer den positive del af inputtet. Hvis kredsløbet fungerede korrekt, skulle der gerne være samme spændingsniveau på samtlige \textit{gates}. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./figurer/nt9.png}
+  \caption{Gatespænding. Grøn: fase 1+, blå: fase 2+, gul: fase 3+, rød: $V_{out}$}
+  \label{fig:nt9}
+\end{figure}
+Her ses, at gate spændingerne ikke har samme niveau. Peak værdier varierer mellem 9.4 V (fase 1), 12.8 V (fase 2) og 16.0 V (fase 3).
+
+På baggrund af denne måling, og da vi ikke havde mere tid til rådighed, var vi desværre nødsaget til at stoppe udviklingen af den aktive ensretter. 
+
 
 \subsection{Spændingsregulator (Jacob)}
 \label{sec:spand-jacob}
@@ -469,7 +648,7 @@ Ved at opsætte analog Discovery til på pin PTD3, vises at vores init funktion 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{mots4.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/mots4.png}
   \caption{Test af init-funktion}
   \label{fig:mots4}
 \end{figure}
@@ -485,7 +664,7 @@ Herefter har vi implementeret en funktion til at styre vores servo motor. Den ta
     \end{minipage}%
     \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.8\linewidth]{mots5.png}
+        \includegraphics[width=0.8\linewidth]{./figurer/mots5.png}
         \label{fig:mots5}
     \end{minipage}
     \caption{Kode til at styre gasspjældet}
@@ -515,7 +694,7 @@ Flow for opstart af motor, ved funktionen \lstinline{start()}:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{mots6.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/mots6.png}
   \caption{BLDC-motor forbundet til motoren med en tandrem}
   \label{fig:mots6}
 \end{figure}
@@ -632,7 +811,7 @@ Når data plottes for et kort tidsrum ses støj omkring 5 volt
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{mo1.png}
+  \includegraphics[width=0.6\textwidth]{./figurer/mo1.png}
   \caption{}
   \label{fig:mo1}
 \end{figure}
@@ -700,7 +879,7 @@ I scriptet fortolkes spænding over 4,5 V som 5 V. Markering af periodegrænser 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{mo2.png}
+  \includegraphics[width=0.6\textwidth]{./figurer/mo2.png}
   \caption{}
   \label{fig:mo2}
 \end{figure}
@@ -710,7 +889,7 @@ Ved plot at tp givet ved rpm overfor tid fås:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{mo3.png}
+  \includegraphics[width=0.6\textwidth]{./figurer/mo3.png}
   \caption{}
   \label{fig:mo3}
 \end{figure}
@@ -732,7 +911,7 @@ Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state ni
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{mo4.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/mo4.png}
   \caption{}
   \label{fig:mo4}
 \end{figure}
@@ -741,7 +920,7 @@ Ved at applicere et midlingsfilter på 10 fås et indtryk af en 1. grads overfø
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{mo5.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/mo5.png}
   \caption{}
   \label{fig:mo5}
 \end{figure}
@@ -764,7 +943,7 @@ I Simulink oprettes følgende:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{sbil1.png}
+  \includegraphics[width=0.6\textwidth]{./figurer/sbil1.png}
   \caption{Simulink - diagram}
   \label{fig:sbil1}
 \end{figure}
@@ -773,7 +952,7 @@ Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{sbil2.png}
+  \includegraphics[width=0.6\textwidth]{./figurer/sbil2.png}
   \caption{Simulink - diagram 2}
   \label{fig:sbil1}
 \end{figure}
@@ -879,10 +1058,9 @@ int main(void) {
 \subsection{Aktiv ensretter}
 \label{sec:aktiv-ensretter}
 
- OBS** Den røde tråd
- \begin{itemize}
- \item Max strøm dronebehov
- \end{itemize}
+Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til kravet om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen. 
+
+Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gates varierede meget, hvorefter vi måtte stoppe udviklingen på grund af manglende tid.  
 
 
 \subsection{Motorstyring}
@@ -894,60 +1072,60 @@ Der blev lavet implementering af PID-koden. Resultatet var desværre at der ved 
 % \bibliographystyle{unsrt}
 
 \clearpage
-\appendix
-\addcontentsline{toc}{section}{Bilag}
-\vspace*{\fill}
-\begin{center}
-\Huge{  \textbf{BILAG}}
-\end{center}
-\vspace*{\fill}
+% \appendix
+% \addcontentsline{toc}{section}{Bilag}
+% \vspace*{\fill}
+% \begin{center}
+% \Huge{  \textbf{BILAG}}
+% \end{center}
+% \vspace*{\fill}
 
-% \appendixpage
-% \addappheadtotoc
+% % \appendixpage
+% % \addappheadtotoc
 
-\addcontentsline{toc}{section}{Timebox 1}
-\label{sec:timebox-1}
-\includepdf[pages={-}]{timebox1-131118}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 1}
+% \label{sec:timebox-1}
+% \includepdf[pages={-}]{timebox1-131118}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 2}
-\label{sec:timebox-2}
-\includepdf[pages={-}]{timebox2-rettelse-fra-klaus(031218)}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 2}
+% \label{sec:timebox-2}
+% \includepdf[pages={-}]{timebox2-rettelse-fra-klaus(031218)}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 3}
-\label{sec:timebox-3}
-\includepdf[pages={-}]{timebox3-171218}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 3}
+% \label{sec:timebox-3}
+% \includepdf[pages={-}]{timebox3-171218}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 4}
-\label{sec:timebox-4-1}
-\includepdf[pages={-}]{timebox4-140219}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 4}
+% \label{sec:timebox-4-1}
+% \includepdf[pages={-}]{timebox4-140219}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 5}
-\label{sec:timebox-5}
-\includepdf[pages={-}]{timebox5-280219}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 5}
+% \label{sec:timebox-5}
+% \includepdf[pages={-}]{timebox5-280219}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 6}
-\label{sec:timebox-6}
-\includepdf[pages={-}]{timebox6}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 6}
+% \label{sec:timebox-6}
+% \includepdf[pages={-}]{timebox6}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 7}
-\label{sec:timebox-7}
-\includepdf[pages={-}]{timebox7}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 7}
+% \label{sec:timebox-7}
+% \includepdf[pages={-}]{timebox7}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 8}
-\label{sec:timebox-8}
-\includepdf[pages={-}]{timebox8}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 8}
+% \label{sec:timebox-8}
+% \includepdf[pages={-}]{timebox8}
+% \clearpage
 
-\addcontentsline{toc}{section}{Timebox 9}
-\label{sec:timebox-9}
-\includepdf[pages={-}]{timebox9}
-\clearpage
+% \addcontentsline{toc}{section}{Timebox 9}
+% \label{sec:timebox-9}
+% \includepdf[pages={-}]{timebox9}
+% \clearpage
 
 \end{document}

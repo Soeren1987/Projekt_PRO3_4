@@ -86,7 +86,7 @@
 \addcontentsline{toc}{chapter}{\protect\numberline{}\hspace{-0.5cm}Formelle informationer}
 \vspace{-5mm}
 % \clearpage
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{4}
 \clearpage
 \renewcommand{\contentsname}{Table of Contents}
@@ -115,7 +115,7 @@ Denne projektrapport sammenfatter vores arbejde, igennem PRO3 og PRO4, med at by
 
 Projektet har været at bygge et system, som kan kobles på en drone for at forlænge flyvetiden. Problemstillingen består i, at de fleste moderne droner, har en meget kort flyveradius, da batterierne er meget tunge i forhold til energikapacitet. Den begrænsede flyvetid gør dronerne uegnede til opgaver som pakkelevering, flyvning med blodprøver og andet leveringsarbejde, som man ellers har spået, kunne automatiseres med dronerne.
 
-Da energitætheden i benzin er væsentlig højere, end i et lithiumbatteri, bruges en HPP der er baseret på en brændselsmotor med tilhørende generator. På denne måde er der  mulighed for at lade batterierne under flyvning.
+Da energitætheden i benzin er væsentlig højere end i et lithiumbatteri, bruges en HPP, der er baseret på en brændselsmotor med tilhørende generator. På denne måde er der  mulighed for at lade batterierne under flyvning.
 
 Rapporten er opbygget, så den først introducerer projektet og udviklingsmetoden. Heriblandt er der inddraget enkelte elementer fra preprojektet. Der er kun udvalgt få elementer, som giver det bedste indblik i, hvad ideen for projektet er, og hvorfor produktet har en eksistensberettigelse, samt et generelt overblik over det færdige system. 
 
@@ -130,7 +130,7 @@ Hele rapportens layout og opsætning, herunder figurnumre og -tekster, bibliogra
 \subsection{Om udviklingsprocessen}
 \label{sec:om-udvikl}
 
-Hele udviklingsprocessen har fulgt strukturen af EUDP. EUDP er en udviklingsmetode til udvikling af produkter, der kombinerer mekanik, elektronik og programmering. En af ideerne i EUDP er, at man skal have et meget tæt samarbejde med kunden, hele processen igennem. Derfor har vi arbejdet i timeboxes af 2 ugers varighed. I enden af hver timebox blev der afholdt et møde med kunden, for at få godkendt det arbejde, som hidtil er udfærdiget. 
+Hele udviklingsprocessen har fulgt strukturen af EUDP. EUDP er en udviklingsmetode til udvikling af produkter, der kombinerer mekanik, elektronik og programmering. En af ideerne i EUDP er, at man skal have et meget tæt samarbejde med kunden hele processen igennem. Derfor har vi arbejdet i timeboxes af 2 ugers varighed. I enden af hver timebox blev der afholdt et møde med kunden for at få godkendt det arbejde, som hidtil er udfærdiget. 
 
 En af de store fordele ved EUDP er, at effektiviteten bliver målbar, da der er opsat nogle meget specifikke stadier igennem processen. EUDP adskiller sig fra mange andre strukturerede udviklingsprocesser ved at være meget simpel at følge. 
 
@@ -141,10 +141,11 @@ EUDP er inddelt i fire faser, hvor det største arbejde ligger i realiseringsfas
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./figurer/ij1.png}
-  \caption{Udviklingsprocessen}
+  \caption[Udviklingsprocessen]{Udviklingsprocessen\protect\footnotemark}
   \label{fig:ij1}
 \end{figure}
 
+\footnotetext{\url{http://eudp.dk/index.php/Roadmap}}
 \section{Kundens (undervisers) krav}
 \label{sec:kravsspecifikation-1}
 Nedenfor følger de krav, som er sat op af kunden, henholdsvis de krav som vi har specificeret for det færdige produkt.
@@ -194,10 +195,12 @@ Herunder ses vores Rich Picture, som en konstrueret lige efter opgaven er blevet
   \label{fig:int1}
 \end{figure}
 
+Formålet med vores Rich Picture er at danne et overblik over vigtige subsystemer. Da Rich Picture laves som noget af det første, lige efter opgaven er blevet stillet, er den ikke fyldestgørende. Den viser dog flere af de vigtige elementer, som vi har arbejdet med, og som beskrives videre her i rapporten. Det er også disse subsystemer, samt en spændingsregulator, der herunder laves kravsspecifikation for.
+
 \subsection{Kravspecifikation}
 \label{sec:kravspecifikation}
 
-På baggrund af ovenstående begyndte vi at opstille specifikke, tekniske krav til produktet - blandt andet på baggrund af de af underviserne stillede krav. I en kravsanalyse specificeres de krav, der er til det færdige produkt eller produktets enkelte komponenter. En udbytterig kravsanalyse indebærer at kunden inddrages. Kravene er nedenfor opstillet efter EARS-princippet (EARS:Easy to Approach Requirements Syntax).
+På baggrund af ovenstående begyndte vi at opstille specifikke, tekniske krav til produktet - blandt andet på baggrund af de af underviserne stillede krav. I en kravsanalyse specificeres de krav, der er til det færdige produkt eller produktets enkelte komponenter. En udbytterig kravsanalyse indebærer, at kunden inddrages. Kravene er nedenfor opstillet efter EARS-princippet (EARS: Easy to Approach Requirements Syntax).
 
 Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (event-driven), driftsorienterede (state-driven) og fejlorienterede krav (unwanted behaviour). EARS-princippet muliggør således en prioritering af kravene.
 
@@ -206,7 +209,7 @@ Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (even
 
 \begin{enumerate}[label=2.1.1.\arabic*]
 \item Motoren skal kunne startes vha. BLDC-generator.
-\item Udstødning skal monteres sådan at varmen ikke påvirker dronen.
+\item Udstødning skal monteres sådan, at varmen ikke påvirker dronen.
 \item Generatoren skal levere en middeleffekt på 2450 W ved 22,2 V (110,3 A)
 \item Generatoren skal være 3-faset jf. projektbeskrivelsen.
 \item HPP må maksimalt veje 5 kg.
@@ -251,16 +254,14 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/int2.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/int2.png}
   \caption{Blokdiagram}
   \label{fig:int2}
 \end{figure}
 % \section{Hypotese}
 % \label{sec:hypotese}
 
-Da projektet er en videreførelse af et projekt fra tidligere BDE-studerende, der aldrig blev funktionelt, er der visse elementer der allerede foreligger. Forbrændingsmotoren, gearing og generatoren er allerede indkøbt. For at mindske omkostningerne ved projektet, har det været vores overbevisning, at vi ville bygge resten af projektet op om disse elementer. 
-
-Da det ikke har været teknisk muligt at frakoble dronens allerede eksisterende batteri, har vi også været nødsaget til at bygge systemet op omkring dette. 
+Da projektet er en videreførelse af et projekt fra tidligere BDE-studerende, der aldrig blev funktionelt, er der visse elementer, der allerede foreligger. Forbrændingsmotoren, gearing og generatoren er allerede indkøbt. For at mindske omkostningerne ved projektet, har det været vores overbevisning, at vi ville bygge resten af projektet op om disse elementer. 
 
 De vigtigste hovedelementer af systemet bliver således spændingsregulatoren, motorstyringen, og den aktive ensretter, hvilket også er de elementer der er beskrevet herunder.
 
@@ -286,13 +287,13 @@ I stedet kan der anvendes IDC (\textit{Ideal Diode Controller}), som har til for
   \label{fig:prens1}
 \end{figure}
 
-Den store fordel ved aktiv ensretning kontra passiv er reduceringen af effekttabet gennem kredsløbet. Denne reduktion påvirker direkte, at forbrændingsmotoren skal køre med mindre RPM for at producere behovet til dronen, end hvis ensretningen var passiv. Derudover vil dimensioneringen af heatzinks til kredsløbet ligeledes være væsentlig mindre, da mindre effekttab betyder mindre varmeafledning.  
+Den store fordel ved aktiv ensretning kontra passiv er reduceringen af effekttabet gennem kredsløbet. Denne reduktion påvirker direkte, at forbrændingsmotoren skal køre med mindre RPM for at producere behovet til dronen, end hvis ensretningen var passiv. Derudover vil dimensioneringen af heatsinks til kredsløbet ligeledes være væsentlig mindre, da mindre effekttab betyder mindre varmeafledning.  
   
-En generel udfordring ved AC/DC konvertering er \textit{ripples} på output signalet. Ensrettes en enkelt AC-fase, får man et udgangssignal, med stor variation i spænding leveret. Kombineres tre faser med en faseforskydning på 120$^\circ$ mellem sig. I vores tilfælde, vil summationen af de tre sinuskurver generere et output signal med mindre \textit{ripple}.
+En generel udfordring ved AC/DC konvertering er \textit{ripples} på output signalet. Ensrettes en enkelt AC-fase, får man et udgangssignal med stor variation i spænding leveret. Kombineres tre faser med en faseforskydning på 120$^\circ$ mellem sig, som i vores tilfælde, vil summationen af de tre sinuskurver generere et output signal med mindre \textit{ripple}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/prens2.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/prens2.png}
   \caption{Graf over ripple spænding på output signal som funktion af tid. Stiplet linje = ensrettet enkeltfase
 AC-signal. Rød linje = ripple på kredsløb med kondensator parallelt på load. Kilde: Wikimedia Commons}
   \label{fig:prens2}
@@ -308,18 +309,20 @@ Under projektets Launch Fase og via arbejdet i de forskellige timeboxes blev der
 \subsubsection{Ubiquitous}
 \label{sec:ubiquitous}
 
-I launchfasen er der defineret følgende krav:
+I launchfasen er der defineret følgende krav:\\
+
 \vspace{1em}
 \begin{tabular}[h]{ll}
-2.1.1.6. &Ensretteren skal kunne klare at håndtere en effekt af 2,45 kW.\vspace{0.5em}\\
-2.1.1.7. &Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.\vspace{0.5em}\\
-2.1.1.9. &Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.\vspace{0.5em}\\
+  2.1.1.6. &Ensretteren skal kunne klare at håndtere en effekt af 2,45 kW.\vspace{0.5em}\\
+  2.1.1.7. &Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.\vspace{0.5em}\\%\vspace{0.5em}\\
+           % &levere en jævnstrøm.\vspace{0.5em}\\
+  2.1.1.9. &Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.\vspace{0.5em}\\
 \end{tabular}
 \vspace{1em}\\
 
 Der opstilles følgende nye krav:
 \begin{enumerate}[label=2.1.1.\arabic*]
-  \setcounter{enumi}{14}
+  \setcounter{enumi}{11}
 \item Skal kunne håndtere et signal med en frekvens op til 600 Hz.
 \item Skal kunne ensrette et AC signal med så lavt et effekttab som muligt.
 \item Spændingstabet gennem kredsløbet skal være mindre end 0.7 V.
@@ -351,27 +354,31 @@ Dette skyldes bl.a., at den er designet specifikt til luftbårne strømforsyning
 \begin{figure}[h]
   % \begin{minipage}{\textwidth}
     \centering
-    \includegraphics[width=0.3\textwidth]{./figurer/prens3.png}
+    \includegraphics[width=0.5\textwidth]{./figurer/prens3.png}
     \caption[Varmeudvikling. Passiv vs. LT4320]{Varmeudvikling. Passiv vs. LT4320\protect\footnotemark}
     \label{fig:prens3}
   % \end{minipage}
 \end{figure}
 \footnotetext{Fra databladet til LT4320-1. \url{https://www.analog.com/media/en/technical-documentation/data-sheets/4320fb.pdf}}
 }
+
+Figur \ref{fig:prens3} viser en sammenligning af varmeudviklingen i en passiv diodebro vs. IDC LT4320. Det ses tydeligt, at varmeudviklingen er væsentligt højre i en standard diodebro kontra ensretning med IDC'en.  
 \clearpage
 \subsection{Kredsløbet}
 \label{sec:kredslobet}
 
-Leverandøren af LT-4320-1, foreslår kredsløbet\footnote{\url{https://www.analog.com/en/products/lt4320.html}} set på figur \ref{fig:prens2}, som en yderst energieffektiv tre-faset aktiv ensretter.
+Leverandøren af LT-4320-1 foreslår kredsløbet\footnote{\url{https://www.analog.com/en/products/lt4320.html}} set på figur \ref{fig:prens2}, som en yderst energieffektiv tre-faset aktiv ensretter.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/prens4.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/prens4.png}
   \caption{Kredsløb til realiseringen af ensretteren}
   \label{fig:prens2}
 \end{figure}
 
-Vi valgte at arbejde videre med den opstilling. De næste afsnit indeholder en opsummering af simulering, realiseringen og test af kredsløbet.
+Simulering, realiseringen og test af kredsløbet vil blive videre beskrevet under afsnittet, metoder.
+
+% Vi valgte at arbejde videre med den opstilling. De næste afsnit indeholder en opsummering af simulering, realiseringen og test af kredsløbet.
 
 \section{Spændingsregulator (Jacob)}
 \label{sec:spandingsforstarker}
@@ -385,10 +392,11 @@ Som en del af det samlede produkt har vi behov for en spændingsregulator. Dette
 \subsubsection{Uniquitous Requirements}
 \label{sec:kravsspecifikation-3}
 
-\begin{itemize}
+\begin{enumerate}[label=2.1.1.\arabic*]
+  \setcounter{enumi}{9}
 \item Spændingsregulatoren skal kunne regulere en spænding fra 22 V ned til 5 V, med en pålydende strøm af 1 A. 
 \item Spændingsregulatoren skal være vejrbestandig.
-\end{itemize}
+\end{enumerate}
 
 Efter research af forskellige muligheder for spændingsregulering, kom vi frem til tre reelle muligheder. Én baserer sig på LM78xx-serien, én baseret på LM317 og én baseret på en BUCK-converter.
 
@@ -400,11 +408,11 @@ Den generelle analyse omhandler udelukkende den sammenhæng, som spændingsregul
 \subsubsection{Interface Analysis and Design}
 \label{sec:generel-analyse}
 
-Spændingsregulatoren vil være koblet til batteripakken i den ene ende og de logiske kredsløb i den anden ende. Som både indgang og udgang til spændingsregulatoren, vil der være forbundet almindelige ledere - 1 kvadrat som indgang og 0,5 kvadrat som udgang.
+Spændingsregulatoren vil være koblet til batteripakken i den ene ende og motorstyring samt CDI-tænding i den anden ende. Som både indgang og udgang til spændingsregulatoren, vil der være forbundet almindelige ledere - 1 kvadrat som indgang og 0,5 kvadrat som udgang.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/j1.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/j1.png}
   \caption{Interface analysis}
   \label{fig:j1}
 \end{figure}
@@ -416,7 +424,7 @@ Figur \ref{fig:j1} viser interface analysis.
 
 Da spændingsregulatoren er en blivende del af systemet, er vi afhængige af, at holdbarheden er god, og som minimum lever op til kvaliteten af de resterende dele af produktet.
 
-Ét af de problemer vi kan støde på under spændingsregulering af temperaturforøgelse, der kan brænde komponenten af.
+Ét af de problemer vi kan støde på under spændingsregulering er temperaturforøgelse, der kan brænde komponenten af.
 
 \subsubsection{Structural Analysis}
 \label{sec:generel-analyse-2}
@@ -426,7 +434,7 @@ Spændingsregulatoren skal være vejrbestandig, da dronen skal kunne være udend
 \section{Motorstyring (Simon)}
 \label{sec:motorstyring}
 
-Motorstyringen for systemet vil bestå i præcis justering af forbrændingsmotorens omdrejninger i forhold til dronecopterens strømforbrug. Det valgtes at arbejde med et simplere system for at fokuserer på principperne i motorstyring. Det betød at motorstyringen skulle bestå i udvikling af PID-regulering af forbrændingsmotoren sådan at der skulle foregå korrektion af motorens spjældvinkel i forhold til motorens omdrejninger.
+Motorstyringen for systemet vil bestå i præcis justering af forbrændingsmotorens omdrejninger i forhold til dronecopterens strømforbrug. Det valgtes at arbejde med et simplere system for at fokuserer på principperne i motorstyring. Det betød, at motorstyringen skulle bestå i udvikling af PID-regulering af forbrændingsmotoren sådan, at der skulle foregå korrektion af motorens spjældvinkel i forhold til motorens omdrejninger.
 
 % Målet med dette afsnit er at opstille en kravsspecifikation for motorstyringen samt at færdiggøre analysen af motorstyringen og lægge op til hvordan en test af motorstyring kan udformes for at præcisere PID-algoritme samt at opfylde krav.
 
@@ -457,16 +465,20 @@ Motorstyringen for systemet vil bestå i præcis justering af forbrændingsmotor
 
 \subsection{Kravsspecifikation}
 \label{sec:kravsspecifikation}
-For at fremstille en kravsspecifikation til motorstyring søges i litteraturen efter beskrivelsen af løsning på lignende problemstilling. Fjare\autocite{pid1} er en artikel, der beskriver PID-regulering af en forbrændingsmotor som skal drive en aerocopter. Med baggrund i Fjare\autocite{pid1} sættes følgende krav, som forsættelse svarende til afsnit 2.1.3 (State-Driven requirements) i launch-fase rapporten (se bilag):
+For at fremstille en kravsspecifikation til motorstyring søges i litteraturen efter beskrivelsen af løsning på lignende problemstillinger. Fjare\autocite{pid1} er en artikel, der beskriver PID-regulering af en forbrændingsmotor, som skal drive en aerocopter. Med baggrund i Fjare\autocite{pid1} opsættes følgende krav. De nummereres i fortsættelse svarende til afsnit 2.1.3  i launch-fase rapporten (se bilag). Kravene kan ses som arbitrært præcise, men er valgt med de værdier, som Fjare\autocite{pid1} har fundet, for at have et udgangspunkt for, hvad der er muligt at opnå:
+
+\subsubsection{State-driven}
+\label{sec:state-driven-1}
+
 \begin{enumerate}[label=2.1.3.\arabic*]
   \setcounter{enumi}{7}
 \item Overshoot skal ikke være mere en 197 rpm.
 \item Justeringstiden må max være 8,8 sekunder.
-\item Ifm. et step respons skal 90 \% af steady-state være opnået i mindre end 3 sekunder.
-\item Strømforsyningen til dronecopterens propelmoterer skal justeres sådan at dronecopterens hastighed kan holdes konstant.%Det skal være muligt at vedligeholde en konstant hastighed over længere tid (dvs. mere end 5 minutter).
-\item Servomotoren skal kunne reguleres.
-\item Motoren skal kunne startes.
-\item Omdrejningerne skal kunne måles.
+\item Ifm. et step respons skal 90 \% af steady-state være opnået på under 3 sekunder.
+\item Strømforsyningen til dronecopterens propelmoterer skal justeres sådan, at dronecopterens hastighed kan holdes konstant.%Det skal være muligt at vedligeholde en konstant hastighed over længere tid (dvs. mere end 5 minutter).
+% \item Servomotoren skal kunne reguleres.
+% \item Motoren skal kunne startes.
+% \item Omdrejningerne skal kunne måles.
 \end{enumerate}
 
 \subsection{Motorstart}
@@ -490,22 +502,22 @@ Når der vælges en ESC er der flere ting at tage højde for. For det første br
 
 Dronebatteriet, et Lithium Poly batteri med 6 celler, vil ved opkobling til ESC'en kunne generere et trefaset signal som sendes til generatoren.
 
-\subsection{Regulering af hastighed}
+\subsection{Regulering af hastighed (Thomas)}
 \label{sec:regul-af-hast}
 
 Ved regulering af forbrændingsmotorens hastigheder reguleres motorens gasspjæld. Der anvendes en servomotor påsat gasspjældet.
 
-For at kunne udvælge en passende servomotor til system-to-be, opstilles herunder følgende krav:
+For at kunne udvælge en passende servomotor til systemet, opstilles herunder følgende krav:\\
 \vspace{1em}
 \begin{tabular}[h]{ll}
-2.1.1.13&Servomotoren skal have en forsyningsspænding på 5 volt.\vspace{0.5em}\\
-2.1.1.14&Servomotoren skal veje under 15 g.\vspace{0.5em}\\
+2.1.1.16&Servomotoren skal have en forsyningsspænding på 5 volt.\vspace{0.5em}\\
+2.1.1.17&Servomotoren skal veje under 15 g.\vspace{0.5em}\\
 2.1.3.6 &Reaktionshastighed på minimum 0,15 s/60$^\circ$.\vspace{0.5em}\\
 2.1.3.7& Servomotorens skal have et moment (torque) på minimum 1,5 kg/cm.\vspace{0.5em}\\
 2.1.3.8& Servomotoren skal kunne styres via et PWM signal.\vspace{0.5em}\\ 
 \end{tabular}
 \vspace{1em}\\
-\noindent \textbf{Ad 2.1.1.13}
+\noindent \textbf{Ad 2.1.1.16}
 
 \noindent Siden der skal anvendes en spændingsregulator, der konverterer dronecoptorens batterispænding fra 22,2 volt ned til 5 volt, ville det være fordelagtigt at vælge en servomotor, der skal forsynes med 5 volt.
 
@@ -538,13 +550,13 @@ PID-regulering består i regulering af et output på baggrund af forskellen mell
   u(t)=k_Pe(t)+k_I \int_0^t e(\tau)\mathrm{d}\tau + k_D\frac{\mathrm{d}e(t)}{\mathrm{d}t}
 \end{equation}
 
-hvor $e(t)$ er fejl som funktion af tiden, $e(\tau)$ er fejl som funktion af den akkumulerede tid og $k_P$, $k_I$ og $k_D$ er koefficienter svarende til henholdsvis det proportionale, integrede og deriverede forhold. Det proportionale vil sige forholdet mellem tilstræbte og det faktiske for et givent tidspunkt. Det integrede vil sige forskellen mellem det tilstræbte og det faktisk akkummulerede over tid. Det betyder at den integrerede koefficient viser en trend for fejlen. Det deriverede er et mål for hvor hurtigt fejlen ændrer sig over tid.
+hvor $e(t)$ er fejl som funktion af tiden, $e(\tau)$ er fejl som funktion af den akkumulerede tid og $k_P$, $k_I$ og $k_D$ er koefficienter svarende til henholdsvis det proportionale, integrede og deriverede forhold. Det proportionale vil sige forholdet mellem tilstræbte og det faktiske for et givent tidspunkt. Det integrede vil sige forskellen mellem det tilstræbte og det faktisk akkummulerede over tid. Det betyder, at den integrerede koefficient viser en trend for fejlen. Det deriverede er et mål for, hvor hurtigt fejlen ændrer sig over tid.
 
 Formålet ved udarbejdelse af PID-regulering er at finde de optimale værdier af $k_P$, $k_i$ og $k_d$.
 
 % For et givent sæt af K-værdier, udvælges en række forskellige typer af trinvise ændringer i hastigheden. Der måles på hvor lang tid det tager for ændringen at indfinde sig, samt hvor store udsving dette gør sig ud i.
 
-Som udgangspunkt er det tidligere vist(\autocite{pid1}) at $K_p=0,065$ og $K_i=0,000005$ har været optimale, samt at $K_d$ helt blev droppet eftersom det ikke var en gavnlig parameter.
+Fjare\autocite{pid1} fandt at $K_p=0,065$ og $K_i=0,000005$ var optimale, men at $K_d$ helt blev droppet eftersom det ikke var en gavnlig parameter.
 
 \subsection{Software}
 \label{sec:software}
@@ -587,19 +599,19 @@ I koden anvendes et lavpasfilter (\lstinline{lowpassSpeed}) for at mindske ændr
 \subsection{Test af generators output spænding}
 \label{sec:test-af-generators}
 
-Inden vi anskaffede os IC’erne til kredsløbet, skulle det sikres, at forbrændingsmotor og generator i tomgangsdrift, som minimum producerede 9 V (peak). Dette var nødvendigt for, at IC’erne var funktionsdygtige. \textcolor{black}{Der opstilles som følge af ovenstående konstatering et krav til den aktive ensretter.}
+Inden vi anskaffede os IC’erne til kredsløbet, skulle det sikres, at forbrændingsmotor og generator i tomgangsdrift, som minimum producerede 9 V (peak). Dette var nødvendigt for, at IC’erne var funktionsdygtige. %\textcolor{black}{% Der opstilles som følge af ovenstående konstatering, et yderligere krav til generator/forbrændingsmotor.}
 
-\begin{tabular}{p{1cm}l}
-  \textcolor{black}{2.1.3.9}&\textcolor{black}{Der skal som minimum være 9 Volt (peak) på udgangen af generatoren,}\\
-  & \textcolor{black}{inden denne tilkobles den aktive ensretter}
-\end{tabular}
+% \begin{tabular}{p{1cm}l}
+%   \textcolor{black}{2.1.3.12}&\textcolor{black}{Der skal som minimum være 9 Volt (peak) på udgangen af generatoren,}\\
+%   & \textcolor{black}{inden denne tilkobles den aktive ensretter}
+% \end{tabular}
 
 For at verificere dette blev der konstrueret et testsetup, hvor det var muligt at måle output spændingen på én af generatorens tre faser. Et blokdiagram over testsetuppet kan ses i figur \ref{fig:prens5}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/prens5.png}
-  \caption{Blokdiagram til test af outout spænding på en fase af generator}
+  \includegraphics[width=0.8\textwidth]{./figurer/prens5.png}
+  \caption{Blokdiagram til test af output spænding på en fase af generator}
   \label{fig:prens5}
 \end{figure}
 
@@ -644,14 +656,14 @@ Den oprindelig stand med påmonteret forbrændingsmotor og generator benyttes ti
   \label{fig:nt2}
 \end{figure}
 
-Ved hjælp af den tidligere benyttede ESC, vil det nu være muligt at starte den drivende motor med forskellige frekvenser, hvilket vil give et tilsvarende output på den nye generator. Dette output kan tilkobles den aktive ensretter, således at det er muligt at teste dens funktionalitet uden forbrændingsmotoren. 
+Ved hjælp af ESC'en, vil det nu være muligt at starte den drivende motor med forskellige frekvenser, hvilket vil give et tilsvarende output på den nye generator. Dette output kan tilkobles den aktive ensretter, således at det er muligt at teste dens funktionalitet uden forbrændingsmotoren. 
 
 Denne teststand blev benyttet til at producere en tre-faset spænding under samtlige test af den aktive ensretter.
 
 \subsection{Realisering på breadboard (nedskaleret)}
 \label{sec:real-pa-breadb}
 
-Kredsløbet blev opbygget på et breadboard i en nedskaleret version for at teste funktionaliteten. Med nedskaleret menes der, at vi benyttede en 1 k$\Omega$’s modstand som load, således at der ikke blev trukket en stor strøm gennem kredsløbet. Der blev ligeledes påsat en tilpasset kondensator parallelt med load-modstanden for at udjævne eventuelt \textit{ripple} på outputtet. 
+Kredsløbet blev opbygget på et breadboard i en nedskaleret version for at teste funktionaliteten. Med nedskaleret menes der, at der blev monteret en 1k$\Omega$ modstand som load, således at der ikke blev trukket en stor strøm gennem kredsløbet. Der blev ligeledes påsat en tilpasset kondensator parallelt med load-modstanden for at udjævne eventuelt \textit{ripple} på outputtet. 
 
 Figur \ref{fig:prens7} viser et skærmbillede fra målingen med oscilloskop af den nedskalerede realisering.
 
@@ -664,7 +676,7 @@ Figur \ref{fig:prens7} viser et skærmbillede fra målingen med oscilloskop af d
 
 Her ses det, at outputtet er jævnt ensrettet i forhold til de tre faser, hvorved vi kunne konstatere, at det nedskalerede kredsløb fungerede efter hensigten.
 
-Der er dog et spændingstab fra input til output på maks. 400 mV, hvilket er en tydelig forbedring ift. en passiv diodebro. Spændingstabet er forårsaget af MOSFET transistorens \textit{on resistance}, $R_{DS(on)}$, som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre $R_{DS(on)}$, hvilket teoretisk vil forbedre kredsløbet yderligere\footnote{Se bilag, Timebox 7, for yderligere information.}.  
+Der er dog et spændingstab fra input til output på maks. 400 mV, hvilket er en forbedring ift. en passiv diodebro. Spændingstabet er forårsaget af MOSFET transistorens \textit{on resistance}, $R_{DS(on)}$, som under denne test var 4$\Omega$. Når kredsløbet skal realiseres uden nedskalering, vil der blive valgt en MOSFET med en langt mindre $R_{DS(on)}$, hvilket teoretisk vil forbedre kredsløbet yderligere\footnote{Se bilag, Timebox 7, for yderligere information.}.  
 
 
 
@@ -695,7 +707,7 @@ Under realiseringen af den nedskalerede version af kredsløbet, fik vi konstater
   \item Max drain strøm: 61 A.
   \item Max drain-source spænding: 200 V.
   \item $R_{DS(on)}$: 41 m$\Omega$.
-  \item $R_{thJA}$: 62.5 $^\circ$C/W
+  \item $R_{\theta JA}$: 62.5 $^\circ$C/W
 \end{itemize}
 \item 6 stk. 100 k$\Omega$’s modstande (1\% tolerance).
 \item 9 stk. dioder, 1N4148.
@@ -731,14 +743,14 @@ Figur \ref{fig:nt5} og \ref{fig:nt6} viser resultatet af den nedskalerede test a
 \clearpage
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/nt5.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/nt5.png}
   \caption{Første måling ($V_{in}$ = 14.613 V, $V_{out}$ = 14.528 V)}
   \label{fig:nt5}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/nt6.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/nt6.png}
   \caption{Anden måling ($V_{in}$ = 10.050 V, $V_{out}$ = 9.648 V)}
   \label{fig:nt6}
 \end{figure}
@@ -746,8 +758,8 @@ Figur \ref{fig:nt5} og \ref{fig:nt6} viser resultatet af den nedskalerede test a
 Som det ses ud fra begge plots i figur \ref{fig:nt5} og \ref{fig:nt6}, er der et spændingstab på udgangen af ensretteren i forhold til indgangen. Spændingstabene for målingerne er i Matlab udregnet til:
 
 \begin{tabular}{p{2cm}l}
-  1. måling: &$V_{delta1}$ = 0.0967 volt.\\
-  2. måling: &$V_{delta2}$ = 0.3497 volt.\\
+  1. måling: &$V_{\Delta 1}$ = 0.0967 volt.\\
+  2. måling: &$V_{\Delta 2}$ = 0.3497 volt.\\
 \end{tabular}
 
 Printet ser ud til at have den ønskede funktionalitet. Der ses dog en ujævnhed i spændingstabet gennem kredsløbet i de to målinger, hvilket vi ikke umiddelbart kan forklare.
@@ -756,8 +768,8 @@ Printet ser ud til at have den ønskede funktionalitet. Der ses dog en ujævnhed
 \subsubsection{Større load}
 \label{sec:storre-load}
 
-For at teste om kredsløbet kunne leve op til de store strømme (ca. 80 A peak), som det færdige HPP system teoretisk set kan komme til at trække, blev der anskaffet en effektmodstand på ca. 12 m$\Omega$, se figur \ref{fig:nt7}. Denne effektmodstand kan håndtere op til 25 A. Kredsløbet kan ikke testes fuldt ud med denne modstand, men det vil give en indikation af, hvordan kredsløbet reagerer ved en større belastning.
-\clearpage
+For at teste om kredsløbet kunne leve op til de store strømme (ca. 80 A peak), som det færdige HPP system teoretisk set kan komme til at trække, blev der anskaffet en effektmodstand på ca. 12 m$\Omega$, se figur \ref{fig:nt7}. Denne effektmodstand kan håndtere op til 75 A. Kredsløbet kan ikke testes fuldt ud med denne modstand, men det vil give en indikation af, hvordan kredsløbet reagerer ved en større belastning.
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./figurer/nt7.png}
@@ -765,11 +777,11 @@ For at teste om kredsløbet kunne leve op til de store strømme (ca. 80 A peak),
   \label{fig:nt7}
 \end{figure}
 
-Effektmodstanden er designet således, at der løber 25 A gennem den, hvis der er et spændingsfald på 300 mV over modstanden.
+Effektmodstanden er designet således, at der løber 25 A gennem den, hvis der er et spændingsfald på 300 mV over modstanden.\\
 
 \begin{tabular}{p{2cm}l}
   1. måling: &Generatoren blev drevet således, der løb ca. 25 A gennem load modstanden.\\
-\end{tabular}
+\end{tabular}\\
 
 Efter få sekunder kunne vi konstatere, at de seks MOSFET transistorer på printet blev meget varme, hvorfor testen blev stoppet.
 
@@ -784,7 +796,7 @@ Og dette vil aflede en stigning i temperaturen i transistorerne på:
 
 \begin{equation}
   \label{eq:3}
-  T=P\cdot R_{thJA} = 2.87 W \cdot 62.5 \frac{^\circ C}{W}=179.2 ^\circ C
+  T=P\cdot R_{\theta JA} = 2.87 W \cdot 62.5 \frac{^\circ C}{W}=179.2 ^\circ C
 \end{equation}
 
 Ud fra datasheet’et til FDP61N20 ses det, at de maksimalt kan håndtere 150 $^\circ C$. Vi var derfor nødt til enten at finde nye transistorer med en lavere intern modstand og/eller påmontere en \textit{heatzink}. Vi blev efter denne test ligeledes bekymret for, at kredsløbet ikke fungerede optimalt, da vi begyndte at se en del uregelmæssigheder.
@@ -800,7 +812,7 @@ Indledningsvist blev der indkøbt følgende MOSFET transistorer med en lavere in
   \item Max drain strøm: 100 A.
   \item Max drain-source spænding: 100 V.
   \item $R_{DS(on)}$: 3.9 m$\Omega$.
-  \item $R_{thJA}$: 62 $^\circ$C/W
+  \item $R_{\theta JA}$: 62 $^\circ$C/W
   \end{itemize}
 \end{itemize}
 
@@ -821,12 +833,12 @@ Figur \ref{fig:nt9} viser målingen af gate spændingen på de tre transistorer,
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/nt9.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/nt9.png}
   \caption{Gatespænding. Grøn: fase 1+, blå: fase 2+, gul: fase 3+, rød: $V_{out}$}
   \label{fig:nt9}
 \end{figure}
 
-Her ses, at gate spændingerne ikke har samme niveau. Peak værdier varierer mellem 9.4 V (fase 1), 12.8 V (fase 2) og 16.0 V (fase 3). På baggrund af denne måling, og da vi ikke havde mere tid til rådighed, var vi desværre nødsaget til at stoppe udviklingen af den aktive ensretter. 
+Her ses, at gate spændingerne ikke har samme niveau. Peak værdier varierer mellem 9.4 V (fase 1), 12.8 V (fase 2) og 16.0 V (fase 3). På baggrund af denne måling, og da vi ikke havde mere tid til rådighed, var vi desværre nødsaget til at stoppe udviklingen af den aktive ensretter. I resultat afsnittet for den aktive ensretter, vil årsagerne til fejlen blive vurderet og diskuteret. 
 
 
 \section{Spændingsregulator (Jacob)}
@@ -835,9 +847,9 @@ Her ses, at gate spændingerne ikke har samme niveau. Peak værdier varierer mel
 \subsection{Analyse af LM78xx-serien}
 \label{sec:analyse-af-lm78xx}
 
-Én af mulighederne for at lave en spændingsregulator er, at bruge en LM7805 IC til opgaven. Fordelen ved en implementering af denne type er, at spændingsregulatoren er simpel, billig og kan laves på meget lidt plads. Ét af de problemer man kan støde på under spændingsreguleringen, er temperaturforøgelse, der kan brænde komponenten af. Bruges der blot en LM7805 til at regulere fra 22 V til 5 V, med en strøm på 1 A, vil der være et effekttab på 17 W.\footnote{Effekten fås ved $P=V\cdot A$}
+Én af mulighederne for at lave en spændingsregulator er, at bruge en LM7805 IC til opgaven. Fordelen ved en implementering af denne type er, at spændingsregulatoren er simpel, billig og kan laves på meget lidt plads. Ét af de problemer, man kan støde på under spændingsreguleringen, er temperaturforøgelse, der kan brænde komponenten af. Bruges der blot en LM7805 til at regulere fra 22 V til 5 V, med en strøm på 1 A, vil der være et effekttab på 17 W.\footnote{Effekten fås ved $P=V\cdot A$}
 
-Af dataarket for LM7805\footnote{(FAIRCHILD, 2006)} opgives det, at temperaturforøgelsen i IC’en er 65 $^\circ C/W$ der forbruges i IC’en. Altså vil vi, udregnet i grader, få en temperaturforøgelse på:
+Af dataarket for LM7805\footnote{(FAIRCHILD, 2006)} opgives det, at temperaturforøgelsen i IC’en er 65 $^\circ C/W$, der forbruges i IC’en. Altså vil vi, udregnet i grader, få en temperaturforøgelse på:
 
 \begin{equation}
   \label{eq:3}
@@ -855,7 +867,9 @@ Monteres der en heatsink i de passende dimensioner, falder $R_{\theta J}$ til 5 
 
 Dette er indenfor et acceptabelt område, da $T_{OPR} \in  [-40 ^\circ C;125 ^\circ C]$. Dog skal det nævnes, at temperatursvingningerne er den største udfordring for holdbarheden på en IC. Endvidere vil det forøge størrelsen og vægten af systemet meget væsentligt.
 
-Hvad angår strømmen kan LM78xx serien klare op til 2,2 A peak og levere en outputstrøm på op til 1 A. Da vores krav var 1 A på udgangen, går serien lige an, hvad angår strømstyrke. Denne type af system er altså yderst ineffektivt, da der afsættes en stor mængde energi til termisk energi. Problemerne med holdbarheden på IC’erne kan løses ved at sætte to forskellige IC’er i serie. Eksempelvis kunne der laves et system som det, der vises i figur \ref{fig:j2}. Det løser dog ikke problemerne med ineffektivitet, hvorfor denne mulighed afskrives allerede efter analysefasen.
+Hvad angår strømmen kan LM78xx serien klare op til 2,2 A peak og levere en outputstrøm på op til 1 A. Da vores krav var 1 A på udgangen, går serien lige an, hvad angår strømstyrke.
+
+Denne type af system er altså yderst ineffektivt, da der afsættes en stor mængde energi til termisk energi. Problemerne med holdbarheden på IC’erne kan løses ved at sætte to forskellige IC’er i serie. Eksempelvis kunne der laves et system som det, der vises i figur \ref{fig:j2}. Det løser dog ikke problemerne med ineffektivitet, hvorfor denne mulighed afskrives allerede efter analysefasen.
 
 \begin{figure}[h]
   \centering
@@ -876,14 +890,14 @@ I figur \ref{fig:j3} ses en simulering af opsætningen af en spændingsregulator
   \label{fig:j3}
 \end{figure}
 
-Som det ses af simuleringen, opnås den ønskede spænding, og den effekt der afsættes i LM117 er meget acceptabel. Dette effekttab vil give en temperaturstigning i LM117 på 22,1 grader, hvilket følger af de temperaturkarakteristika der gælder for LM117 iflg. dataarket. Ulempen ved denne løsning er, at den er væsentligt dyrere end en løsning der bygger på LM78xx-serien.
+Som det ses af simuleringen, opnås den ønskede spænding, og den effekt der afsættes i LM117 er meget acceptabel. Dette effekttab vil give en temperaturstigning i LM117 på 22,1 grader, hvilket følger af de temperaturkarakteristika, der gælder for LM117 iflg. dataarket. Ulempen ved denne løsning er, at den er væsentligt dyrere end en løsning, der bygger på LM78xx-serien.
 
 \subsection{Analyse af BUCK-konverter}
 \label{sec:analyse-af-buck}
 
 En anden mulighed for konvertering af spændingen er med en BUCK converter. Opstillingen i figur \ref{fig:j4} kommer fra et designværktøj udviklet af Texas Instruments, kaldet WEBENCH.\footnote{(Instruments, 2019)}
 
-I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spænding, hvorefter der tegnes forskellige mulige kredsløb, som man kan vælge imellem. På baggrund af effektivitet og kostpris, valgtes følgende. 
+I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spænding, hvorefter der tegnes forskellige mulige kredsløb, som man kan vælge imellem. På baggrund af effektivitet og kostpris valgtes følgende. 
 
 \begin{figure}[h]
   \centering
@@ -892,7 +906,7 @@ I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spændi
   \label{fig:j4}
 \end{figure}
 
-Værktøjet indeholder også et analyseværktøj. For at bekræfte, at kredsløbet giver den ønskede outputspænding, er  karakteristikken i steady state undersøgt.
+Værktøjet indeholder også et analyseværktøj. For at bekræfte at kredsløbet giver den ønskede outputspænding, er  karakteristikken i steady state undersøgt.
 \clearpage
 \begin{figure}[h]
   \centering
@@ -901,7 +915,7 @@ Værktøjet indeholder også et analyseværktøj. For at bekræfte, at kredsløb
   \label{fig:j5}
 \end{figure}
 
-Som det ses af figur \ref{fig:j5}, opnås den ønskede spænding. Billedet viser en del ripple, men denne er underordnet, så længe den ikke har større udsving end det vises her. Effektiviteten for ovenstående konverter er på 86,1\%, og effekttabet i IC'en udregnes af programmet til 208 mW. Dette giver, i forhold til de i dataarket oplyste temperaturkarakteristika, en temperaturstigning på 22,02 grader, hvilket er acceptabelt, også uden heatsink. Endvidere er denne løsning væsentlig billigere da ét styk TPS5410DR kan erhverves for cirka 20 kr. 
+Som det ses af figur \ref{fig:j5}, opnås den ønskede spænding. Billedet viser en del ripple, men denne er underordnet, så længe den ikke har større udsving, end det vises her. Effektiviteten for ovenstående konverter er på 86,1\%, og effekttabet i IC'en udregnes af programmet til 208 mW. Dette giver, i forhold til de i dataarket oplyste temperaturkarakteristika, en temperaturstigning på 22,02 grader, hvilket er acceptabelt, også uden heatsink. Endvidere er denne løsning væsentlig billigere, da ét styk TPS5410DR kan erhverves for cirka 20 kr.
 
 Efter analysen kan det konkluderes, at LM78xx-serien er en ineffektiv og ringe løsning til HPP. På baggrund af analyse og simulering af LM317 og BUCK-konverteren kan det ikke afgøres, hvilken opsætning der er bedst i HPP. Derfor bygges begge systemer på breadboard, for at teste dem.
 
@@ -918,7 +932,7 @@ I figur \ref{fig:j6} ses opstillingen realiseret.
 \end{figure}
 
 
-Som det også ses af billedet har opstillingen en meget beskeden størrelse og vægt, hvilket er en stor fordel for vores vedkommende, som det også fremgår af de overordnede krav for projektet. Prisen på alle komponenter er billig. Det dyreste er LM317 til cirka 11 kroner stykket. Samlet pris for hele systemet beløber sig til cirka 19 kroner. Efter første test, blev systemet udsat for varme, fra en lighter, for at se udsving.
+Som det også ses af billedet har opstillingen en meget beskeden størrelse og vægt, hvilket er en stor fordel for vores vedkommende, som det også fremgår af de overordnede krav for projektet. Prisen på alle komponenter er lav. Det dyreste er LM317 til cirka 11 kroner stykket. Samlet pris for hele systemet beløber sig til cirka 19 kroner. Efter første test blev systemet udsat for varme fra en lighter for at se udsving.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\textwidth]{./figurer/j7.png}
@@ -958,7 +972,7 @@ I figur \ref{fig:j10} ses resultater for testen. Først under almindelige omstæ
   \label{fig:j10}
 \end{figure}
 
-Som det ses, leveres en spænding omkring de 5 V. Denne spænding er acceptabel, om end vi ser en lille smule ripple. Denne kan skyldes den måde BUCK-konverteren virker på. Filteret der sidder efter konverteren, kan afvige en smule i praksis fra de teoretiske værdier. Det er dog stadig vigtigt at understrege, at dette output er acceptabelt. Strømmen måles til 1,3 A med loadmodstand.
+Som det ses, leveres en spænding omkring de 5 V. Denne spænding er acceptabel, om end vi ser en lille smule ripple. Denne kan skyldes den måde BUCK-konverteren virker på. Filteret, der sidder efter konverteren, kan afvige en smule i praksis fra de teoretiske værdier. Det er dog stadig vigtigt at understrege, at dette output er acceptabelt. Strømmen måles til 1,3 A med loadmodstand.
 
 Efter påvirkning af varme ændrede outputtet sig imidlertid ret dramatisk. Dette kan skyldes, at både dioden og TPS5410 er påvirkelige af varme, ligesom den induktive reaktans påvirkes i spolen. Her ses outputtet efter varmepåvirkningen har stået på i 30 sekunder. 
 
@@ -973,7 +987,7 @@ Efter påvirkning af varme ændrede outputtet sig imidlertid ret dramatisk. Dett
 Som det ses i figur \ref{fig:j11}, ændrer outputtet sig væsentligt! 
 
 For at være sikker på, at komponenterne ikke var brændt af ved påvirkningen fra lighteren, køres en test cirka 15 minutter efter, hvor outputtet igen var standardiseret. 
-
+\vspace{0.3cm}
 For at kunne vælge endeligt imellem spændingsregulatorerne, opsættes følgende pointsystem
 \begin{itemize}
 \item Driftssikker, også ved påvirkning af varme - 2 P
@@ -1016,9 +1030,9 @@ Minimal størrelse & 1 & 0 \\
 \subsection{Endelig test}
 \label{sec:endelig-test}
 
-Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyning som input og tilslutte et voltmeter, for at måle udgangsspændingen. Opstillingen kan ses i figur \ref{fig:j12}. Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det accepteres. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
+Spændingsregulatoren blev meget enkelt testet ved at tilslutte en strømforsyning som input og et voltmeter, for at måle udgangsspændingen. Opstillingen kan ses i figur \ref{fig:j12}. Som det fremgår af ovenstående billede, regulerer spændingsregulatoren fra 22 V til 5,3 V. Output spændingen er altså en smule højere end tilsigtet, men ikke mere end det accepteres. Da setuppet blev bygget på breadboard var outputspændingen på 5,1 V. Forskellen ligger i, at der er en større intern modstand på breadboardet end på PCB-printet, hvilket der ikke er blevet taget højde for. 
 
-Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. Dette er en forglemmelse, og det må antages, at der stadig kan trækkes den fornødne strøm. 
+Efter spændingsregulatoren blev bygget på PCB, burde vi have testet strømmen. Dette er en forglemmelse, og det må antages, at der stadig kan trækkes den fornødne strøm. 
 
 \begin{figure}[h]
   \centering
@@ -1031,21 +1045,21 @@ Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. 
 \section{Motorstyring}
 \label{sec:motorstyring-1}
 
-Metoder og analyser i motorstyring indebærer udarbejdelse af start-funktion af systemets ESC og kontrol af gasspjæld. Herudover også en mulighed for måling af forbrændingsmotorens omdrejninger. Dette bruges ved hjælp af steprespons at finde overføringsfunktion for motorstyring som udgangspunkt for PID-regulering.
+Metoder og analyser i motorstyring indebærer udarbejdelse af start-funktion af systemets ESC og kontrol af gasspjæld. Herudover også en mulighed for måling af forbrændingsmotorens omdrejninger. Dette bruges ved hjælp af steprespons til at finde overføringsfunktion for motorstyring som udgangspunkt for PID-regulering.
 
 \subsection{Servo motor og ESC driver (Søren)}
 \label{sec:servo-motor-og}
 
 Servomotoren skal bruge et signal på 50 Hz for at fungere. Dette opnås ved at justere PWM mellem 1 ms til 2 ms aktiv høj, hvilket fremgår fra databladet på servomotoren (SG90 micro servo). Dette tillader at justere positionen på servomotoren fra 0 – 90 $^\circ$.
 
-Dette signal bruges også til at justere hastigheden på BLDC-motor, via ESC'en. 1 ms blev brugt til stop af BLDC-motor og 1,3 ms, til at kunne starte motoren. 1,3 ms blev fundet via brug af et scope med et wavegen, hvor vi kom frem til at, at ved denne værdi, havde motoren nemt ved at starte. Følgende krav blev opsat, for at kunne verificere at det virkede efter hensigten
+Dette setup bruges også til at justere hastigheden på BLDC-motor, via ESC'en. 1 ms blev brugt til stop af BLDC-motor og 1,3 ms, til at kunne starte motoren. 1,3 ms blev fundet via brug af et scope med et wavegen, hvor vi kom frem til at, at ved denne værdi, havde motoren nemt ved at starte. Følgende krav blev opsat, for at kunne verificere at det virkede efter hensigten
 
 \begin{itemize}
 \item 50 Hz signal, 20 ms periode (Krav nr. 2.1.3.8.1)
 \item Skal kunne justere puls mellem 1 – 2 ms. (Krav nr. 2.1.3.8.2)
 \end{itemize}
 
-Ved at opsætte analog Discovery til på pin PTD3, se figur \ref{fig:mots4}, vises at init funktion (se figur \ref{fig:kodes1}) virker efter hensigten, med 50 Hz og 1 ms puls. Og hermed lever op til følgende krav 2.1.3.8.1 og 2.1.3.8.2, der er beskrevet tidligere.
+Ved at opsætte analog Discovery til på pin PTD3, se måling i figur \ref{fig:mots4}, vises at init funktion (se figur \ref{fig:kodes1}) virker efter hensigten, med 50 Hz og 1 ms puls. Og hermed lever op til kravene 2.1.3.8.1 og 2.1.3.8.2, der er beskrevet tidligere.
 
 \begin{figure}[h]
   \centering
@@ -1062,7 +1076,7 @@ Ved at opsætte analog Discovery til på pin PTD3, se figur \ref{fig:mots4}, vis
 \end{figure}
 \clearpage
 
-Herefter blev en funktion til at styre vores servomotor implementeret, se figur \ref{fig:kodes2}. Den tager et argument, som er en procentsats af hvor meget den skal dreje, i forhold til om den skal give fuld gas (100\%) eller køre i tomgang (0\%). Ved montering af servomotor (se evt. figur \ref{fig:mots5}), viste 1,4 ms signal til servomotoren sig at være fuldgas, hvilket blev tilpasset i koden. Såmax værdien der kunne sendes ud er 1,4 ms.
+Herefter blev en funktion til at styre vores servomotor implementeret, se figur \ref{fig:kodes2}. Den tager et argument, som er en procentsats af hvor meget den skal dreje, i forhold til om den skal give fuld gas (100\%) eller køre i tomgang (0\%). Ved montering af servomotor (se evt. figur \ref{fig:mots5}), viste 1,4 ms signal til servomotoren sig at være fuld gas, hvilket blev tilpasset i koden. Så max værdien, der kunne sendes ud, er 1,4 ms.
 
 % \begin{figure}[!htb]
 %     \centering
@@ -1098,15 +1112,15 @@ Herefter blev en funktion til at styre vores servomotor implementeret, se figur 
 \subsection{Start af motoren (Søren)}
 \label{sec:start-af-motoren}
 
-Driveren der bruges til at styre servomotoren var den samme, som skulle bruges for at kunne starte BLDC-motor, da den fungere som el-starter til motoren. Derfor blev der implementeret en pin ekstra, i driveren, der er vist i koden se figur \ref{fig:kodes3}. Herefter blev der lavet en start funktion, der skulle bruges til at starte motoren.
+Driveren der bruges til at styre servomotoren var den samme, som skulle bruges for at kunne starte BLDC-motor, da den fungerer som el-starter til motoren. Derfor blev der implementeret en pin ekstra i driveren, der er vist i koden - se figur \ref{fig:kodes3}. Herefter blev der lavet en start funktion, der skulle bruges til at starte motoren.
 
 Flow for opstart af motor, ved funktionen \lstinline{start()}:
 
 \begin{enumerate}
 \item Startknap initialiseres.
 \item Afventer at brugeren trykker på knappen.
-\item En timer opsættes, som tæller vores ’i’ værdi op, når der er gået 500 ms.
-\item Så prøver motoren at starte benzinmotoren, og det vil den gøre så længe start knappen er trykket ned (dog i maks. 15 sek).
+\item En timer opsættes, der tæller variablen \lstinline{i} op, når der er gået 500 ms.
+\item Så prøver motoren at starte benzinmotoren, og det vil den gøre, så længe start knappen er trykket ned (dog i maks. 15 sek).
 \item Efter 15 sek vil opstartsprocessen afbrydes.
 \end{enumerate}
 
@@ -1117,36 +1131,45 @@ Flow for opstart af motor, ved funktionen \lstinline{start()}:
   \label{fig:kodes3}
 \end{figure}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.3\textwidth]{./figurer/mots6.png}
-  \caption{BLDC-motor forbundet til motoren med en tandrem}
-  \label{fig:mots6}
-\end{figure}
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.3\textwidth]{./figurer/mots6.png}
+%   \caption{BLDC-motor forbundet til motoren med en tandrem}
+%   \label{fig:mots6}
+% \end{figure}
 \clearpage
 \subsection{RPM-detektering (Søren)}
 \label{sec:rpm-detektering}
 
-Der er blevet udviklet kode til at aflæse rpm, se figur \ref{fig:kodes3}, som bruges til i forbindelse med PID-regulering. Der er taget udgangspunkt i at aflæse et tacho signal som kommer fra tændspolen. Dette signal lave en høj spænding ved hver omdrejning og går lav igen. For at afkode dette signal, bruges der input capture, der er implementeret i TPM periferenheden på KL25. Funktionen input capture, fungere ved at tælle op til hver ’rising edge’ og gemmer denne værdi. Når værdien og frekvensen der tælles op med er kendt, kan dette omregnes til RPM ved formlen:
+Der er blevet udviklet kode til at aflæse forbrændingsmotorens rpm, se figur \ref{fig:kodes3}, som bruges i forbindelse med PID-regulering. Der er taget udgangspunkt i at aflæse et tacho signal, som kommer fra tændspolen. Dette signal lave en høj spænding ved hver omdrejning og går lav igen. For at afkode dette signal bruges der input capture, der er implementeret i TPM periferenheden på KL25. Input capture fungerer ved at tælle op til hver ’rising edge’ og gemmer denne værdi. Når værdien og frekvensen der tælles op med er kendt, kan dette omregnes til RPM ved formlen:
 \begin{equation}
   \label{eq:4}
- 60 \mathrm{sek} \cdot \frac{\mathrm{frekvens}}{\mathrm{input\ capture\ værdien}}=\mathrm{RPM} 
+ 60 \mathrm{\ sek} \cdot \frac{\mathrm{frekvens}}{\mathrm{input\ capture\ value}}=\mathrm{RPM} 
 \end{equation}
 
-Selve koden er vist i figur \ref{fig:kodes3}. Der bruges interrupts til at opfange overflows og rising edge hvorved værdien gemmes i CNV-registeret. TPM1 modulet initialiseres og frekvensen der bruges til at tælle op med, bliver nedskaleret, til 375 kHz. Dvs. imellem hvert overflow går der 5,75 Hz, hvilket passer med måleområdet (17 - 167 Hz) som der arbejdes indenfor.
+Selve koden er vist i figur \ref{fig:kodes3} og figur \ref{fig:kodes32}. Der bruges interrupts til at opfange overflows og rising edge, hvorved værdien gemmes i CNV-registeret. TPM1 modulet initialiseres, og frekvensen, der bruges til at tælle op med, bliver nedskaleret til 375 kHz. Dvs. at der går 5,75 Hz mellem hvert overflow, hvilket dækker forbrændingsmotorens arbejdsområde (1000 - 10.000 RPM).
 
 \begin{figure}[h]
   \centering
   \lstinputlisting[language=c,firstline=39,lastline=58,basicstyle=\scriptsize\ttfamily]{./kode/rpm-detect.cpp}  
-  \caption{Kode til RPM-detektering}
+  \caption{Kode til initialisering af RPM-detektering}
   \label{fig:kodes3}
 \end{figure}
+\clearpage
+\begin{figure}[h]
+  \centering
+  \lstinputlisting[language=c,firstline=8,lastline=37,basicstyle=\scriptsize\ttfamily]{./kode/rpm-detect.cpp}  
+  \caption{Kode til RPM-detektering}
+  \label{fig:kodes32}
+\end{figure}
+
+
 
 
 \subsection{Stepinput og overføringsfunktion (Simon)}
 \label{sec:tests}
 
-PID-koefficienterne skal defineres udfra en overføringsfunktion for vores system som skal reguleres. For at udlede overføringsfunktionen blev et forsøg med optagelse af steprespons udarbejdet.
+PID-koefficienterne skal defineres udfra en overføringsfunktion for vores system, som skal reguleres. For at udlede overføringsfunktionen blev et forsøg med optagelse af steprespons udarbejdet.
 
 % Et testprogram kan køres via microcontroller som foretager PID-reguleringen og optage motorens omdrejninger ved forskellige skift mellem hastigheder. Disse gentages for forskellige værdier af $K_p$ og $K_i$.
 
@@ -1155,8 +1178,8 @@ Som udgangspunkt vil strømmen fra dronecopteren til batteri være variende.%ska
 
 Tilgengæld skal spjældet til forbrændingsmotoren konstant reguleres. Derfor vil en teststand som udgangspunkt have følgende:
 \begin{itemize}
-\item input: strøm fra batteri til drone
-\item output: regulering af spjæld via servomotor
+\item Input: Strøm fra batteri til drone
+\item Output: Regulering af spjæld via servomotor
 \end{itemize}
 
 Her vil $e(t)$ være et mål for forskellen mellem den ønskede strømstyrke og den faktiske.
@@ -1164,8 +1187,8 @@ Her vil $e(t)$ være et mål for forskellen mellem den ønskede strømstyrke og 
 For at lave en systematisk fremgang blev det valgt at begynde med en simpel PID-regulering. Derfor blev der lavet en teststand som kunne tjene som demonstration af PID-regulering samt som skabelon for senere tests. Der blev fremstilleten teststand som skulle justere spjældet i forhold til motorens omdrejninger. Dvs:
 
 \begin{itemize}
-\item input: motorens omdrejninger
-\item output: regulering af spjæld via servomotor
+\item Input: Motorens omdrejninger
+\item Output: Regulering af spjæld via servomotor
 \end{itemize}
 
 I dette tilfælde vil $e(t)$ være et mål for forskellen mellem det ønskede omdrejningstal og det faktiske.
@@ -1235,14 +1258,14 @@ Data fra oscilloskopet bestod i 50.000 målinger som bestod af Hall-sensorens sp
 Spændingen fra Hall-sensoren, Volt1, anvendes.
 
 Når data plottes for et kort tidsrum ses støj omkring 5 volt
-
+\clearpage
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{./figurer/mo1.png}
-  \caption{}
+  \caption{Måling ved en enkelt omdrejning}
   \label{fig:mo1}
 \end{figure}
-\clearpage
+
 Data processeres nu med følgende Matlab-script:
 \begin{lstlisting}[language=Matlab]
 close all
@@ -1307,7 +1330,7 @@ I scriptet fortolkes spænding over 4,5 V som 5 V. Markering af periodegrænser 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{./figurer/mo2.png}
-  \caption{}
+  \caption{Justeret præsentation af data, hvor der for 5V og 0V er markeret med røde prikker}
   \label{fig:mo2}
 \end{figure}
 
@@ -1316,7 +1339,7 @@ Herudover udregnes tiden for hver omdrejningsperiode og gemmes i vektoren ”tp�
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{./figurer/mo3.png}
-  \caption{}
+  \caption{RPM som funktion af tid}
   \label{fig:mo3}
 \end{figure}
 
@@ -1334,12 +1357,12 @@ Udfra stepresponset skal følgende identificeres:
 
 Scopet der har målt data gemmer også data op til stepresponset. Stepresponset ses ved tiden 0.
 
-Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900 RPM. Det kan ses ved aflæsning i Matlab at stepresponset initialiseres ved 7600 RPM. Dvs forskellen fra initialisering til steady-state er 1300 RPM. 
+Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900 RPM. Det kan ses ved aflæsning i Matlab, at stepresponset initialiseres ved 7600 RPM. Dvs forskellen fra initialisering til steady-state er 1300 RPM. 
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./figurer/mo4.png}
-  \caption{}
+  \caption{Data præsenteret ved midlingsfilter på 200}
   \label{fig:mo4}
 \end{figure}
 
@@ -1348,11 +1371,11 @@ Ved at applicere et midlingsfilter på 10 fås et indtryk af en 1. grads overfø
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./figurer/mo5.png}
-  \caption{}
+  \caption{Data præsenteret ved midlingsfilter på 10}
   \label{fig:mo5}
 \end{figure}
 
-Det måles at steady-state er opnået ved 0,19 sekunder. Dvs. $0.19 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
+Det måles i Matlab, at steady-state er opnået ved 0,19 sekunder. Dvs. $0,19 = 5\tau \Leftrightarrow \frac{0,19}{5}=\tau=0,04$.
 
 Hermed kan overføringsfunktionen sættes som
 \begin{equation}
@@ -1366,107 +1389,30 @@ G(s) = \frac{1300}{0,04s+1}
 % G(s) = \frac{8900}{0,04s+1}  
 % \end{equation}
 
-I Simulink oprettes en system med et steprespons, PID-regulering, overføringsfunktion samt negativ feedbackfølgend:
+I Simulink oprettes et system med et steprespons, PID-regulering, overføringsfunktion samt negativ feedback:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{./figurer/sbil1.png}
-  \caption{Simulink - diagram}
+  \includegraphics[width=0.8\textwidth]{./figurer/sbil1.png}
+  \caption{Simulink - stepinput}
   \label{fig:sbil1}
 \end{figure}
 
 Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $P=0,0010$, $I=0,0514$, $D=-1,4946$ og følgende respons:
-
+\clearpage
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{./figurer/sbil2.png}
-  \caption{Simulink - diagram 2}
+  \caption{Simulink - steprespons efter PID-regulering}
   \label{fig:sbil1}
 \end{figure}
 
 \subsection{Software (Simon)}
 \label{sec:software-1}
 
-På baggrund af tidligere PID-kode, se kode \ref{lst:pid1}. Der udarbejdes nu et udkast til PID-kontrol software som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
+På baggrund af tidligere PID-kode, se kode \ref{lst:pid1} udarbejdes der nu et udkast til PID-kontrol software, som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
 
-\begin{lstlisting}[language=C,basicstyle=\scriptsize\ttfamily]
-#include <stdio.h>
-#include "board.h"
-#include "peripherals.h"
-#include "pin_mux.h"
-#include "clock_config.h"
-#include "MKL25Z4.h"
-#include "fsl_debug_console.h"
-#include "rpm-detect.h"
-#include "servo_driver.h"
-
-// Filtrering
-double alpha = 0.2;
-double measuredSpeed = 0 ;
-
-// Koefficienter
-double kp = 0.001;
-double ki = 0.0514;
-double kd = -1.4946;
-double K1;
-double K2;
-double K3;
-
-// Vægtning af koefficienter
-double setpointWeight = 0.2;
-double lowpassSpeed;
-double setpointSpeed;
-
-// Diverse
-double output;
-double throttleopen = 1.0;
-float throttlePos;
-
-int rpmch;
-int MAX_RPM = 9000;
-
-// Initialiering
-double lastSetpointSpeed = 0;
-double lastMeasuredSpeed = 0;
-double lastLowpassSpeed = 0;
-double lastOutput = 0;
-double lastLastMeasuredSpeed = 0;
-
-void velPID (int setpointSpeed, int measuredSpeed) {
-    lowpassSpeed = alpha * lastLowpassSpeed + (1-alpha ) * measuredSpeed;
-    K1 = kp * setpointWeight * (setpointSpeed-lastSetpointSpeed) + kp * (lastMeasuredSpeed-lowpassSpeed);
-    K2 = ki * (setpointSpeed-lowpassSpeed);
-    K3 = kd * (2 * lastMeasuredSpeed-lowpassSpeed-lastLastMeasuredSpeed);
-    output = lastOutput-K1-K2-K3;
-    if (output < 0) {
-      output = 0;
-    }
-    throttlePos = output/MAX_RPM;
-    lastLowpassSpeed = lowpassSpeed;
-    lastLastMeasuredSpeed = lastMeasuredSpeed;
-    lastMeasuredSpeed = lowpassSpeed;
-    lastSetpointSpeed = setpointSpeed;
-    lastOutput = output;
-    angle_throttle(throttlePos);
-}
-
-init_read_rpm()
-
-int main(void) {
-  /* Init board hardware. */
-  BOARD_InitBootPins();
-  BOARD_InitBootClocks();
-  BOARD_InitBootPeripherals();
-  /* Init FSL debug console. */
-  BOARD_InitDebugConsole();
-  rpmch = 7000;
-  init_pwm();
-  start();
-  velPID(rpmch, measuredSpeed);
-  return 0 ;
-}
-
-\end{lstlisting}
+\lstinputlisting[language=c,basicstyle=\scriptsize\ttfamily]{./kode/pidkl25cpp.cpp}  
 
 
 % Udfra disse mål kan der gives et bud på en overføringsfunktion. I matlab kan der via simulink og en overføringsfunktion findes PID-koefficienter og laves tuning. I slutningen af arbejdet undersøges om følgende kravene overholdes:
@@ -1487,46 +1433,53 @@ int main(void) {
 
 Dette afsnit beskriver det opnåede resultat af arbejdet med at realisere en aktiv ensretter. 
 
-Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes (figur \ref{fig:nt5} og \ref{fig:nt6}) og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til krav (nr. ????) om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen.  
+Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes (figur \ref{fig:nt5} og \ref{fig:nt6}) og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til krav (nr. 2.1.1.14) om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen.  
 
 Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gate pins varierede meget. Dette vil medvirke, at transistorerne vil lukke en varierende mængde af strøm for hver fase gennem kredsløbet. 
 
 Årsagen til kredsløbets uregelmæssighed er kompleks, og vi nåede desværre ikke at komme frem til en endelig konklusion. Den overskyggende teori var dog, at de tre IC’er på printet flere steder blev forsynet med et ikke tilstrækkeligt spændingsniveau. Denne ubalance vil forårsage en ”skævvridning” af strømmens gang gennem kredsløbet og i sidste ende resultere i et defekt kredsløb eller komponent.  
-På baggrund af det ovenstående, kan det konkluderes, at den aktive ensretter på nuværende tidspunkt ikke ser ud til at være funktionsdygtig. Følgende opstillede krav er dog for nuværende opfyldt:
+På baggrund af det ovenstående, kan det konkluderes, at den aktive ensretter på nuværende tidspunkt ikke ser ud til at være funktionsdygtig. Følgende opstillede krav er dog for nuværende opfyldt:\\
 
-\begin{itemize}
-\item NR: Skal kunne håndtere et signal med en frekvens op til 600 Hz.
-\end{itemize}
-
-
-Den valgte IC til kredsløbet kan jf. datasheet håndtere dette krav. 
-
-\begin{itemize}
-\item NR: Spændingstabet gennem kredsløbet skal være mindre end 0.7 V.
-\end{itemize}
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.12&Skal kunne håndtere et signal med en frekvens op til 600 Hz.\vspace{0.5em}\\
+\end{tabular}
+\vspace{1em}\\
 
 
-Ud fra den nedskalerede test af kredsløbet blev der konstateret et spændingstab på max. 349.7 mV. Med de sidst indkøbte MOSFET transistorer, vil dette tab være væsentlig mindre pga. reduceringen af den interne modstand. Kravet anses derfor for at være opfyldt.  
+Den valgte IC til kredsløbet kan jf. datasheet håndtere dette krav.\\
 
-\begin{itemize}
-\item 2.1.1.7. Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.
-\end{itemize}
-
-
-Det endelig kredsløb kunne ensrette et tre-faset signal til jævnstrøm i den nedskalerede test. 
-
-\begin{itemize}
-\item 2.1.1.9. Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.
-\end{itemize}
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.14&Spændingstabet gennem kredsløbet skal være mindre end 0.7 V.\vspace{0.5em}\\
+\end{tabular}
+\vspace{1em}\\
 
 
-Dette krav opfyldes ved at dimensionere en kondensator parallelt med load’en. I den nedskalerede test, var der tilnærmelsesvist ingen ripple på kredsløbets output.  
+Ud fra den nedskalerede test af kredsløbet blev der konstateret et spændingstab på max. 349.7 mV. Med de sidst indkøbte MOSFET transistorer, vil dette tab være væsentlig mindre pga. reduceringen af den interne modstand. Kravet anses derfor for at være opfyldt.\\
 
-\begin{itemize}
-\item NR: Det endelige kredsløb skal laves på PCB print.
-\end{itemize}
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.7&Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.\vspace{0.5em}\\
+\end{tabular}
+\vspace{1em}\\
 
 
+Det endelig kredsløb kunne ensrette et tre-faset signal til jævnstrøm i den nedskalerede test.\\
+
+% \vspace{1em}
+% \begin{tabular}[h]{ll}
+% 2.1.1.9&Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.\vspace{0.5em}\\
+% \end{tabular}
+% \vspace{1em}\\
+
+% Dette krav opfyldes ved at dimensionere en kondensator parallelt med load’en. I den nedskalerede test, var der tilnærmelsesvist ingen ripple på kredsløbets output.\\
+
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.15&Det endelige kredsløb skal laves på PCB print.\vspace{0.5em}\\
+\end{tabular}
+\vspace{1em}\\
 
 % Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til kravet om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen. 
 
@@ -1536,13 +1489,12 @@ Dette krav opfyldes ved at dimensionere en kondensator parallelt med load’en. 
 \label{sec:spandingsregulator}
 
 
-
-
+Jævnfør metodeafsnittet for spændingsregulatoren, nåede vi frem til, at systemet bygget op omkring en LM317-T lineær spændingsregulator, er den bedste løsning for vores system. Den lineære spændingsregulator er BUCK-konverteren klart overlegen i både pris og ripple samt varmeresistens og varmeudvikling. Efter regulatoren er monteret på PCB, er outputspændingen en anelse højere end forventet. Det skyldes, at der ikke er taget højde for den interne modstand i breadboardet. 
 
 \section{Motorstyring (Simon)}
 \label{sec:motorstyring-2} 
 
-Der er blevet lavet kontrol af motoropstart samt justering af gasspjæld og måling af motorens omdrejninger. Ligeledes er der udarbejdet udkast til PID-regulering. Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne idet der kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling.
+Der er blevet lavet kontrol af motoropstart samt justering af gasspjæld og måling af motorens omdrejninger. Ligeledes er der udarbejdet udkast til PID-regulering. Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne, idet kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling.
 
 
 % \bibliographystyle{unsrt}
@@ -1615,33 +1567,34 @@ I dette afsnit vil vi beskrive vores proces gennem projektet. Vi kommer ind på 
 \section{Gruppedannelse, samarbejdsaftale og udviklingsforløb}
 \label{sec:gruppe-dannelse:-}
 
-Sammensætning af vores gruppe, er ud fra vores insights personlighedsprofiler, vi fik lavet i starten af uddannelsen. Vi er en blanding af forskellige profiler, hvilket skaber en dynamik og til tider en anderledes tilgang til tingene. Det giver mulighed for at belyse hver opgave med et bredt perspektiv.  
+Sammensætning af vores gruppe, er sket ud fra vores insights personlighedsprofiler\footnote{Insight Discovery: \url{https://www.insights.com/dk/om-os/hvorfor-vaelge-insights/}}. Disse profiler fik vi lavet i starten af uddannelsen. Vi er en blanding af forskellige profiler, hvilket skaber en dynamik og til tider en anderledes tilgang til tingene. Det giver mulighed for at belyse hver opgave med et bredt perspektiv.  
 
 % \section{Samarbejdsaftale}
 % \label{sec:samarbejdsaftale:-}
 
-Vi lavede i starten en psykologisk kontrakt, hvori vi har beskrevet vores forventninger til hinanden og til gruppen. Der er opsat kriterier, man skal opfylde for at kunne blive i gruppen. % I tilfælde af hvis der var en i gruppen som ikke levede op til disse kriterier. Og hvordan dette skulle tackles, disse kriterier er vi alle enige i, og har underskrevet dette.
-Kontrakten kan ses i bilag ()
+Vi lavede i starten en psykologisk kontrakt, hvori vi har beskrevet vores forventninger til hinanden og til gruppen. Der er opsat kriterier, man skal opfylde for at kunne blive i gruppen.\footnote{Kontrakten kan ses i bilag} % I tilfælde af hvis der var en i gruppen som ikke levede op til disse kriterier. Og hvordan dette skulle tackles, disse kriterier er vi alle enige i, og har underskrevet dette.
+
 
 % \section{Udviklingsforløb}
 % \label{sec:udviklingsforlob}
 
-Vi har anvendt EUDP værktøjet til vores udvikling. Se fodnote http://eudp.dk/index.php/Main_Page
+Vi har anvendt EUDP værktøjet til vores udvikling.\footnote{ Se \url{http://eudp.dk/index.php/Main_Page}}
 
 \section{Projektledelsen}
 \label{sec:projektledelsen}
 
-I starten af projektet valgte vi at give hinanden en rolle i vores projekt, så man havde et ansvarsområde. Rolleinddelingen kan ses i tabel \ref{tab:rolle}.
+I starten af projektet valgte vi at definere og fordele overordnede ansvarsområder mellem hinanden. Ansvarsfordelingen kan ses i tabel \ref{tab:rolle}.
 \begin{table}[h]
   \centering
 % BEGIN RECEIVE ORGTBL rolle
 \begin{tabular}{ll}
-\textbf{Navn} & \textbf{Rolle} \\
+\textbf{Navn} & \textbf{Ansvarsområde} \\
 \hline
-Søren & Projektleder \\
-Simon & Ordstyrer til møder samt sammensætning af rapporter \\
-Thomas & Holder styr på deadlines og indkaldelse til vejledningsmøder og kundemøder \\
-Jacob & Referent til ugentlige møder \\
+Søren & Projektleder. \\
+Simon & Ordstyrer til møder samt sammensætning af rapporter. \\
+Thomas & Ansvar for diverse deadlines samt indkaldelse til vejlednings- og kundemøder. \\
+  Jacob & Referent til ugentlige møder. \\
+  \hline
 \end{tabular}
 % END RECEIVE ORGTBL rolle    
   \caption{Rollefordeling}
@@ -1660,17 +1613,19 @@ Jacob & Referent til ugentlige møder \\
 \section{Arbejdsfordeling og planlægning}
 \label{sec:arbejdsfordeling:-}
 
-Arbejdsopgaver blev uddelt udfra hvad man havde interesse for og lyst til. Da Søren er uddannet mekaniker, var det naturligt at han skulle stå for mekanikken. 
+De konkrete arbejdsopgaver i projektet blev uddelt udfra, hvad man havde interesse for og lyst til. Da Søren er uddannet mekaniker, var det naturligt, at han skulle stå for mekanikken ift. forbrændingsmotor mm.
 
 % \section{Planlægning}
 % \label{sec:planlagning:-}
 
 
-Som det ses i figur \ref{fig:p1} og i launch fase, se bilag, har vi lavet et Gantt-skema. Så vi fik tildelt hver en opgave, som vi skulle arbejde med og gøre færdigt og hvis der opstod problemer eller man skulle have hjælp, kunne man bare spørge tilrådes ved hinanden, så opgaven bedre kunne løses, hvilket også er beskrevet i vores psykologiske kontrakt.
+Figur \ref{fig:p1} viser Gantt-skema med den indledende plan for projektet. Hver projektdeltager fik tildelt et ansvarsområde, som der skulle arbejdes med og gøres færdigt. Hvis der opstod problemer undervejs i processen, eller der var behov for hjælp, kunne man spørge de øvrige deltagere tilråds. Derved kunne opgaverne bedre løses, hvilket også er beskrevet i vores psykologiske kontrakt.
+
+% Som det ses i figur  og i launch fase, se bilag, har vi lavet et Gantt-skema. Så vi fik tildelt hver en opgave, som vi skulle arbejde med og gøre færdigt og hvis der opstod problemer eller man skulle have hjælp, kunne man bare spørge tilrådes ved hinanden, så opgaven bedre kunne løses, hvilket også er beskrevet i vores psykologiske kontrakt.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{./figurer/p1.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/p1.png}
   \caption{Development plan}
   \label{fig:p1}
 \end{figure}
@@ -1681,14 +1636,14 @@ Som det ses i figur \ref{fig:p1} og i launch fase, se bilag, har vi lavet et Gan
 \label{sec:proj-}
 
 Deling af materiale foregik på GitHub.% Og ellers Facebook gruppe og telefon kontakt.
-Da vores gruppe består af onliner og campusstuderende havde vi et fast video-møde hver mandag kl. 20. hvor vi har haft en opsamling og diskuteret udfordringer.
+Da vores gruppe består af onliner og campusstuderende, havde vi et fast video-møde hver mandag kl. 20, hvor vi har aflagde statusrapporter for hvert emne samt diskuterede udfordringer og den fremadrettede strategi for projektet. hvor vi har haft en opsamling og diskuteret udfordringer.
 
 \section{Konflikthåndtering og udfordringer}
 \label{sec:konfl-}
 
-I det første halve år, af vores projekt, gik det hele efter planen. Men da vi kom i gang igen i det nye år, meldte Jonas ud, at han er i samtale med studievejledningen om at få forlænget sit studie, hvilket medførte, at han ikke forsatte. 
+I det første halve år af vores projekt, gik det hele efter planen. Men da vi kom i gang igen i det nye år, meldte Jonas ud, at han var i samtale med studievejledningen om at få forlænget sit studie, hvilket medførte, at han ikke forsatte. 
 
-Derfor gik Søren fra timebox 7, med i arbejdte med ensretteren. Dette betød, at vi kun havde en mand på motorstyringen i stedet for to. Denne rokering betød at vores tidsplan blev rykket. Alle realiseringer tog meget længere tid end beregnet. Ensretteren virkede ikke som forventet og vi brugte meget tid på at prøve at finde en løsning på dette. De  gange vi brugte på at lave en test på vores motor, brugte vi ofte bare en time på at opstille det og ofte havde onlinere også det problem, at de ikke havde sufficient hardware, for at kunne teste og verificere deres opgaver.
+Derfor gik Søren fra timebox 7 med i arbejdet med ensretteren. Dette betød, at vi kun havde en mand på motorstyringen i stedet for to. Denne rokering betød, at vores tidsplan blev rykket. Derudover tog alle realiseringer meget længere tid end beregnet. Ensretteren virkede ikke som forventet og vi brugte meget tid på at prøve at finde en løsning på dette. De  gange vi brugte på at lave en test på vores motor, brugte vi ofte bare en time på at opstille det og ofte havde onlinere også det problem, at de ikke havde sufficient hardware, for at kunne teste og verificere deres opgaver.
 I timebox 6, var vi nødt til at stoppe arbejdet på ensretteren, fordi vi var nødt til at teste spændingerne fra BLDC-motor, for at kunne forsætte.
 
 \chapter{Konklusion og diskussion}

@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{\numberline {1.2.3.2}Event Driven}{4}{subsubsection.1.2.3.2}
 \contentsline {subsubsection}{\numberline {1.2.3.3}State Driven}{4}{subsubsection.1.2.3.3}
 \contentsline {subsubsection}{\numberline {1.2.3.4}Unwanted}{4}{subsubsection.1.2.3.4}
-\contentsline {subsection}{\numberline {1.2.4}Blokdiagram}{4}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.4}Blokdiagram}{5}{subsection.1.2.4}
 \contentsline {chapter}{\numberline {2}Baggrund}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Aktive ensretter (S\IeC {\o }ren og Thomas)}{6}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Passiv vs. aktiv ensretning}{6}{subsection.2.1.1}
@@ -24,56 +24,57 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}State-driven}{8}{subsubsection.2.1.2.2}
 \contentsline {subsection}{\numberline {2.1.3}Valg af IC }{8}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Kredsl\IeC {\o }bet}{9}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Sp\IeC {\ae }ndingsregulator (Jacob)}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Kravsspecifikation}{10}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Uniquitous Requirements}{10}{subsubsection.2.2.1.1}
+\contentsline {section}{\numberline {2.2}Sp\IeC {\ae }ndingsregulator (Jacob)}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Kravsspecifikation}{9}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Uniquitous Requirements}{9}{subsubsection.2.2.1.1}
 \contentsline {subsection}{\numberline {2.2.2}Generel analyse}{10}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Interface Analysis and Design}{10}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Dimensionering}{10}{subsubsection.2.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.3}Structural Analysis}{10}{subsubsection.2.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Dimensionering}{11}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Structural Analysis}{11}{subsubsection.2.2.2.3}
 \contentsline {section}{\numberline {2.3}Motorstyring (Simon)}{11}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Kravsspecifikation}{11}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}State-driven}{11}{subsubsection.2.3.1.1}
 \contentsline {subsection}{\numberline {2.3.2}Motorstart}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Regulering af hastighed}{12}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Regulering af hastighed (Thomas)}{12}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}PID regulering}{13}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Software}{13}{subsection.2.3.5}
 \contentsline {chapter}{\numberline {3}Metoder}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Aktive ensretter (S\IeC {\o }ren og Thomas)}{15}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Test af generators output sp\IeC {\ae }nding}{15}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Simulering}{15}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Simulering}{16}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Teststand}{16}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Realisering p\IeC {\r a} breadboard (nedskaleret)}{17}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}PDB print}{18}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Implementering}{19}{subsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.6.1}Nedskaleret test af PCB}{19}{subsubsection.3.1.6.1}
 \contentsline {subsubsection}{\numberline {3.1.6.2}St\IeC {\o }rre load}{20}{subsubsection.3.1.6.2}
-\contentsline {subsubsection}{\numberline {3.1.6.3}Fejls\IeC {\o }gning}{21}{subsubsection.3.1.6.3}
-\contentsline {section}{\numberline {3.2}Sp\IeC {\ae }ndingsregulator (Jacob)}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Analyse af LM78xx-serien}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Analyse af LM317 }{24}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.1.6.3}Fejls\IeC {\o }gning}{22}{subsubsection.3.1.6.3}
+\contentsline {section}{\numberline {3.2}Sp\IeC {\ae }ndingsregulator (Jacob)}{22}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Analyse af LM78xx-serien}{22}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Analyse af LM317 }{23}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Analyse af BUCK-konverter}{24}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Implementering af LM317}{25}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Test af BUCK-konverteren}{27}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Endelig test}{29}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Motorstyring}{30}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Servo motor og ESC driver (S\IeC {\o }ren)}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Start af motoren (S\IeC {\o }ren)}{32}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}RPM-detektering (S\IeC {\o }ren)}{34}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Stepinput og overf\IeC {\o }ringsfunktion (Simon)}{34}{subsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Steprespons}{35}{subsubsection.3.3.4.1}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Overf\IeC {\o }ringsfunktion}{39}{subsubsection.3.3.4.2}
-\contentsline {subsection}{\numberline {3.3.5}Software (Simon)}{40}{subsection.3.3.5}
-\contentsline {chapter}{\numberline {4}Resultater}{42}{chapter.4}
-\contentsline {section}{\numberline {4.1}Aktiv ensretter}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sp\IeC {\ae }ndingsregulator}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Motorstyring (Simon)}{43}{section.4.3}
-\contentsline {chapter}{\numberline {5}Procesevaluering}{44}{chapter.5}
-\contentsline {section}{\numberline {5.1}Indledning}{44}{section.5.1}
-\contentsline {section}{\numberline {5.2}Gruppedannelse, samarbejdsaftale og udviklingsforl\IeC {\o }b}{44}{section.5.2}
-\contentsline {section}{\numberline {5.3}Projektledelsen}{44}{section.5.3}
-\contentsline {section}{\numberline {5.4}Arbejdsfordeling og planl\IeC {\ae }gning}{44}{section.5.4}
-\contentsline {section}{\numberline {5.5}Projektadministration}{45}{section.5.5}
-\contentsline {section}{\numberline {5.6}Konflikth\IeC {\r a}ndtering og udfordringer}{45}{section.5.6}
-\contentsline {chapter}{\numberline {6}Konklusion og diskussion}{46}{chapter.6}
-\contentsline {section}{\numberline {6.1}Diskussion}{46}{section.6.1}
-\contentsline {section}{\numberline {6.2}Konklusion}{46}{section.6.2}
+\contentsline {subsection}{\numberline {3.2.4}Implementering af LM317}{26}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Test af BUCK-konverteren}{28}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Endelig test}{30}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Motorstyring}{31}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Servo motor og ESC driver (S\IeC {\o }ren)}{31}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Start af motoren (S\IeC {\o }ren)}{33}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}RPM-detektering (S\IeC {\o }ren)}{35}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Stepinput og overf\IeC {\o }ringsfunktion (Simon)}{36}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Steprespons}{37}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Overf\IeC {\o }ringsfunktion}{40}{subsubsection.3.3.4.2}
+\contentsline {subsection}{\numberline {3.3.5}Software (Simon)}{42}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {4}Resultater}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aktiv ensretter}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sp\IeC {\ae }ndingsregulator}{45}{section.4.2}
+\contentsline {section}{\numberline {4.3}Motorstyring (Simon)}{45}{section.4.3}
+\contentsline {chapter}{\numberline {5}Procesevaluering}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Indledning}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Gruppedannelse, samarbejdsaftale og udviklingsforl\IeC {\o }b}{46}{section.5.2}
+\contentsline {section}{\numberline {5.3}Projektledelsen}{46}{section.5.3}
+\contentsline {section}{\numberline {5.4}Arbejdsfordeling og planl\IeC {\ae }gning}{47}{section.5.4}
+\contentsline {section}{\numberline {5.5}Projektadministration}{47}{section.5.5}
+\contentsline {section}{\numberline {5.6}Konflikth\IeC {\r a}ndtering og udfordringer}{47}{section.5.6}
+\contentsline {chapter}{\numberline {6}Konklusion og diskussion}{48}{chapter.6}
+\contentsline {section}{\numberline {6.1}Diskussion}{48}{section.6.1}
+\contentsline {section}{\numberline {6.2}Konklusion}{48}{section.6.2}

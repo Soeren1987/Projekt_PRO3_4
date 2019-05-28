@@ -10,6 +10,12 @@
 \usepackage{courier}
 \usepackage[margin=1in]{geometry}
 
+
+\usepackage{tabularx}
+
+\usepackage{booktabs}
+\usepackage{mwe}% Provides example figures
+
 % \renewcommand{\footrulewidth}{0.4pt}
 
 \setlength{\footskip}{17pt}
@@ -30,10 +36,53 @@
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{1pt}
 \pagenumbering{roman} 
-\title{Projekt 4 - rapport}
-\author{Team 2}
+
+% \title{Projekt 4 - rapport}
+% \author{Team 2}
+
+
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
 \begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	\includegraphics[width=2cm]{./figurer/segl.pdf}
+	\hfill
+	\parbox{.5\linewidth}{%
+		\centering
+		Aarhus Universitet\par
+		\vspace{.05\textheight}
+		Ingeniørhøjskolen, Science and Technology\par
+	}
+	\hfill
+	\includegraphics[width=2cm]{./figurer/au.pdf}
+	\par
+		\vspace{.05\textheight}
+		{\LARGE\scshape Projekt 4 rapport\par}
+		\vspace{.05\textheight}
+		I forbindelse med eksamen i faget\par
+		{\itshape\ Projekt 4\par}
+		\vspace{.05\textheight}
+		Undervisere \textsc{Klaus Kolle} og \textsc{Morten Opprud Jakobsen}\par
+		\vspace{.05\textheight}
+		{\Huge\bfseries Professional Drone, Hybrid Power Pack \par}
+		\vspace{.05\textheight}
+		{\large Øgning af flyvetiden for droner ved hjælp af forbrændingsmotorer\par}
+		\vfill
+		\noindent\begin{tabularx}{\textwidth}{p{5cm}p{10cm}}
+			\toprule
+			Studienummer & Navn \\
+			\midrule
+                        201602094 & Søren Holm Korsgaard \\
+                        201607563 & Jacob Gustafsson \\
+                        20084327 & Simon Rasmussen \\
+                        201704483 & Thomas Dueholm Jensen \\
+  \bottomrule
+  \end{tabularx}
+\end{center}
+\end{titlepage}
+
+
 
 \lstset{language=C,%
   % basicstyle=\color{red},
@@ -53,38 +102,38 @@
 }
 
 
-\maketitle
+% \maketitle
 
 % \thispagestyle{empty}
 
 % \setcounter{page}{1}
-\textbf{Deltagere:}
-\begin{figure}[h]
-  \centering
-  % BEGIN RECEIVE ORGTBL delt
-  \begin{tabular}{p{5cm}p{10cm}}
-    &\\
-    Stud. nr: & Navn: \\
-    \hline
-    &\\
-    201602094 & Søren Holm Korsgaard \\
-    &\\
-    201607563 & Jacob Gustafsson \\
-    &\\
-    % Stud.nr.: 201704859 & Navn: Jonas Buus \\
-    % \hline
-    % &\\
-    20084327 & Simon Rasmussen \\
-    &\\
-    201704483 & Thomas Dueholm Jensen \\
-    &\\
-    \hline
-  \end{tabular}
-  % END RECEIVE ORGTBL delt
+% \textbf{Deltagere:}
+% \begin{figure}[h]
+%   \centering
+%   % BEGIN RECEIVE ORGTBL delt
+%   \begin{tabular}{p{5cm}p{10cm}}
+%     &\\
+%     Stud. nr: & Navn: \\
+%     \hline
+%     &\\
+%     201602094 & Søren Holm Korsgaard \\
+%     &\\
+%     201607563 & Jacob Gustafsson \\
+%     &\\
+%     % Stud.nr.: 201704859 & Navn: Jonas Buus \\
+%     % \hline
+%     % &\\
+%     20084327 & Simon Rasmussen \\
+%     &\\
+%     201704483 & Thomas Dueholm Jensen \\
+%     &\\
+%     \hline
+%   \end{tabular}
+%   % END RECEIVE ORGTBL delt
 
-\end{figure}
-\addcontentsline{toc}{chapter}{\protect\numberline{}\hspace{-0.5cm}Formelle informationer}
-\vspace{-5mm}
+% \end{figure}
+% \addcontentsline{toc}{chapter}{\protect\numberline{}\hspace{-0.5cm}Formelle informationer}
+% \vspace{-5mm}
 % \clearpage
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{4}

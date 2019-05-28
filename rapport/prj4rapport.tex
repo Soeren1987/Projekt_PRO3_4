@@ -2,7 +2,8 @@
 % \bibliographystyle{plain} % Style BST file (bmc-mathphys, vancouver, spbasic).
 % \bibliographystyle{unsrt} % Style BST file (bmc-mathphys, vancouver, spbasic).
 % \bibliography{pubs.bib}      % Bibliography
-\usepackage{tocbibind}
+\usepackage{enumitem}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage{lastpage}
 \usepackage{amsmath}
 \usepackage{newpxtext,newpxmath}
@@ -203,7 +204,7 @@ Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (even
 \subsubsection{Ubiquitous}
 \label{sec:kravspecifikation-1}
 
-\begin{enumerate}
+\begin{enumerate}[label=2.1.1.\arabic*]
 \item Motoren skal kunne startes vha. BLDC-generator.
 \item Udstødning skal monteres sådan at varmen ikke påvirker dronen.
 \item Generatoren skal levere en middeleffekt på 2450 W ved 22,2 V (110,3 A)
@@ -218,14 +219,14 @@ Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (even
 \subsubsection{Event Driven}
 \label{sec:kravspecifikation-2}
 
-\begin{enumerate}
+\begin{enumerate}[label=2.1.2.\arabic*]
 \item I tilfælde af nødlanding skal motoren deaktivere. 
 \end{enumerate}
 
 \subsubsection{State Driven}
 \label{sec:kravspecifikation-3}
 
-\begin{enumerate}
+\begin{enumerate}[label=2.1.3.\arabic*]
 \item HPP skal fungere korrekt før dronecopterens motorer igangsættes ved take-off.
 \item Når motoren er aktiv, skal omdrejninger reguleres efter belastning af ladestrømmen.
 \item Når generatoren ikke er i fulde omdrejninger, skal dronen ikke kunne lette.
@@ -236,7 +237,7 @@ Kravene er inddelt udfra ufravigelige (ubiquitous), begivenhedsorienterede (even
 \subsubsection{Unwanted}
 \label{sec:kravspecifikation-4}
 
-\begin{enumerate}
+\begin{enumerate}[label=2.1.4.\arabic*]
 \item Dronecopterens motorer vil tillade nødlanding ved fejl i moteren.
 \item Hvis der opstår fejl i motoren, vil dronen lande når spændingen falder på batteriet.
 \item Hvis generatoren ikke opnår fulde omdrejninger inden 10 sek. efter motorstart, afbrydes motoren.
@@ -388,10 +389,8 @@ Spændingsregulatoren skal være vejrbestandig, da dronen skal kunne være udend
 \section{Motorstyring (Simon)}
 \label{sec:motorstyring}
 
-
 Motorstyringen for systemet vil bestå i præcis justering af forbrændingsmotorens omdrejninger i forhold til dronecopterens strømforbrug. Det valgtes at arbejde med et simplere system for at fokuserer på principperne i motorstyring. Det betød at motorstyringen skulle bestå i udvikling af PID-regulering af forbrændingsmotoren sådan at der skulle foregå korrektion af motorens spjældvinkel i forhold til motorens omdrejninger.
 
-Fjare\autocite{pid1} er en artikel der beskriver PID regulering af en forbrændingsmotor som skal drive en aerocopter. Der er taget inspiration fra denne tilgang inklusiv PID-regulering og PID-koefficienter.
 % Målet med dette afsnit er at opstille en kravsspecifikation for motorstyringen samt at færdiggøre analysen af motorstyringen og lægge op til hvordan en test af motorstyring kan udformes for at præcisere PID-algoritme samt at opfylde krav.
 
 % \lstdefinestyle{customc}{
@@ -421,16 +420,76 @@ Fjare\autocite{pid1} er en artikel der beskriver PID regulering af en forbrændi
 
 \subsection{Kravsspecifikation}
 \label{sec:kravsspecifikation}
-Med baggrund i Fjare\autocite{pid1} sættes følgende krav:
-\begin{enumerate}
+For at fremstille en kravsspecifikation til motorstyring søges i litteraturen efter beskrivelsen af løsning på lignende problemstilling. Fjare\autocite{pid1} er en artikel, der beskriver PID-regulering af en forbrændingsmotor som skal drive en aerocopter. Med baggrund i Fjare\autocite{pid1} sættes følgende krav, som forsættelse svarende til afsnit 2.1.3 (State-Driven requirements) i launch-fase rapporten (se bilag):
+\begin{enumerate}[label=2.1.3.\arabic*]
 \item Overshoot skal ikke være mere en 197 rpm.
 \item Justeringstiden må max være 8,8 sekunder.
-\item Ifm. et step respons skal 90 \% af målet være opnået i mindre end 3 sekunder.
+\item Ifm. et step respons skal 90 \% af steady-state være opnået i mindre end 3 sekunder.
 \item Strømforsyningen til dronecopterens propelmoterer skal justeres sådan at dronecopterens hastighed kan holdes konstant.%Det skal være muligt at vedligeholde en konstant hastighed over længere tid (dvs. mere end 5 minutter).
 \item Servomotoren skal kunne reguleres.
 \item Motoren skal kunne startes.
 \item Omdrejningerne skal kunne måles.
 \end{enumerate}
+
+\subsection{Motorstart}
+\label{sec:esc}
+
+En ``electronic speed control'' (ESC) anvendes som fartstyring i fartøjer. En ESC tager et input signal, fx fra en pedal eller et joystick, og genererer et signal udfra et netværk af transistorer (FETs). Signalet kan varieres ved at varierer transistorernes switching.
+
+Alt efter om en motor er brushed eller brushless kræves forskellige ESC'er. I projektets tilfælde er der tale om en brushless motor. 
+
+ESC'er kan i nogen tilfælde programmeres. Ved programmering kan følgende typisk redigeres:
+\begin{itemize}
+\item Timing
+\item Acceleration
+\item Deccelaration
+\item Rotationsretning
+\end{itemize}
+
+ESC'en skal genererer et trefaset signal. Fasen varierer med motor rotation og en Hall sensor bruges til at registrerer omdrejningerne. Brugerens interaktion med starteren er basal og jf. launch fase rapport, er brugerinteraktion med hele HPP minimal.
+
+Når der vælges en ESC er der flere ting at tage højde for. For det første brushed vs. brushless motor. Herefter er der spændings- og strømstyrke begrænsninger for ESC for hvor meget den kan håndtere. Spændingsbegrænsningen er oftest udtrykt i antal battericeller. NiMH batterier har 1,2 V pr. celle og Lithium batterier har 3,7 V pr. celle. En markering i datablad kan indeholde grænser for begge batterityper. ESC'en vil skulle kunne håndterer 22 V da dronens batteri leverer denne spænding. Det planlægges at anvende  en ``Turnigy Plush 60a'' (TP60a). TP60a er ratet til 2-6 Li-ion batterier (optil 22,2 V) eller 5-18 (optil 21,6 V) NiMH batterier. Altså en grænse omkring 22 V. Grænsen for kontinuerlig strømstyrke ligger på 60 A.
+
+Dronebatteriet, et Lithium Poly batteri med 6 celler, vil ved opkobling til ESC'en kunne generere et trefaset signal som sendes til generatoren.
+
+\subsection{Regulering af hastighed}
+\label{sec:regul-af-hast}
+
+Ved regulering af forbrændingsmotorens hastigheder reguleres motorens gasspjæld. Der anvendes en servomotor påsat gasspjældet.
+
+For at kunne udvælge en passende servomotor til system-to-be, opstilles herunder følgende krav:
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.13&Servomotoren skal have en forsyningsspænding på 5 volt.\vspace{0.5em}\\
+2.1.1.14&Servomotoren skal veje under 15 g.\vspace{0.5em}\\
+2.1.3.6 &Reaktionshastighed på minimum 0,15 s/60$^\circ$.\vspace{0.5em}\\
+2.1.3.7& Servomotorens skal have et moment (torque) på minimum 1,5 kg/cm.\vspace{0.5em}\\
+2.1.3.8& Servomotoren skal kunne styres via et PWM signal.\vspace{0.5em}\\ 
+\end{tabular}
+\vspace{1em}\\
+\noindent \textbf{Ad 2.1.1.13}
+
+\noindent Siden der skal anvendes en spændingsregulator, der konverterer dronecoptorens batterispænding fra 22,2 volt ned til 5 volt, ville det være fordelagtigt at vælge en servomotor, der skal forsynes med 5 volt.
+
+Der anvendes en servomotor, TowerPro SG-90, som ses i \ref{fig:anath2}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{anath2.png}
+  \caption{TowerPro SG-90. Kilde: \url{http://www.towerpro.com.tw/product/sg90-7/}}
+  \label{fig:anath2}
+\end{figure}
+
+Som des ses ud fra servoens specifikationer lever denne op til de opstillede krav. Derudover er dimensionerne på servoen meget små, hvilket er at foretrække til HPP.
+
+I figur~\ref{fig:anath3} ses opsætningen af duty-cycle for servomotoren. Signalet skal have en frekvens på 50 Hz, og on-time for en periode skal være mellem 1 og 2 ms. Det vil sige, at servoens styrearm står med en vinkel på $0^\circ$, når on-time er 1,0 ms, $90^\circ$ med en on-time på 1,5 ms, og $180^\circ$ med on-time på 2,0 ms. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{anath3.png}
+  \caption{PWM signal til servomotoren}
+  \label{fig:anath3}
+\end{figure}
 
 \subsection{PID regulering}
 \label{sec:overordnet-mal}
@@ -477,6 +536,9 @@ Fra Fjare\autocite{pid1} kunne et eksempel på et program være skrevet i pseudo
     throttle.writeMicroseconds(throttlePos);
   }
 \end{lstlisting}
+
+I koden anvendes et lavpasfilter (\lstinline{lowpassSpeed}) for at mindske ændringen (beregningen af \lstinline{K1}, \lstinline{K2} og \lstinline{K3}) for hver regulering. \lstinline{alpha} sætter størrelsen af filteres (0 er ingen filter). \lstinline{setpointSpeed} sættes til den ønskede hastighed. Koden kontrollerer output ved på baggrund af sidste output at fra trække \lstinline{K1}, \lstinline{K2} og \lstinline{K3}.
+
 
 \chapter[Metoder]{Metoder og analyser}
 \label{sec:metode}
@@ -1227,7 +1289,7 @@ Udfra stepresponset skal følgende identificeres:
 \item Rise time, $t_r$
 \item Settling time, $t_s$
 \item Overshoot, $M_p$
-\item Peak time, $t_p$
+% \item Peak time, $t_p$
 \end{itemize}
 
 Scopet der har målt data gemmer også data op til stepresponset. Stepresponset ses ved tiden 0.
@@ -1284,7 +1346,7 @@ Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $
 \subsection{Software (Simon)}
 \label{sec:software-1}
 
-Der udarbejdes nu et udkast til PID-kontrol software som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit XXX).
+Der udarbejdes nu et udkast til PID-kontrol software som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
 
 \begin{lstlisting}[language=C,basicstyle=\scriptsize\ttfamily]
 #include <stdio.h>

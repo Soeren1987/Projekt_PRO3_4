@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  29 MAY 2019 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  29 MAY 2019 00:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2746,22 +2746,22 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (./prj4rapport.toc
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 4.
+(Font)              scaled to size 10.0pt on input line 5.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 53.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 ...se af LM78xx-serien}{22}{subsection.3.2.1}
+l.53 ...se af LM78xx-serien}{22}{subsection.3.2.1}
                                                    [1
 
 
@@ -4053,7 +4053,7 @@ Package logreq Info: Writing requests to 'prj4rapport.run.xml'.
 Here is how much of TeX's memory you used:
  60787 strings out of 492990
  1365452 string characters out of 6129798
- 2213817 words of memory out of 5000000
+ 2213818 words of memory out of 5000000
  62820 multiletter control sequences out of 15000+600000
  636328 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4143,7 +4143,7 @@ texlive/2016/texmf-dist/fonts/type1/public/newpx/zplb.pfb><c:/Program Files/tex
 live/2016/texmf-dist/fonts/type1/public/newpx/zplr.pfb><c:/Program Files/texliv
 e/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><c:/Program Files/texlive/
 2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on prj4rapport.pdf (51 pages, 22142664 bytes).
+Output written on prj4rapport.pdf (51 pages, 22141765 bytes).
 PDF statistics:
  1368 PDF objects out of 1440 (max. 8388607)
  1204 compressed objects within 13 object streams

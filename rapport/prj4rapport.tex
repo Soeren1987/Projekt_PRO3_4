@@ -300,6 +300,43 @@ AC-signal. Rød linje = ripple på kredsløb med kondensator parallelt på load.
 
 Der vil stadig være \textit{ripple} til stede i signalet, og denne udjævnes til et acceptabelt niveau (for batteriet på dronen) vha. kondensatorer. Kondensatoren lader, når $\frac{\mathrm{d}v}{\mathrm{d}t}$ på udgangssignalet er positivt og aflader, når spændingen igen falder. Den strøm kondensatoren afgiver adderes til udgangssignalet, hvorfor $\frac{\mathrm{d}v}{\mathrm{d}t}$ øges.
 
+\subsection{Kravsspecifikation}
+\label{sec:kravsspecifikation-4}
+
+Under projektets Launch Fase og via arbejdet i de forskellige timeboxes blev der opstillet følgende krav til konstruktionen af den aktive ensretter.
+
+\subsubsection{Ubiquitous}
+\label{sec:ubiquitous}
+
+I launchfasen er der defineret følgende krav:
+\vspace{1em}
+\begin{tabular}[h]{ll}
+2.1.1.6. &Ensretteren skal kunne klare at håndtere en effekt af 2,45 kW.\vspace{0.5em}\\
+2.1.1.7. &Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.\vspace{0.5em}\\
+2.1.1.9. &Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.\vspace{0.5em}\\
+\end{tabular}
+\vspace{1em}\\
+
+Der opstilles følgende nye krav:
+\begin{enumerate}[label=2.1.1.\arabic*]
+  \setcounter{enumi}{14}
+\item Skal kunne håndtere et signal med en frekvens op til 600 Hz.
+\item Skal kunne ensrette et AC signal med så lavt et effekttab som muligt.
+\item Spændingstabet gennem kredsløbet skal være mindre end 0.7 V.
+\item Det endelige kredsløb skal laves på PCB print.
+\end{enumerate}
+
+
+\subsubsection{State-driven}
+\label{sec:state-driven}
+\begin{enumerate}[label=2.1.3.\arabic*]
+  \setcounter{enumi}{5}
+\item IC’en skal styre spændingen på gate-terminalen af de MOSFET transistorer, som skal ensrette de 3 AC-faser, når motor/generator producerer strøm til dronen.
+\item Når PID-syringen regulerer omdrejningstallet på motor/generator-enheden, skal IC’en kunne tilpasse sig frekvensskiftet i signalet.
+\end{enumerate}
+
+
+
 \subsection{Valg af IC }
 \label{sec:valg-af-ic}
 
@@ -422,6 +459,7 @@ Motorstyringen for systemet vil bestå i præcis justering af forbrændingsmotor
 \label{sec:kravsspecifikation}
 For at fremstille en kravsspecifikation til motorstyring søges i litteraturen efter beskrivelsen af løsning på lignende problemstilling. Fjare\autocite{pid1} er en artikel, der beskriver PID-regulering af en forbrændingsmotor som skal drive en aerocopter. Med baggrund i Fjare\autocite{pid1} sættes følgende krav, som forsættelse svarende til afsnit 2.1.3 (State-Driven requirements) i launch-fase rapporten (se bilag):
 \begin{enumerate}[label=2.1.3.\arabic*]
+  \setcounter{enumi}{7}
 \item Overshoot skal ikke være mere en 197 rpm.
 \item Justeringstiden må max være 8,8 sekunder.
 \item Ifm. et step respons skal 90 \% af steady-state være opnået i mindre end 3 sekunder.
@@ -512,7 +550,7 @@ Som udgangspunkt er det tidligere vist(\autocite{pid1}) at $K_p=0,065$ og $K_i=0
 \label{sec:software}
 
 Fra Fjare\autocite{pid1} kunne et eksempel på et program være skrevet i pseudo C-kode:
-\begin{lstlisting}[language=C,basicstyle=\ttfamily]
+\begin{lstlisting}[language=C,basicstyle=\ttfamily,label={lst:pid1}]
   void velPID ( ) {
     lowpassSpeed = alpha * lastLowpassSpeed + (1-alpha) * measuredSpeed;
     K1 = kp * setpointWeight * (setpointSpeed - lastSetpointSpeed) + kp * (lastMeasuredSpeed - lowpassSpeed);
@@ -537,7 +575,7 @@ Fra Fjare\autocite{pid1} kunne et eksempel på et program være skrevet i pseudo
   }
 \end{lstlisting}
 
-I koden anvendes et lavpasfilter (\lstinline{lowpassSpeed}) for at mindske ændringen (beregningen af \lstinline{K1}, \lstinline{K2} og \lstinline{K3}) for hver regulering. \lstinline{alpha} sætter størrelsen af filteres (0 er ingen filter). \lstinline{setpointSpeed} sættes til den ønskede hastighed. Koden kontrollerer output ved på baggrund af sidste output at fra trække \lstinline{K1}, \lstinline{K2} og \lstinline{K3}.
+I koden anvendes et lavpasfilter (\lstinline{lowpassSpeed}) for at mindske ændringen (beregningen af \lstinline{K1}, \lstinline{K2} og \lstinline{K3}) for hver regulering. \lstinline{alpha} sætter størrelsen af filteres (0 er ingen filter). \lstinline{setpointSpeed} sættes til den ønskede hastighed. Koden kontrollerer output ved på baggrund af sidste output at fra trække \lstinline{K1}, \lstinline{K2} og \lstinline{K3} og beregner også ændringen påbaggrund af tidligere værdier gemt i \lstinline{last...} og \lstinline{lastLast...}, dvs. i alt to tidligere mål for hastigheden anvendes.
 
 
 \chapter[Metoder]{Metoder og analyser}
@@ -993,6 +1031,8 @@ Efter spændingsregulatoren blev bygget på PCB burde vi have testet strømmen. 
 \section{Motorstyring}
 \label{sec:motorstyring-1}
 
+Metoder og analyser i motorstyring indebærer udarbejdelse af start-funktion af systemets ESC og kontrol af gasspjæld. Herudover også en mulighed for måling af forbrændingsmotorens omdrejninger. Dette bruges ved hjælp af steprespons at finde overføringsfunktion for motorstyring som udgangspunkt for PID-regulering.
+
 \subsection{Servo motor og ESC driver (Søren)}
 \label{sec:servo-motor-og}
 
@@ -1055,7 +1095,7 @@ Herefter blev en funktion til at styre vores servomotor implementeret, se figur 
 \end{figure}
 
   
-\subsection{Start af motoren}
+\subsection{Start af motoren (Søren)}
 \label{sec:start-af-motoren}
 
 Driveren der bruges til at styre servomotoren var den samme, som skulle bruges for at kunne starte BLDC-motor, da den fungere som el-starter til motoren. Derfor blev der implementeret en pin ekstra, i driveren, der er vist i koden se figur \ref{fig:kodes3}. Herefter blev der lavet en start funktion, der skulle bruges til at starte motoren.
@@ -1084,7 +1124,7 @@ Flow for opstart af motor, ved funktionen \lstinline{start()}:
   \label{fig:mots6}
 \end{figure}
 \clearpage
-\subsection{RPM-detektering}
+\subsection{RPM-detektering (Søren)}
 \label{sec:rpm-detektering}
 
 Der er blevet udviklet kode til at aflæse rpm, se figur \ref{fig:kodes3}, som bruges til i forbindelse med PID-regulering. Der er taget udgangspunkt i at aflæse et tacho signal som kommer fra tændspolen. Dette signal lave en høj spænding ved hver omdrejning og går lav igen. For at afkode dette signal, bruges der input capture, der er implementeret i TPM periferenheden på KL25. Funktionen input capture, fungere ved at tælle op til hver ’rising edge’ og gemmer denne værdi. Når værdien og frekvensen der tælles op med er kendt, kan dette omregnes til RPM ved formlen:
@@ -1121,7 +1161,7 @@ Tilgengæld skal spjældet til forbrændingsmotoren konstant reguleres. Derfor v
 
 Her vil $e(t)$ være et mål for forskellen mellem den ønskede strømstyrke og den faktiske.
 
-Det var ikke muligt at måle strømmen fra batteri til drone. For at lave en teststand som kan tjene som demonstration af PID-regulering samt som skabelon for senere tests fremstilles istedet en teststand som skal justere spjældet i forhold til motorens omdrejninger. Dvs:
+For at lave en systematisk fremgang blev det valgt at begynde med en simpel PID-regulering. Derfor blev der lavet en teststand som kunne tjene som demonstration af PID-regulering samt som skabelon for senere tests. Der blev fremstilleten teststand som skulle justere spjældet i forhold til motorens omdrejninger. Dvs:
 
 \begin{itemize}
 \item input: motorens omdrejninger
@@ -1149,9 +1189,9 @@ For at få en grov ide om niveauet af koefficienterne kan en simulink simulation
 \label{sec:steprespons}
 
 %For at simplificere PID-reguleringen forsøges forst med regulering af spjæld i forhold til motorens omdrejninger.
-Der vil tages udgangspunkt i måling af et steprespons på motorens omdrejninger. Til målinger af omdrejninger anvendtes et oscilloskop som optog data fra Hall-sensoren. Optagelsen blev tricket fra KL25Z.% foreslås at bruge Pocketbeagle som vil kunne foretage måling af omdrejninger via Hall-sensor og lagre data i en fil som kan eksporteres til analyse i Matlab.
+Der blev taget udgangspunkt i måling af et steprespons på motorens omdrejninger. Til målinger af omdrejninger anvendtes et oscilloskop som optog data fra Hall-sensoren. Optagelsen blev tricket fra oscilloskopet.% foreslås at bruge Pocketbeagle som vil kunne foretage måling af omdrejninger via Hall-sensor og lagre data i en fil som kan eksporteres til analyse i Matlab.
 
-Data fra oscilloskopet bestod i 50000 målinger som bestod af Hall-sensorens spænding, spændingen fra servomotoren, der styrer spjældet, samt et tidsmål. Nedenfor ses et udsnit af de 50000 målinger:
+Data fra oscilloskopet bestod i 50.000 målinger som bestod af Hall-sensorens spænding, spændingen fra servomotoren, der styrer spjældet, samt et tidsmål. Nedenfor ses et udsnit af de 50.000 målinger:
 
 \begin{table}[h]
   \centering
@@ -1193,6 +1233,7 @@ Data fra oscilloskopet bestod i 50000 målinger som bestod af Hall-sensorens sp�
 \end{comment}
 
 Spændingen fra Hall-sensoren, Volt1, anvendes.
+
 Når data plottes for et kort tidsrum ses støj omkring 5 volt
 
 \begin{figure}[h]
@@ -1270,8 +1311,7 @@ I scriptet fortolkes spænding over 4,5 V som 5 V. Markering af periodegrænser 
   \label{fig:mo2}
 \end{figure}
 
-Herudover udregnes tiden for hver omdrejningsperiode og gemmes i vektoren ”tp”.
-Ved plot at tp givet ved rpm overfor tid fås:
+Herudover udregnes tiden for hver omdrejningsperiode og gemmes i vektoren ”tp”. Ved plot at tp givet ved RPM overfor tid fås:
 
 \begin{figure}[h]
   \centering
@@ -1293,7 +1333,8 @@ Udfra stepresponset skal følgende identificeres:
 \end{itemize}
 
 Scopet der har målt data gemmer også data op til stepresponset. Stepresponset ses ved tiden 0.
-Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900, med start fra 7600, dvs 1300. 
+
+Ved at applicere et midlingsfilter på 200 fås et indtryk af et steady-state niveau ved 8900 RPM. Det kan ses ved aflæsning i Matlab at stepresponset initialiseres ved 7600 RPM. Dvs forskellen fra initialisering til steady-state er 1300 RPM. 
 
 \begin{figure}[h]
   \centering
@@ -1325,7 +1366,7 @@ G(s) = \frac{1300}{0,04s+1}
 % G(s) = \frac{8900}{0,04s+1}  
 % \end{equation}
 
-I Simulink oprettes følgende:
+I Simulink oprettes en system med et steprespons, PID-regulering, overføringsfunktion samt negativ feedbackfølgend:
 
 \begin{figure}[h]
   \centering
@@ -1346,7 +1387,7 @@ Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $
 \subsection{Software (Simon)}
 \label{sec:software-1}
 
-Der udarbejdes nu et udkast til PID-kontrol software som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
+På baggrund af tidligere PID-kode, se kode \ref{lst:pid1}. Der udarbejdes nu et udkast til PID-kontrol software som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
 
 \begin{lstlisting}[language=C,basicstyle=\scriptsize\ttfamily]
 #include <stdio.h>
@@ -1444,9 +1485,52 @@ int main(void) {
 \section{Aktiv ensretter}
 \label{sec:aktiv-ensretter}
 
-Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til kravet om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen. 
+Dette afsnit beskriver det opnåede resultat af arbejdet med at realisere en aktiv ensretter. 
 
-Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gates varierede meget, hvorefter vi måtte stoppe udviklingen på grund af manglende tid.  
+Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes (figur \ref{fig:nt5} og \ref{fig:nt6}) og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til krav (nr. ????) om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen.  
+
+Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gate pins varierede meget. Dette vil medvirke, at transistorerne vil lukke en varierende mængde af strøm for hver fase gennem kredsløbet. 
+
+Årsagen til kredsløbets uregelmæssighed er kompleks, og vi nåede desværre ikke at komme frem til en endelig konklusion. Den overskyggende teori var dog, at de tre IC’er på printet flere steder blev forsynet med et ikke tilstrækkeligt spændingsniveau. Denne ubalance vil forårsage en ”skævvridning” af strømmens gang gennem kredsløbet og i sidste ende resultere i et defekt kredsløb eller komponent.  
+På baggrund af det ovenstående, kan det konkluderes, at den aktive ensretter på nuværende tidspunkt ikke ser ud til at være funktionsdygtig. Følgende opstillede krav er dog for nuværende opfyldt:
+
+\begin{itemize}
+\item NR: Skal kunne håndtere et signal med en frekvens op til 600 Hz.
+\end{itemize}
+
+
+Den valgte IC til kredsløbet kan jf. datasheet håndtere dette krav. 
+
+\begin{itemize}
+\item NR: Spændingstabet gennem kredsløbet skal være mindre end 0.7 V.
+\end{itemize}
+
+
+Ud fra den nedskalerede test af kredsløbet blev der konstateret et spændingstab på max. 349.7 mV. Med de sidst indkøbte MOSFET transistorer, vil dette tab være væsentlig mindre pga. reduceringen af den interne modstand. Kravet anses derfor for at være opfyldt.  
+
+\begin{itemize}
+\item 2.1.1.7. Ensretteren skal modtage tre-faset vekselstrøm og levere en jævnstrøm.
+\end{itemize}
+
+
+Det endelig kredsløb kunne ensrette et tre-faset signal til jævnstrøm i den nedskalerede test. 
+
+\begin{itemize}
+\item 2.1.1.9. Ensretteren må maksimalt have 1 V (pp) ripple på outputtet.
+\end{itemize}
+
+
+Dette krav opfyldes ved at dimensionere en kondensator parallelt med load’en. I den nedskalerede test, var der tilnærmelsesvist ingen ripple på kredsløbets output.  
+
+\begin{itemize}
+\item NR: Det endelige kredsløb skal laves på PCB print.
+\end{itemize}
+
+
+
+% Ud fra den nedskalerede funktionalitetstest af den aktive ensretter, hvor inputspænding vs. outputspænding plottes og spændingsfaldet beregnes i Matlab, kan det konkluderes, at kredsløbet indledningsvist levede op til kravet om ikke at have et spændingsfald på udgangen på mere end 0.7 volt i forhold til indgangen. 
+
+% Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gates varierede meget, hvorefter vi måtte stoppe udviklingen på grund af manglende tid.  
 
 \section{Spændingsregulator}
 \label{sec:spandingsregulator}
@@ -1455,10 +1539,10 @@ Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når de
 
 
 
-\section{Motorstyring}
+\section{Motorstyring (Simon)}
 \label{sec:motorstyring-2} 
 
-Der blev lavet implementering af PID-koden. Resultatet var desværre at der ved øgning af mindskning af omdrejningstal blev lavet en stigning i omdrejningstal og omvendt.
+Der er blevet lavet kontrol af motoropstart samt justering af gasspjæld og måling af motorens omdrejninger. Ligeledes er der udarbejdet udkast til PID-regulering. Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne idet der kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling.
 
 
 % \bibliographystyle{unsrt}
@@ -1614,10 +1698,14 @@ I timebox 6, var vi nødt til at stoppe arbejdet på ensretteren, fordi vi var n
 \section{Diskussion}
 \label{sec:diskussion}
 
+Motorstyringen har fremstået med væsentlige mangler men dog stadig mulighed for at opnå et godt resultat såfremt der bruges mere tid på fejlfinding og test af PID-kontrollen.
+
 % \addcontentsline{toc}{chapter}{\protect\numberline{\thesection}Konklusion}
 
 \section{Konklusion}
 \label{sec:konklusion}
+
+Der er lavet initielle værktøjer til motorstyring men der mangler fejlfinding og flere tests af PID-kontrollen.
 
 
 \end{document}

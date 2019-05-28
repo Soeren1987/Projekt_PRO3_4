@@ -1,72 +1,76 @@
 \BOOKMARK [0][-]{figure.caption.1}{Formelle informationer}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{Table of Contents}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Introduktion \(Jacob\)}{}% 3
-\BOOKMARK [1][-]{subsection.1.0.1}{Om udviklingsprocessen}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.1}{Kundens \(undervisers\) krav}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.1}{Funktionelle}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.2}{Designspecifikke }{section.1.1}% 7
-\BOOKMARK [1][-]{section.1.2}{Preprojekt}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.2.1}{Storytelling}{section.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2}{Rich Picture}{section.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.2.3}{Kravspecifikation}{section.1.2}% 11
-\BOOKMARK [3][-]{subsubsection.1.2.3.1}{Ubiquitous}{subsection.1.2.3}% 12
-\BOOKMARK [3][-]{subsubsection.1.2.3.2}{Event Driven}{subsection.1.2.3}% 13
-\BOOKMARK [3][-]{subsubsection.1.2.3.3}{State Driven}{subsection.1.2.3}% 14
-\BOOKMARK [3][-]{subsubsection.1.2.3.4}{Unwanted}{subsection.1.2.3}% 15
-\BOOKMARK [2][-]{subsection.1.2.4}{Blokdiagram}{section.1.2}% 16
-\BOOKMARK [0][-]{chapter.2}{Baggrund}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Aktive ensretter \(S\370ren og Thomas\)}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.1.1}{Passiv vs. aktiv ensretning}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.2}{Valg af IC }{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.3}{Kredsl\370bet}{section.2.1}% 21
-\BOOKMARK [1][-]{section.2.2}{Sp\346ndingsregulator \(Jacob\)}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.1}{Kravsspecifikation}{section.2.2}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Uniquitous Requirements}{subsection.2.2.1}% 24
-\BOOKMARK [2][-]{subsection.2.2.2}{Generel analyse}{section.2.2}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Interface Analysis and Design}{subsection.2.2.2}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Dimensionering}{subsection.2.2.2}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Structural Analysis}{subsection.2.2.2}% 28
-\BOOKMARK [1][-]{section.2.3}{Motorstyring \(Simon\)}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.3.1}{Kravsspecifikation}{section.2.3}% 30
-\BOOKMARK [2][-]{subsection.2.3.2}{PID regulering}{section.2.3}% 31
-\BOOKMARK [2][-]{subsection.2.3.3}{Software}{section.2.3}% 32
-\BOOKMARK [0][-]{chapter.3}{Metoder}{}% 33
-\BOOKMARK [1][-]{section.3.1}{Aktive ensretter \(S\370ren og Thomas\)}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.1.1}{Test af generators output sp\346nding}{section.3.1}% 35
-\BOOKMARK [2][-]{subsection.3.1.2}{Simulering}{section.3.1}% 36
-\BOOKMARK [2][-]{subsection.3.1.3}{Teststand}{section.3.1}% 37
-\BOOKMARK [2][-]{subsection.3.1.4}{Realisering p\345 breadboard \(nedskaleret\)}{section.3.1}% 38
-\BOOKMARK [2][-]{subsection.3.1.5}{PDB print}{section.3.1}% 39
-\BOOKMARK [2][-]{subsection.3.1.6}{Implementering}{section.3.1}% 40
-\BOOKMARK [3][-]{subsubsection.3.1.6.1}{Nedskaleret test af PCB}{subsection.3.1.6}% 41
-\BOOKMARK [3][-]{subsubsection.3.1.6.2}{St\370rre load}{subsection.3.1.6}% 42
-\BOOKMARK [3][-]{subsubsection.3.1.6.3}{Fejls\370gning}{subsection.3.1.6}% 43
-\BOOKMARK [1][-]{section.3.2}{Sp\346ndingsregulator \(Jacob\)}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.2.1}{Analyse af LM78xx-serien}{section.3.2}% 45
-\BOOKMARK [2][-]{subsection.3.2.2}{Analyse af LM317 }{section.3.2}% 46
-\BOOKMARK [2][-]{subsection.3.2.3}{Analyse af BUCK-konverter}{section.3.2}% 47
-\BOOKMARK [2][-]{subsection.3.2.4}{Implementering af LM317}{section.3.2}% 48
-\BOOKMARK [2][-]{subsection.3.2.5}{Test af BUCK-konverteren}{section.3.2}% 49
-\BOOKMARK [2][-]{subsection.3.2.6}{Endelig test}{section.3.2}% 50
-\BOOKMARK [1][-]{section.3.3}{Motorstyring}{chapter.3}% 51
-\BOOKMARK [2][-]{subsection.3.3.1}{Servo motor og ESC driver \(S\370ren\)}{section.3.3}% 52
-\BOOKMARK [2][-]{subsection.3.3.2}{Start af motoren}{section.3.3}% 53
-\BOOKMARK [2][-]{subsection.3.3.3}{RPM-detektering}{section.3.3}% 54
-\BOOKMARK [2][-]{subsection.3.3.4}{Stepinput og overf\370ringsfunktion \(Simon\)}{section.3.3}% 55
-\BOOKMARK [3][-]{subsubsection.3.3.4.1}{Steprespons}{subsection.3.3.4}% 56
-\BOOKMARK [3][-]{subsubsection.3.3.4.2}{Overf\370ringsfunktion}{subsection.3.3.4}% 57
-\BOOKMARK [2][-]{subsection.3.3.5}{Software \(Simon\)}{section.3.3}% 58
-\BOOKMARK [0][-]{chapter.4}{Resultater}{}% 59
-\BOOKMARK [1][-]{section.4.1}{Aktiv ensretter}{chapter.4}% 60
-\BOOKMARK [1][-]{section.4.2}{Sp\346ndingsregulator}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.3}{Motorstyring}{chapter.4}% 62
-\BOOKMARK [0][-]{chapter.5}{Procesevaluering}{}% 63
-\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.2}{Gruppedannelse, samarbejdsaftale og udviklingsforl\370b}{chapter.5}% 65
-\BOOKMARK [1][-]{section.5.3}{Projektledelsen}{chapter.5}% 66
-\BOOKMARK [1][-]{section.5.4}{Arbejdsfordeling og planl\346gning}{chapter.5}% 67
-\BOOKMARK [1][-]{section.5.5}{Projektadministration}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.6}{Konflikth\345ndtering og udfordringer}{chapter.5}% 69
-\BOOKMARK [0][-]{chapter.6}{Konklusion og diskussion}{}% 70
-\BOOKMARK [1][-]{section.6.1}{Diskussion}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.2}{Konklusion}{chapter.6}% 72
+\BOOKMARK [0][-]{chapter.1}{Introduktion \(Jacob\)}{}% 2
+\BOOKMARK [1][-]{subsection.1.0.1}{Om udviklingsprocessen}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Kundens \(undervisers\) krav}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Funktionelle}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.2}{Designspecifikke }{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Preprojekt}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Storytelling}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Rich Picture}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.3}{Kravspecifikation}{section.1.2}% 10
+\BOOKMARK [3][-]{subsubsection.1.2.3.1}{Ubiquitous}{subsection.1.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.1.2.3.2}{Event Driven}{subsection.1.2.3}% 12
+\BOOKMARK [3][-]{subsubsection.1.2.3.3}{State Driven}{subsection.1.2.3}% 13
+\BOOKMARK [3][-]{subsubsection.1.2.3.4}{Unwanted}{subsection.1.2.3}% 14
+\BOOKMARK [2][-]{subsection.1.2.4}{Blokdiagram}{section.1.2}% 15
+\BOOKMARK [0][-]{chapter.2}{Baggrund}{}% 16
+\BOOKMARK [1][-]{section.2.1}{Aktive ensretter \(S\370ren og Thomas\)}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.1.1}{Passiv vs. aktiv ensretning}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.2}{Kravsspecifikation}{section.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Ubiquitous}{subsection.2.1.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{State-driven}{subsection.2.1.2}% 21
+\BOOKMARK [2][-]{subsection.2.1.3}{Valg af IC }{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.4}{Kredsl\370bet}{section.2.1}% 23
+\BOOKMARK [1][-]{section.2.2}{Sp\346ndingsregulator \(Jacob\)}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.1}{Kravsspecifikation}{section.2.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Uniquitous Requirements}{subsection.2.2.1}% 26
+\BOOKMARK [2][-]{subsection.2.2.2}{Generel analyse}{section.2.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Interface Analysis and Design}{subsection.2.2.2}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Dimensionering}{subsection.2.2.2}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Structural Analysis}{subsection.2.2.2}% 30
+\BOOKMARK [1][-]{section.2.3}{Motorstyring \(Simon\)}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.3.1}{Kravsspecifikation}{section.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.3.2}{Motorstart}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.3}{Regulering af hastighed}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.4}{PID regulering}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.5}{Software}{section.2.3}% 36
+\BOOKMARK [0][-]{chapter.3}{Metoder}{}% 37
+\BOOKMARK [1][-]{section.3.1}{Aktive ensretter \(S\370ren og Thomas\)}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.1.1}{Test af generators output sp\346nding}{section.3.1}% 39
+\BOOKMARK [2][-]{subsection.3.1.2}{Simulering}{section.3.1}% 40
+\BOOKMARK [2][-]{subsection.3.1.3}{Teststand}{section.3.1}% 41
+\BOOKMARK [2][-]{subsection.3.1.4}{Realisering p\345 breadboard \(nedskaleret\)}{section.3.1}% 42
+\BOOKMARK [2][-]{subsection.3.1.5}{PDB print}{section.3.1}% 43
+\BOOKMARK [2][-]{subsection.3.1.6}{Implementering}{section.3.1}% 44
+\BOOKMARK [3][-]{subsubsection.3.1.6.1}{Nedskaleret test af PCB}{subsection.3.1.6}% 45
+\BOOKMARK [3][-]{subsubsection.3.1.6.2}{St\370rre load}{subsection.3.1.6}% 46
+\BOOKMARK [3][-]{subsubsection.3.1.6.3}{Fejls\370gning}{subsection.3.1.6}% 47
+\BOOKMARK [1][-]{section.3.2}{Sp\346ndingsregulator \(Jacob\)}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.2.1}{Analyse af LM78xx-serien}{section.3.2}% 49
+\BOOKMARK [2][-]{subsection.3.2.2}{Analyse af LM317 }{section.3.2}% 50
+\BOOKMARK [2][-]{subsection.3.2.3}{Analyse af BUCK-konverter}{section.3.2}% 51
+\BOOKMARK [2][-]{subsection.3.2.4}{Implementering af LM317}{section.3.2}% 52
+\BOOKMARK [2][-]{subsection.3.2.5}{Test af BUCK-konverteren}{section.3.2}% 53
+\BOOKMARK [2][-]{subsection.3.2.6}{Endelig test}{section.3.2}% 54
+\BOOKMARK [1][-]{section.3.3}{Motorstyring}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.3.1}{Servo motor og ESC driver \(S\370ren\)}{section.3.3}% 56
+\BOOKMARK [2][-]{subsection.3.3.2}{Start af motoren \(S\370ren\)}{section.3.3}% 57
+\BOOKMARK [2][-]{subsection.3.3.3}{RPM-detektering \(S\370ren\)}{section.3.3}% 58
+\BOOKMARK [2][-]{subsection.3.3.4}{Stepinput og overf\370ringsfunktion \(Simon\)}{section.3.3}% 59
+\BOOKMARK [3][-]{subsubsection.3.3.4.1}{Steprespons}{subsection.3.3.4}% 60
+\BOOKMARK [3][-]{subsubsection.3.3.4.2}{Overf\370ringsfunktion}{subsection.3.3.4}% 61
+\BOOKMARK [2][-]{subsection.3.3.5}{Software \(Simon\)}{section.3.3}% 62
+\BOOKMARK [0][-]{chapter.4}{Resultater}{}% 63
+\BOOKMARK [1][-]{section.4.1}{Aktiv ensretter}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.2}{Sp\346ndingsregulator}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.3}{Motorstyring \(Simon\)}{chapter.4}% 66
+\BOOKMARK [0][-]{chapter.5}{Procesevaluering}{}% 67
+\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.2}{Gruppedannelse, samarbejdsaftale og udviklingsforl\370b}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.3}{Projektledelsen}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.4}{Arbejdsfordeling og planl\346gning}{chapter.5}% 71
+\BOOKMARK [1][-]{section.5.5}{Projektadministration}{chapter.5}% 72
+\BOOKMARK [1][-]{section.5.6}{Konflikth\345ndtering og udfordringer}{chapter.5}% 73
+\BOOKMARK [0][-]{chapter.6}{Konklusion og diskussion}{}% 74
+\BOOKMARK [1][-]{section.6.1}{Diskussion}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.2}{Konklusion}{chapter.6}% 76

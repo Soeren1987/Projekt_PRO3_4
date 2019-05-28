@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  28 MAY 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  28 MAY 2019 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2362,14 +2362,14 @@ Package biblatex Info: ... file 'danish.lbx' found.
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/danish.lbx
 File: danish.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
-LaTeX Font Info:    Try loading font information for T1+zpltlf on input line 35
+LaTeX Font Info:    Try loading font information for T1+zpltlf on input line 36
 .
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/t1zpltlf.fd
 File: t1zpltlf.fd 2015/01/17 v1.0 font definition file for T1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 36.
 
 (./prj4rapport.aux
 
@@ -2393,54 +2393,54 @@ LaTeX Warning: Label `fig:sbil1' multiply defined.
 )
 \openout1 = `prj4rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 35.
-LaTeX Font Info:    Try loading font information for OML+npxmi on input line 35
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 36.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 36
 .
  (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 36.
 
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 35
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 36
 .
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/08/13 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 36.
 LaTeX Font Info:    Try loading font information for LMX+npxexx on input line 3
-5.
+6.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/08/13 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    ... okay on input line 36.
 \AtBeginShipoutBox=\box77
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -2475,7 +2475,7 @@ g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2486,9 +2486,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count482
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
  (./prj4rapport.out) (./prj4rapport.out)
 \@outlinefile=\write6
 \openout6 = `prj4rapport.out'.
@@ -2512,7 +2512,7 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into 
 your preamble.
- on input line 35.
+ on input line 36.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2525,11 +2525,11 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'prj4rapport.bbl' found.
 (./prj4rapport.bbl)
-Package biblatex Info: Reference section=0 on input line 35.
-Package biblatex Info: Reference segment=0 on input line 35.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 35.
+(lastpage)             ! on input line 36.
 \c@mv@tabular=\count484
 \c@mv@boldtabular=\count485
 
@@ -2569,76 +2569,76 @@ Package lastpage Info: Please have a look at the pageslts package at
 
 \c__siunitx_mathsf_int=\count486
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 3
-5.
+6.
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 35.
+(Font)              scaled to size 7.3pt on input line 36.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 35.
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+(Font)              scaled to size 5.5pt on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 35.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 35.
+(Font)              size <5> substituted on input line 36.
 
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 35.
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 35.
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 36.
 
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 35.
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 36.
 
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 35.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 35.
+(Font)              scaled to size 9.40002pt on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 6.86201pt on input line 35.
+(Font)              scaled to size 6.86201pt on input line 36.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.17001pt on input line 35.
+(Font)              scaled to size 5.17001pt on input line 36.
 \c__siunitx_mathtt_int=\count487
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 35.
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 36.
 
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 36.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 7.3pt on input line 35.
+(Font)              scaled to size 7.3pt on input line 36.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 5.5pt on input line 35.
+(Font)              scaled to size 5.5pt on input line 36.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -2647,73 +2647,69 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 56.
+(Font)              scaled to size 17.28pt on input line 57.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 56.
+(Font)              scaled to size 12.0pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 56.
+(Font)              scaled to size 12.0pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 56.
+(Font)              scaled to size 8.8pt on input line 57.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 56.
+(Font)              scaled to size 6.6pt on input line 57.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 56.
+(Font)              scaled to size 11.28003pt on input line 57.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.27202pt on input line 56.
+(Font)              scaled to size 8.27202pt on input line 57.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 6.20401pt on input line 56.
+(Font)              scaled to size 6.20401pt on input line 57.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 56.
+(Font)              scaled to size 12.0pt on input line 57.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 8.8pt on input line 56.
+(Font)              scaled to size 8.8pt on input line 57.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 6.6pt on input line 56.
+(Font)              scaled to size 6.6pt on input line 57.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 57.
 
 [1
 
 {c:/Program Files/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 60.
+(Font)              scaled to size 10.0pt on input line 61.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 86.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 90.
+(Font)              scaled to size 10.0pt on input line 91.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \clearpage
+l.91 \clearpage
                 [1]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 92.
+(Font)              scaled to size 24.88pt on input line 93.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 92.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 92.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 92.
+(Font)              scaled to size 24.88pt on input line 93.
  (./prj4rapport.toc
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 36.
@@ -2731,224 +2727,224 @@ Package babel Info: Redefining danish shorthand "~
 \openout7 = `prj4rapport.toc'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
  [3]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 101.
+less on input line 102.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 103.
+less on input line 104.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 105.
+less on input line 106.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 107.
+less on input line 108.
 
 Kapitel 1.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 110.
+(Font)              scaled to size 20.74pt on input line 111.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 110.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 111.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 110.
+(Font)              scaled to size 20.74pt on input line 111.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 129.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 130.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 129.
+(Font)              scaled to size 12.0pt on input line 130.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 129.
+(hyperref)                than one, level fixed on input line 130.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 130.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 130.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 [1
 
 ]
 <./figurer/ij1.png, id=392, 226.665pt x 172.134pt>
 File: ./figurer/ij1.png Graphic file (type png)
 <use ./figurer/ij1.png>
-Package pdftex.def Info: ./figurer/ij1.png  used on input line 142. on input li
-ne 142.
+Package pdftex.def Info: ./figurer/ij1.png  used on input line 143. on input li
+ne 143.
 Package pdftex.def Info: Requested size: 234.8775pt x 178.37688pt on input line
- 142.
+ 143.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 147.
+(Font)              scaled to size 14.4pt on input line 148.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 147.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 148.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 147.
+(Font)              scaled to size 14.4pt on input line 148.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 153.
 LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 1
-56.
+57.
  (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 156.
+(Font)              scaled to size 10.0pt on input line 157.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 
 [2 <./figurer/ij1.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
 <./figurer/int1.png, id=401, 598.48593pt x 334.24875pt>
 File: ./figurer/int1.png Graphic file (type png)
 <use ./figurer/int1.png>
-Package pdftex.def Info: ./figurer/int1.png  used on input line 191. on input l
-ine 191.
+Package pdftex.def Info: ./figurer/int1.png  used on input line 192. on input l
+ine 192.
 Package pdftex.def Info: Requested size: 234.8775pt x 131.17252pt on input line
- 191.
+ 192.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 196.
+(babel)             in language  on input line 197.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 196.
+(babel)             in language  on input line 197.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
  [3 <./figurer/int1.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 218.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 218.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 226.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 226.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 236.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 246.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 246.
+(babel)             in language  on input line 247.
 <./figurer/int2.png, id=409, 500.62032pt x 335.75438pt>
 File: ./figurer/int2.png Graphic file (type png)
 <use ./figurer/int2.png>
-Package pdftex.def Info: ./figurer/int2.png  used on input line 253. on input l
-ine 253.
+Package pdftex.def Info: ./figurer/int2.png  used on input line 254. on input l
+ine 254.
 Package pdftex.def Info: Requested size: 234.8775pt x 157.52792pt on input line
- 253.
+ 254.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 266.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 266.
 [4]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
  [5 <./figurer/int2.png>]
 Kapitel 2.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 270.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 270.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 2
-77.
+78.
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 277.
+(Font)              scaled to size 10.0pt on input line 278.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 277.
+(Font)              scaled to size 8.0pt on input line 278.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 8.0pt on input line 277.
+(Font)              scaled to size 8.0pt on input line 278.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 279.
+(Font)              scaled to size 10.0pt on input line 280.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 281.
 
 [6
 
@@ -2956,346 +2952,448 @@ Package babel Info: Redefining danish shorthand "~
 <./figurer/prens1.png, id=449, 745.78625pt x 341.275pt>
 File: ./figurer/prens1.png Graphic file (type png)
 <use ./figurer/prens1.png>
-Package pdftex.def Info: ./figurer/prens1.png  used on input line 283. on input
- line 283.
+Package pdftex.def Info: ./figurer/prens1.png  used on input line 284. on input
+ line 284.
 Package pdftex.def Info: Requested size: 281.85587pt x 128.97763pt on input lin
-e 283.
+e 284.
 <./figurer/prens2.png, id=451, 2520.41624pt x 1026.83624pt>
 File: ./figurer/prens2.png Graphic file (type png)
 <use ./figurer/prens2.png>
-Package pdftex.def Info: ./figurer/prens2.png  used on input line 294. on input
- line 294.
+Package pdftex.def Info: ./figurer/prens2.png  used on input line 295. on input
+ line 295.
 Package pdftex.def Info: Requested size: 234.8775pt x 95.68593pt on input line 
-294.
+295.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 303.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 308.
+
+Overfull \hbox (88.91606pt too wide) in paragraph at lines 311--319
+\T1/zpltlf/m/n/10 I laun-ch-fa-sen er der de-fi-ne-ret føl-gen-de krav: []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--319
+
+ []
+
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 319.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 323.
- [7
+(babel)             in language  on input line 319.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 319.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 319.
+[7
 
  <./figurer/prens1.png> <./figurer/prens2.png
 
 pdfTeX warning: pdflatex.exe (file ./figurer/prens2.png): large interlaced PNG 
 might cause out of memory (use non-interlaced PNG to fix this)
 >]
-<./figurer/prens3.png, id=465, 353.06906pt x 368.1253pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 330.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 340.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 340.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 361.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 361.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 361.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 361.
+ [8]
+<./figurer/prens3.png, id=478, 353.06906pt x 368.1253pt>
 File: ./figurer/prens3.png Graphic file (type png)
 <use ./figurer/prens3.png>
-Package pdftex.def Info: ./figurer/prens3.png  used on input line 323. on input
- line 323.
+Package pdftex.def Info: ./figurer/prens3.png  used on input line 361. on input
+ line 361.
 Package pdftex.def Info: Requested size: 140.92793pt x 146.93857pt on input lin
-e 323.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 323.
+e 361.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 361.
  (c:/Program Files/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 323.
+(Font)              scaled to size 8.0pt on input line 361.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 323.
+(Font)              scaled to size 6.2pt on input line 361.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.52002pt on input line 323.
+(Font)              scaled to size 7.52002pt on input line 361.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 5.828pt on input line 323.
+(Font)              scaled to size 5.828pt on input line 361.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 323.
+(Font)              scaled to size 8.0pt on input line 361.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 6.2pt on input line 323.
+(Font)              scaled to size 6.2pt on input line 361.
 
-Underfull \hbox (badness 6961) in paragraph at lines 323--323
+Underfull \hbox (badness 6961) in paragraph at lines 361--361
 [][]\T1/zpltlf/m/n/8 Fra da-ta-bla-det til LT4320-1. []$\T1/pcr/m/n/8 https : /
  / www . analog . com / media / en / technical-[]documentation / data-[]sheets 
 /
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 362.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 324.
-<./figurer/prens4.png, id=472, 580.41844pt x 599.23875pt>
+(babel)             in language  on input line 362.
+<./figurer/prens4.png, id=485, 580.41844pt x 599.23875pt>
 File: ./figurer/prens4.png Graphic file (type png)
 <use ./figurer/prens4.png>
-Package pdftex.def Info: ./figurer/prens4.png  used on input line 331. on input
- line 331.
+Package pdftex.def Info: ./figurer/prens4.png  used on input line 369. on input
+ line 369.
 Package pdftex.def Info: Requested size: 234.8775pt x 242.4892pt on input line 
-331.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 338.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 338.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 343.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 343.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 343.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 343.
-[8
-
- <./figurer/prens3.png> <./figurer/prens4.png>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 344.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 344.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 347.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 347.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 357.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 357.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 362.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 362.
-<./figurer/j1.png, id=486, 428.35031pt x 60.97781pt>
-File: ./figurer/j1.png Graphic file (type png)
-<use ./figurer/j1.png>
-Package pdftex.def Info: ./figurer/j1.png  used on input line 369. on input lin
-e 369.
-Package pdftex.def Info: Requested size: 234.8775pt x 33.43553pt on input line 
 369.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 376.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 376.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 383.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 388.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 393.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 393.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 393.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 393.
- [9 <./figurer/j1.png>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 422.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 435.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 435.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 452.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 452.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 458.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 458.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 458.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 381.
+[9
 
-[10]
+ <./figurer/prens3.png> <./figurer/prens4.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 382.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 382.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 385.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 481.
- [11]
+(babel)             in language  on input line 385.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 395.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 395.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 400.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 400.
+<./figurer/j1.png, id=501, 428.35031pt x 60.97781pt>
+File: ./figurer/j1.png Graphic file (type png)
+<use ./figurer/j1.png>
+Package pdftex.def Info: ./figurer/j1.png  used on input line 407. on input lin
+e 407.
+Package pdftex.def Info: Requested size: 234.8775pt x 33.43553pt on input line 
+407.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 414.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 414.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 421.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 421.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 426.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 426.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 430.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 430.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 430.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 430.
+ [10 <./figurer/j1.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 458.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 472.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 472.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 490.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 490.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 490.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 490.
+
+[11]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 493.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 493.
+
+
+LaTeX Warning: Reference `fig:anath2' on page 12 undefined on input line 512.
+
+
+LaTeX Warning: File `anath2.png' not found on input line 516.
+
+
+./prj4rapport.tex:516: Package pdftex.def Error: File `anath2.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.516 ...graphics[width=0.7\textwidth]{anath2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:anath3' on page 12 undefined on input line 523.
+
+
+LaTeX Warning: File `anath3.png' not found on input line 527.
+
+
+./prj4rapport.tex:527: Package pdftex.def Error: File `anath3.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.527 ...graphics[width=0.5\textwidth]{anath3.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 532.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 532.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 542.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 542.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 542.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 542.
+[12]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 549.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 549.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 561.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 561.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 561.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 561.
+ [13]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 581.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 581.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 581.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 581.
+ [14]
 Kapitel 3.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 581.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 484.
+(babel)             in language  on input line 584.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 484.
+(babel)             in language  on input line 584.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 487.
+(babel)             in language  on input line 587.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 487.
-<./figurer/prens5.png, id=552, 1336.995pt x 674.52pt>
+(babel)             in language  on input line 587.
+<./figurer/prens5.png, id=583, 1336.995pt x 674.52pt>
 File: ./figurer/prens5.png Graphic file (type png)
 <use ./figurer/prens5.png>
-Package pdftex.def Info: ./figurer/prens5.png  used on input line 501. on input
- line 501.
+Package pdftex.def Info: ./figurer/prens5.png  used on input line 601. on input
+ line 601.
 Package pdftex.def Info: Requested size: 234.8775pt x 118.49562pt on input line
- 501.
+ 601.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 508.
+(babel)             in language  on input line 608.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 508.
+(babel)             in language  on input line 608.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 614.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 614.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 614.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 514.
-[12
+(babel)             in language  on input line 614.
+[15
 
  <./figurer/prens5.png>]
-<./figurer/prens6.png, id=562, 2168.1pt x 1159.33125pt>
+<./figurer/prens6.png, id=594, 2168.1pt x 1159.33125pt>
 File: ./figurer/prens6.png Graphic file (type png)
 <use ./figurer/prens6.png>
-Package pdftex.def Info: ./figurer/prens6.png  used on input line 517. on input
- line 517.
+Package pdftex.def Info: ./figurer/prens6.png  used on input line 617. on input
+ line 617.
 Package pdftex.def Info: Requested size: 422.77664pt x 226.05984pt on input lin
-e 517.
+e 617.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 526.
+(babel)             in language  on input line 626.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 526.
+(babel)             in language  on input line 626.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 632.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 632.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 632.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 532.
- [13 <./figurer/prens6.png
+(babel)             in language  on input line 632.
+ [16 <./figurer/prens6.png
 
 pdfTeX warning: pdflatex.exe (file ./figurer/prens6.png): large interlaced PNG 
 might cause out of memory (use non-interlaced PNG to fix this)
 >]
-<./figurer/nt1.png, id=576, 767.11594pt x 1445.4pt>
+<./figurer/nt1.png, id=606, 767.11594pt x 1445.4pt>
 File: ./figurer/nt1.png Graphic file (type png)
 <use ./figurer/nt1.png>
-Package pdftex.def Info: ./figurer/nt1.png  used on input line 535. on input li
-ne 535.
+Package pdftex.def Info: ./figurer/nt1.png  used on input line 635. on input li
+ne 635.
 Package pdftex.def Info: Requested size: 140.92793pt x 265.52014pt on input lin
-e 535.
-<./figurer/nt2.png, id=577, 1445.4pt x 767.11594pt>
+e 635.
+<./figurer/nt2.png, id=607, 1445.4pt x 767.11594pt>
 File: ./figurer/nt2.png Graphic file (type png)
 <use ./figurer/nt2.png>
-Package pdftex.def Info: ./figurer/nt2.png  used on input line 542. on input li
-ne 542.
+Package pdftex.def Info: ./figurer/nt2.png  used on input line 642. on input li
+ne 642.
 Package pdftex.def Info: Requested size: 281.85587pt x 149.58115pt on input lin
-e 542.
+e 642.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 651.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 651.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 556.
+(babel)             in language  on input line 656.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 556.
+(babel)             in language  on input line 656.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 556.
+(babel)             in language  on input line 656.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 556.
- [14
+(babel)             in language  on input line 656.
+ [17
 
  <./figurer/nt1.png> <./figurer/nt2.png>]
-<./figurer/prens7.png, id=587, 753.5653pt x 453.94594pt>
+<./figurer/prens7.png, id=618, 753.5653pt x 453.94594pt>
 File: ./figurer/prens7.png Graphic file (type png)
 <use ./figurer/prens7.png>
-Package pdftex.def Info: ./figurer/prens7.png  used on input line 560. on input
- line 560.
+Package pdftex.def Info: ./figurer/prens7.png  used on input line 660. on input
+ line 660.
 Package pdftex.def Info: Requested size: 234.8775pt x 141.4837pt on input line 
-560.
+660.
 LaTeX Font Info:    Font shape `T1/zplsups/bx/n' in size <12> not available
-(Font)              Font shape `T1/zplsups/b/n' tried instead on input line 586
+(Font)              Font shape `T1/zplsups/b/n' tried instead on input line 686
 .
 LaTeX Font Info:    Font shape `T1/zplsups/b/n' will be
-(Font)              scaled to size 12.0pt on input line 586.
+(Font)              scaled to size 12.0pt on input line 686.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 686.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 586.
-<./figurer/nt3.png, id=593, 459.21562pt x 740.7675pt>
+(babel)             in language  on input line 686.
+<./figurer/nt3.png, id=624, 459.21562pt x 740.7675pt>
 File: ./figurer/nt3.png Graphic file (type png)
 <use ./figurer/nt3.png>
-Package pdftex.def Info: ./figurer/nt3.png  used on input line 609. on input li
-ne 609.
+Package pdftex.def Info: ./figurer/nt3.png  used on input line 709. on input li
+ne 709.
 Package pdftex.def Info: Requested size: 459.2145pt x 740.76569pt on input line
- 609.
+ 709.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figurer/nt4.png, id=594, 480.29437pt x 745.28438pt>
+<./figurer/nt4.png, id=625, 480.29437pt x 745.28438pt>
 File: ./figurer/nt4.png Graphic file (type png)
 <use ./figurer/nt4.png>
-Package pdftex.def Info: ./figurer/nt4.png  used on input line 616. on input li
-ne 616.
+Package pdftex.def Info: ./figurer/nt4.png  used on input line 716. on input li
+ne 716.
 Package pdftex.def Info: Requested size: 480.29318pt x 745.28256pt on input lin
-e 616.
+e 716.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 722.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 622.
+(babel)             in language  on input line 722.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 626.
+(babel)             in language  on input line 726.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 626.
+(babel)             in language  on input line 726.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 626.
+(babel)             in language  on input line 726.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 626.
-[15 <./figurer/prens7.png>]
+(babel)             in language  on input line 726.
+[18 <./figurer/prens7.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 627.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 631.
+(babel)             in language  on input line 731.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 631.
+(babel)             in language  on input line 731.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 631.
+(babel)             in language  on input line 731.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 631.
- [16 <./figurer/nt3.png> <./figurer/nt4.png>]
-<./figurer/nt5.png, id=622, 1827.82875pt x 1014.79124pt>
+(babel)             in language  on input line 731.
+ [19 <./figurer/nt3.png> <./figurer/nt4.png>]
+<./figurer/nt5.png, id=650, 1827.82875pt x 1014.79124pt>
 File: ./figurer/nt5.png Graphic file (type png)
 <use ./figurer/nt5.png>
-Package pdftex.def Info: ./figurer/nt5.png  used on input line 634. on input li
-ne 634.
+Package pdftex.def Info: ./figurer/nt5.png  used on input line 734. on input li
+ne 734.
 Package pdftex.def Info: Requested size: 234.8775pt x 130.39453pt on input line
- 634.
-<./figurer/nt6.png, id=623, 1818.795pt x 1017.8025pt>
+ 734.
+<./figurer/nt6.png, id=651, 1818.795pt x 1017.8025pt>
 File: ./figurer/nt6.png Graphic file (type png)
 <use ./figurer/nt6.png>
-Package pdftex.def Info: ./figurer/nt6.png  used on input line 641. on input li
-ne 641.
+Package pdftex.def Info: ./figurer/nt6.png  used on input line 741. on input li
+ne 741.
 Package pdftex.def Info: Requested size: 234.8775pt x 131.43373pt on input line
- 641.
+ 741.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 656.
+(babel)             in language  on input line 756.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 656.
+(babel)             in language  on input line 756.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 760.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 760.
 
-[17
+[20
 
  <./figurer/nt5.png
 
@@ -3306,591 +3404,604 @@ ht cause out of memory (use non-interlaced PNG to fix this)
 pdfTeX warning: pdflatex.exe (file ./figurer/nt6.png): large interlaced PNG mig
 ht cause out of memory (use non-interlaced PNG to fix this)
 >]
-<./figurer/nt7.png, id=635, 1029.8475pt x 1373.13pt>
+<./figurer/nt7.png, id=664, 1029.8475pt x 1373.13pt>
 File: ./figurer/nt7.png Graphic file (type png)
 <use ./figurer/nt7.png>
-Package pdftex.def Info: ./figurer/nt7.png  used on input line 663. on input li
-ne 663.
+Package pdftex.def Info: ./figurer/nt7.png  used on input line 763. on input li
+ne 763.
 Package pdftex.def Info: Requested size: 234.8775pt x 313.15233pt on input line
- 663.
+ 763.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 692.
+(babel)             in language  on input line 792.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 692.
+(babel)             in language  on input line 792.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 700.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 700.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 700.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 700.
- [18
+(babel)             in language  on input line 800.
+ [21
 
  <./figurer/nt7.png>]
-<./figurer/nt8.png, id=644, 514.17094pt x 317.68687pt>
+<./figurer/nt8.png, id=675, 514.17094pt x 317.68687pt>
 File: ./figurer/nt8.png Graphic file (type png)
 <use ./figurer/nt8.png>
-Package pdftex.def Info: ./figurer/nt8.png  used on input line 713. on input li
-ne 713.
+Package pdftex.def Info: ./figurer/nt8.png  used on input line 813. on input li
+ne 813.
 Package pdftex.def Info: Requested size: 234.8775pt x 145.12459pt on input line
- 713.
-<./figurer/nt9.png, id=646, 806.01125pt x 424.58624pt>
+ 813.
+<./figurer/nt9.png, id=677, 806.01125pt x 424.58624pt>
 File: ./figurer/nt9.png Graphic file (type png)
 <use ./figurer/nt9.png>
-Package pdftex.def Info: ./figurer/nt9.png  used on input line 724. on input li
-ne 724.
+Package pdftex.def Info: ./figurer/nt9.png  used on input line 824. on input li
+ne 824.
 Package pdftex.def Info: Requested size: 234.8775pt x 123.72289pt on input line
- 724.
+ 824.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 732.
+(babel)             in language  on input line 832.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 732.
+(babel)             in language  on input line 832.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 735.
+(babel)             in language  on input line 835.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 735.
+(babel)             in language  on input line 835.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 839.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 839.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 739.
+(babel)             in language  on input line 839.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 739.
- [19 <./figurer/nt8.png> <./figurer/nt9.png>]
-<./figurer/j2.png, id=658, 596.2275pt x 268.75406pt>
+(babel)             in language  on input line 839.
+ [22 <./figurer/nt8.png> <./figurer/nt9.png>]
+<./figurer/j2.png, id=689, 596.2275pt x 268.75406pt>
 File: ./figurer/j2.png Graphic file (type png)
 <use ./figurer/j2.png>
-Package pdftex.def Info: ./figurer/j2.png  used on input line 762. on input lin
-e 762.
+Package pdftex.def Info: ./figurer/j2.png  used on input line 862. on input lin
+e 862.
 Package pdftex.def Info: Requested size: 328.82707pt x 148.22116pt on input lin
-e 762.
+e 862.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 767.
+(babel)             in language  on input line 867.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 767.
-<./figurer/j3.png, id=661, 755.82375pt x 286.06876pt>
+(babel)             in language  on input line 867.
+<./figurer/j3.png, id=692, 755.82375pt x 286.06876pt>
 File: ./figurer/j3.png Graphic file (type png)
 <use ./figurer/j3.png>
-Package pdftex.def Info: ./figurer/j3.png  used on input line 774. on input lin
-e 774.
+Package pdftex.def Info: ./figurer/j3.png  used on input line 874. on input lin
+e 874.
 Package pdftex.def Info: Requested size: 328.82707pt x 124.45636pt on input lin
-e 774.
+e 874.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 777.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 777.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 777.
+(babel)             in language  on input line 877.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 777.
+(babel)             in language  on input line 877.
 
-[20 <./figurer/j2.png>]
+[23 <./figurer/j2.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 881.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 781.
-<./figurer/j4.png, id=674, 965.10562pt x 318.43968pt>
+(babel)             in language  on input line 881.
+<./figurer/j4.png, id=705, 965.10562pt x 318.43968pt>
 File: ./figurer/j4.png Graphic file (type png)
 <use ./figurer/j4.png>
-Package pdftex.def Info: ./figurer/j4.png  used on input line 790. on input lin
-e 790.
+Package pdftex.def Info: ./figurer/j4.png  used on input line 890. on input lin
+e 890.
 Package pdftex.def Info: Requested size: 328.82707pt x 108.49643pt on input lin
-e 790.
+e 890.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 796.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 796.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 796.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 796.
- [21 <./figurer/j3.png> <./figurer/j4.png>]
-<./figurer/j5.png, id=685, 511.15968pt x 539.76656pt>
+(babel)             in language  on input line 896.
+ [24 <./figurer/j3.png> <./figurer/j4.png>]
+<./figurer/j5.png, id=716, 511.15968pt x 539.76656pt>
 File: ./figurer/j5.png Graphic file (type png)
 <use ./figurer/j5.png>
-Package pdftex.def Info: ./figurer/j5.png  used on input line 799. on input lin
-e 799.
+Package pdftex.def Info: ./figurer/j5.png  used on input line 899. on input lin
+e 899.
 Package pdftex.def Info: Requested size: 328.82707pt x 347.22842pt on input lin
-e 799.
+e 899.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 808.
+(babel)             in language  on input line 908.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 808.
+(babel)             in language  on input line 908.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 812.
+(babel)             in language  on input line 912.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 812.
+(babel)             in language  on input line 912.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 812.
+(babel)             in language  on input line 912.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 812.
- [22
+(babel)             in language  on input line 912.
+ [25
 
  <./figurer/j5.png>]
-<./figurer/j6.png, id=695, 772.38562pt x 1029.8475pt>
+<./figurer/j6.png, id=725, 772.38562pt x 1029.8475pt>
 File: ./figurer/j6.png Graphic file (type png)
 <use ./figurer/j6.png>
-Package pdftex.def Info: ./figurer/j6.png  used on input line 815. on input lin
-e 815.
+Package pdftex.def Info: ./figurer/j6.png  used on input line 915. on input lin
+e 915.
 Package pdftex.def Info: Requested size: 164.41711pt x 219.2129pt on input line
- 815.
-<./figurer/j7.png, id=696, 1146.08176pt x 549.85425pt>
+ 915.
+<./figurer/j7.png, id=726, 1146.08176pt x 549.85425pt>
 File: ./figurer/j7.png Graphic file (type png)
 <use ./figurer/j7.png>
-Package pdftex.def Info: ./figurer/j7.png  used on input line 824. on input lin
-e 824.
+Package pdftex.def Info: ./figurer/j7.png  used on input line 924. on input lin
+e 924.
 Package pdftex.def Info: Requested size: 328.82707pt x 157.75883pt on input lin
-e 824.
+e 924.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 830.
+(babel)             in language  on input line 930.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 830.
+(babel)             in language  on input line 930.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 830.
+(babel)             in language  on input line 930.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 830.
- [23
+(babel)             in language  on input line 930.
+ [26
 
  <./figurer/j6.png> <./figurer/j7.png>]
-<./figurer/j8.png, id=705, 359.379pt x 172.4625pt>
+<./figurer/j8.png, id=736, 359.379pt x 172.4625pt>
 File: ./figurer/j8.png Graphic file (type png)
 <use ./figurer/j8.png>
-Package pdftex.def Info: ./figurer/j8.png  used on input line 833. on input lin
-e 833.
+Package pdftex.def Info: ./figurer/j8.png  used on input line 933. on input lin
+e 933.
 Package pdftex.def Info: Requested size: 328.82707pt x 157.8016pt on input line
- 833.
+ 933.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 840.
+(babel)             in language  on input line 940.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 840.
-<./figurer/j9.png, id=708, 772.38562pt x 1029.8475pt>
+(babel)             in language  on input line 940.
+<./figurer/j9.png, id=739, 772.38562pt x 1029.8475pt>
 File: ./figurer/j9.png Graphic file (type png)
 <use ./figurer/j9.png>
-Package pdftex.def Info: ./figurer/j9.png  used on input line 847. on input lin
-e 847.
+Package pdftex.def Info: ./figurer/j9.png  used on input line 947. on input lin
+e 947.
 Package pdftex.def Info: Requested size: 164.41711pt x 219.2129pt on input line
- 847.
+ 947.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 851.
+(babel)             in language  on input line 951.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 851.
+(babel)             in language  on input line 951.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 851.
+(babel)             in language  on input line 951.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 851.
- [24
+(babel)             in language  on input line 951.
+ [27
 
  <./figurer/j8.png> <./figurer/j9.png>]
-<./figurer/j10.png, id=719, 1155.1155pt x 517.33275pt>
+<./figurer/j10.png, id=750, 1155.1155pt x 517.33275pt>
 File: ./figurer/j10.png Graphic file (type png)
 <use ./figurer/j10.png>
-Package pdftex.def Info: ./figurer/j10.png  used on input line 856. on input li
-ne 856.
+Package pdftex.def Info: ./figurer/j10.png  used on input line 956. on input li
+ne 956.
 Package pdftex.def Info: Requested size: 234.8775pt x 105.18556pt on input line
- 856.
-<./figurer/j11.png, id=720, 163.593pt x 146.511pt>
+ 956.
+<./figurer/j11.png, id=751, 163.593pt x 146.511pt>
 File: ./figurer/j11.png Graphic file (type png)
 <use ./figurer/j11.png>
-Package pdftex.def Info: ./figurer/j11.png  used on input line 867. on input li
-ne 867.
+Package pdftex.def Info: ./figurer/j11.png  used on input line 967. on input li
+ne 967.
 Package pdftex.def Info: Requested size: 234.8775pt x 210.3698pt on input line 
-867.
+967.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 883.
+(babel)             in language  on input line 983.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 883.
+(babel)             in language  on input line 983.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 883.
+(babel)             in language  on input line 983.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 883.
- [25
+(babel)             in language  on input line 983.
+ [28
 
  <./figurer/j10.png> <./figurer/j11.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 916.
+(babel)             in language  on input line 1016.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 916.
-<./figurer/j12.png, id=732, 1029.8475pt x 1373.13pt>
+(babel)             in language  on input line 1016.
+<./figurer/j12.png, id=763, 1029.8475pt x 1373.13pt>
 File: ./figurer/j12.png Graphic file (type png)
 <use ./figurer/j12.png>
-Package pdftex.def Info: ./figurer/j12.png  used on input line 925. on input li
-ne 925.
+Package pdftex.def Info: ./figurer/j12.png  used on input line 1025. on input l
+ine 1025.
 Package pdftex.def Info: Requested size: 187.89914pt x 250.52605pt on input lin
-e 925.
+e 1025.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 930.
+(babel)             in language  on input line 1030.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 930.
+(babel)             in language  on input line 1030.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 930.
+(babel)             in language  on input line 1030.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 930.
- [26 <./figurer/j12.png>]
+(babel)             in language  on input line 1030.
+ [29 <./figurer/j12.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 931.
+(babel)             in language  on input line 1031.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 931.
+(babel)             in language  on input line 1031.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 934.
+(babel)             in language  on input line 1036.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 934.
-<./figurer/mots4.png, id=742, 695.59875pt x 460.72125pt>
+(babel)             in language  on input line 1036.
+<./figurer/mots4.png, id=773, 695.59875pt x 460.72125pt>
 File: ./figurer/mots4.png Graphic file (type png)
 <use ./figurer/mots4.png>
-Package pdftex.def Info: ./figurer/mots4.png  used on input line 950. on input 
-line 950.
+Package pdftex.def Info: ./figurer/mots4.png  used on input line 1052. on input
+ line 1052.
 Package pdftex.def Info: Requested size: 375.80544pt x 248.90527pt on input lin
-e 950.
+e 1052.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 954.
+(babel)             in language  on input line 1056.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 954.
+(babel)             in language  on input line 1056.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 954.
+(babel)             in language  on input line 1056.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 954.
- [27
+(babel)             in language  on input line 1056.
+ [30
 
  <./figurer/mots4.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 957.
+nput line 1059.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 957.
+(Font)              scaled to size 7.0pt on input line 1059.
  (./kode/servo-driver.cpp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 961.
+(babel)             in language  on input line 1063.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 961.
+(babel)             in language  on input line 1063.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 961.
+(babel)             in language  on input line 1063.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 961.
-[28] (./kode/servo-driver.cpp)
-<./figurer/mots5.png, id=823, 344.78813pt x 420.06938pt>
+(babel)             in language  on input line 1063.
+[31] (./kode/servo-driver.cpp)
+<./figurer/mots5.png, id=855, 344.78813pt x 420.06938pt>
 File: ./figurer/mots5.png Graphic file (type png)
 <use ./figurer/mots5.png>
-Package pdftex.def Info: ./figurer/mots5.png  used on input line 990. on input 
-line 990.
+Package pdftex.def Info: ./figurer/mots5.png  used on input line 1092. on input
+ line 1092.
 Package pdftex.def Info: Requested size: 234.8775pt x 286.16258pt on input line
- 990.
+ 1092.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 996.
+(babel)             in language  on input line 1098.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 996.
+(babel)             in language  on input line 1098.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1007.
+(babel)             in language  on input line 1109.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1007.
+(babel)             in language  on input line 1109.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1007.
+(babel)             in language  on input line 1109.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1007.
- [29
+(babel)             in language  on input line 1109.
+ [32
 
 
  <./figurer/mots5.png>]
 (./kode/servo-driver.cpp)
-<./figurer/mots6.png, id=843, 318.43968pt x 447.17062pt>
+<./figurer/mots6.png, id=874, 318.43968pt x 447.17062pt>
 File: ./figurer/mots6.png Graphic file (type png)
 <use ./figurer/mots6.png>
-Package pdftex.def Info: ./figurer/mots6.png  used on input line 1020. on input
- line 1020.
+Package pdftex.def Info: ./figurer/mots6.png  used on input line 1122. on input
+ line 1122.
 Package pdftex.def Info: Requested size: 140.92793pt x 197.89516pt on input lin
-e 1020.
+e 1122.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1024.
+(babel)             in language  on input line 1126.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1024.
+(babel)             in language  on input line 1126.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1024.
+(babel)             in language  on input line 1126.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1024.
- [30 <./figurer/mots6.png>]
+(babel)             in language  on input line 1126.
+ [33 <./figurer/mots6.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1025.
+(babel)             in language  on input line 1127.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1025.
+(babel)             in language  on input line 1127.
 
 
-LaTeX Warning: Command \ae invalid in math mode on input line 1031.
+LaTeX Warning: Command \ae invalid in math mode on input line 1133.
 
 Missing character: There is no æ in font zpl-Regular-tlf-ot1!
 (./kode/rpm-detect.cpp)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1044.
+(babel)             in language  on input line 1146.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1044.
+(babel)             in language  on input line 1146.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1065.
+(babel)             in language  on input line 1165.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1065.
+(babel)             in language  on input line 1165.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1065.
+(babel)             in language  on input line 1165.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1065.
- [31
+(babel)             in language  on input line 1165.
+ [34
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1086.
+(babel)             in language  on input line 1188.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1086.
-<./figurer/mo1.png, id=907, 555.57562pt x 395.97937pt>
+(babel)             in language  on input line 1188.
+<./figurer/mo1.png, id=940, 555.57562pt x 395.97937pt>
 File: ./figurer/mo1.png Graphic file (type png)
 <use ./figurer/mo1.png>
-Package pdftex.def Info: ./figurer/mo1.png  used on input line 1138. on input l
-ine 1138.
+Package pdftex.def Info: ./figurer/mo1.png  used on input line 1241. on input l
+ine 1241.
 Package pdftex.def Info: Requested size: 281.85587pt x 200.88943pt on input lin
-e 1138.
+e 1241.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1142.
-[32]
+(babel)             in language  on input line 1245.
+[35]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1142.
+(babel)             in language  on input line 1245.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1142.
- [33 <./figurer/mo1.png>]
+(babel)             in language  on input line 1245.
+ [36 <./figurer/mo1.png>]
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1190.
+(babel)             in language  on input line 1293.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1190.
+(babel)             in language  on input line 1293.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1190.
+(babel)             in language  on input line 1293.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1190.
+(babel)             in language  on input line 1293.
 
-[34
+[37
 
 ]
-<./figurer/mo2.png, id=972, 767.11594pt x 398.99063pt>
+<./figurer/mo2.png, id=1003, 767.11594pt x 398.99063pt>
 File: ./figurer/mo2.png Graphic file (type png)
 <use ./figurer/mo2.png>
-Package pdftex.def Info: ./figurer/mo2.png  used on input line 1206. on input l
-ine 1206.
+Package pdftex.def Info: ./figurer/mo2.png  used on input line 1309. on input l
+ine 1309.
 Package pdftex.def Info: Requested size: 281.85587pt x 146.60141pt on input lin
-e 1206.
-<./figurer/mo3.png, id=973, 644.4075pt x 369.63094pt>
+e 1309.
+<./figurer/mo3.png, id=1004, 644.4075pt x 369.63094pt>
 File: ./figurer/mo3.png Graphic file (type png)
 <use ./figurer/mo3.png>
-Package pdftex.def Info: ./figurer/mo3.png  used on input line 1216. on input l
-ine 1216.
+Package pdftex.def Info: ./figurer/mo3.png  used on input line 1318. on input l
+ine 1318.
 Package pdftex.def Info: Requested size: 281.85587pt x 161.67929pt on input lin
-e 1216.
+e 1318.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1221.
+(babel)             in language  on input line 1323.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1221.
+(babel)             in language  on input line 1323.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1227.
+(babel)             in language  on input line 1329.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1227.
+(babel)             in language  on input line 1329.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1227.
+(babel)             in language  on input line 1329.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1227.
- [35 <./figurer/mo2.png> <./figurer/mo3.png>]
-<./figurer/mo4.png, id=992, 421.575pt x 316.18124pt>
+(babel)             in language  on input line 1329.
+ [38 <./figurer/mo2.png> <./figurer/mo3.png>]
+<./figurer/mo4.png, id=1023, 421.575pt x 316.18124pt>
 File: ./figurer/mo4.png Graphic file (type png)
 <use ./figurer/mo4.png>
-Package pdftex.def Info: ./figurer/mo4.png  used on input line 1238. on input l
-ine 1238.
+Package pdftex.def Info: ./figurer/mo4.png  used on input line 1341. on input l
+ine 1341.
 Package pdftex.def Info: Requested size: 234.8775pt x 176.1581pt on input line 
-1238.
-<./figurer/mo5.png, id=993, 421.575pt x 316.18124pt>
+1341.
+<./figurer/mo5.png, id=1024, 421.575pt x 316.18124pt>
 File: ./figurer/mo5.png Graphic file (type png)
 <use ./figurer/mo5.png>
-Package pdftex.def Info: ./figurer/mo5.png  used on input line 1247. on input l
-ine 1247.
+Package pdftex.def Info: ./figurer/mo5.png  used on input line 1350. on input l
+ine 1350.
 Package pdftex.def Info: Requested size: 234.8775pt x 176.1581pt on input line 
-1247.
+1350.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1258.
+(babel)             in language  on input line 1361.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1258.
+(babel)             in language  on input line 1361.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1258.
+(babel)             in language  on input line 1361.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1258.
- [36 <./figurer/mo4.png> <./figurer/mo5.png>]
-<./figurer/sbil1.png, id=1001, 1416.79312pt x 498.36188pt>
+(babel)             in language  on input line 1361.
+ [39 <./figurer/mo4.png> <./figurer/mo5.png>]
+<./figurer/sbil1.png, id=1033, 1416.79312pt x 498.36188pt>
 File: ./figurer/sbil1.png Graphic file (type png)
 <use ./figurer/sbil1.png>
-Package pdftex.def Info: ./figurer/sbil1.png  used on input line 1270. on input
- line 1270.
+Package pdftex.def Info: ./figurer/sbil1.png  used on input line 1373. on input
+ line 1373.
 Package pdftex.def Info: Requested size: 281.85587pt x 99.13829pt on input line
- 1270.
-<./figurer/sbil2.png, id=1002, 737.75626pt x 480.29437pt>
+ 1373.
+<./figurer/sbil2.png, id=1034, 737.75626pt x 480.29437pt>
 File: ./figurer/sbil2.png Graphic file (type png)
 <use ./figurer/sbil2.png>
-Package pdftex.def Info: ./figurer/sbil2.png  used on input line 1279. on input
- line 1279.
+Package pdftex.def Info: ./figurer/sbil2.png  used on input line 1382. on input
+ line 1382.
 Package pdftex.def Info: Requested size: 281.85587pt x 183.48846pt on input lin
-e 1279.
+e 1382.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1284.
+(babel)             in language  on input line 1387.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1284.
+(babel)             in language  on input line 1387.
+
+
+LaTeX Warning: Reference `lst:pid1' on page 40 undefined on input line 1390.
+
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1304.
+(babel)             in language  on input line 1403.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1304.
+(babel)             in language  on input line 1403.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1304.
+(babel)             in language  on input line 1403.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1304.
- [37 <./figurer/sbil1.png> <./figurer/sbil2.png>]
+(babel)             in language  on input line 1403.
+[40 <./figurer/sbil1.png> <./figurer/sbil2.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1378.
+(babel)             in language  on input line 1481.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1378.
+(babel)             in language  on input line 1481.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1378.
+(babel)             in language  on input line 1481.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1378.
- [38]
+(babel)             in language  on input line 1481.
+ [41]
 Kapitel 4.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1379.
+(babel)             in language  on input line 1482.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1379.
+(babel)             in language  on input line 1482.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1382.
+(babel)             in language  on input line 1485.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1382.
+(babel)             in language  on input line 1485.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1389.
+(babel)             in language  on input line 1527.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1389.
+(babel)             in language  on input line 1527.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1396.
+(babel)             in language  on input line 1527.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1396.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1404.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1404.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1404.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1404.
-[39
+(babel)             in language  on input line 1527.
+[42
 
 
 ]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1535.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1535.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1542.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1542.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1550.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1550.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1550.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1550.
+ [43]
 Kapitel 5.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1461.
+(babel)             in language  on input line 1607.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1461.
+(babel)             in language  on input line 1607.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1464.
+(babel)             in language  on input line 1610.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1464.
+(babel)             in language  on input line 1610.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1469.
+(babel)             in language  on input line 1615.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1469.
+(babel)             in language  on input line 1615.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1485.
+(babel)             in language  on input line 1631.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1485.
+(babel)             in language  on input line 1631.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1514.
+(babel)             in language  on input line 1660.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1514.
+(babel)             in language  on input line 1660.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1524.
+(babel)             in language  on input line 1670.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1524.
+(babel)             in language  on input line 1670.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1524.
+(babel)             in language  on input line 1670.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1524.
-[40
+(babel)             in language  on input line 1670.
+[44
 
 
 ]
-<./figurer/p1.png, id=1105, 983.92593pt x 478.03593pt>
+<./figurer/p1.png, id=1144, 983.92593pt x 478.03593pt>
 File: ./figurer/p1.png Graphic file (type png)
 <use ./figurer/p1.png>
-Package pdftex.def Info: ./figurer/p1.png  used on input line 1527. on input li
-ne 1527.
+Package pdftex.def Info: ./figurer/p1.png  used on input line 1673. on input li
+ne 1673.
 Package pdftex.def Info: Requested size: 281.85587pt x 136.9346pt on input line
- 1527.
+ 1673.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1534.
+(babel)             in language  on input line 1680.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1534.
+(babel)             in language  on input line 1680.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1540.
+(babel)             in language  on input line 1686.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1540.
+(babel)             in language  on input line 1686.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1548.
+(babel)             in language  on input line 1694.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1548.
+(babel)             in language  on input line 1694.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1548.
+(babel)             in language  on input line 1694.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1548.
- [41 <./figurer/p1.png>]
+(babel)             in language  on input line 1694.
+ [45 <./figurer/p1.png>]
 Kapitel 6.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1548.
+(babel)             in language  on input line 1694.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1548.
+(babel)             in language  on input line 1694.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1552.
+(babel)             in language  on input line 1698.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1552.
+(babel)             in language  on input line 1698.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1557.
+(babel)             in language  on input line 1705.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1557.
+(babel)             in language  on input line 1705.
 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1561.
+(babel)             in language  on input line 1711.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1561.
+(babel)             in language  on input line 1711.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1561.
+(babel)             in language  on input line 1711.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1561.
-[42
+(babel)             in language  on input line 1711.
+[46
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1561.
+(babel)             in language  on input line 1711.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1561.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1561.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1561.
+(babel)             in language  on input line 1711.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1711.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1711.
  (./prj4rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1561.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1561.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1711.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1711.
 
 
 
@@ -3899,29 +4010,42 @@ Package rerunfilecheck Warning: File `prj4rapport.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `prj4rapport.out':
-(rerunfilecheck)             Before: 478E3ABA9E736A2F7AB09A0945E7480D;5206
-(rerunfilecheck)             After:  632386DFFBB9674DC995A06F7E724B68;5134.
+(rerunfilecheck)             Before: 632386DFFBB9674DC995A06F7E724B68;5134
+(rerunfilecheck)             After:  4476C0467EF9BC1AB5753F77B8F4B37E;5479.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'prj4rapport.run.xml'.
 \openout1 = `prj4rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 60246 strings out of 492990
- 1357556 string characters out of 6129798
- 2100159 words of memory out of 5000000
- 62365 multiletter control sequences out of 15000+600000
+ 60283 strings out of 492990
+ 1358039 string characters out of 6129798
+ 2099236 words of memory out of 5000000
+ 62381 multiletter control sequences out of 15000+600000
  651597 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,96p,10468b,3737s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not ex
-ist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.50} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
 t, replaced by a fixed one
@@ -3989,10 +4113,10 @@ live/2016/texmf-dist/fonts/type1/public/newpx/zplb.pfb><c:/Program Files/texliv
 e/2016/texmf-dist/fonts/type1/public/newpx/zplr.pfb><c:/Program Files/texlive/2
 016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><c:/Program Files/texlive/201
 6/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on prj4rapport.pdf (46 pages, 21815035 bytes).
+Output written on prj4rapport.pdf (50 pages, 21824819 bytes).
 PDF statistics:
- 1270 PDF objects out of 1440 (max. 8388607)
- 1136 compressed objects within 12 object streams
- 494 named destinations out of 1000 (max. 500000)
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 1176 compressed objects within 12 object streams
+ 513 named destinations out of 1000 (max. 500000)
  799 words of extra memory for PDF output out of 10000 (max. 10000000)
 

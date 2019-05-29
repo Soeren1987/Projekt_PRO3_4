@@ -1,0 +1,240 @@
+2\input{../preamble.tex}
+% \bibliographystyle{plain} % Style BST file (bmc-mathphys, vancouver, spbasic).
+% \bibliographystyle{unsrt} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{pubs.bib}      % Bibliography 
+
+\title{Professional Drone, Hybrid Power Pack  - Timebox 10}
+\author{Team 2}
+
+\begin{document}
+
+\lstset{language=Matlab,%
+  % basicstyle=\color{red},
+    inputencoding=latin1,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+
+\lstset{language=C,%
+  % basicstyle=\color{red},
+  inputencoding=latin1,
+  breaklines=true,%
+  morekeywords={matlab2tikz},
+  keywordstyle=\color{blue},%
+  morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+  identifierstyle=\color{black},%
+  stringstyle=\color{mylilas},
+  commentstyle=\color{mygreen},%
+  showstringspaces=false,%without this there will be a symbol in the places where there is a space
+  % numbers=left,%
+  % numberstyle={\tiny \color{black}},% size of the numbers
+  % numbersep=9pt, % this defines how far the numbers are from the text
+  emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+  % emph=[2]{word1,word2}, emphstyle=[2]{style},
+}
+
+
+% \lstdefinestyle{customc}{
+%   belowcaptionskip=1\baselineskip,
+%   breaklines=true,
+%   frame=L,
+%   xleftmargin=\parindent,
+%   language=C,
+%   showstringspaces=false,
+%   basicstyle=\footnotesize\ttfamily,
+%   keywordstyle=\bfseries\color{green!40!black},
+%   commentstyle=\itshape\color{purple!40!black},
+%   identifierstyle=\color{blue},
+%   stringstyle=\color{orange},
+% }
+
+% \lstdefinestyle{customasm}{
+%   belowcaptionskip=1\baselineskip,
+%   frame=L,
+%   xleftmargin=\parindent,
+%   language=[x86masm]Assembler,
+%   basicstyle=\footnotesize\ttfamily,
+%   commentstyle=\itshape\color{purple!40!black},
+% }
+
+% \lstset{escapechar=@,style=customc}
+
+\newcounter{udrboks}[section]\setcounter{udrboks}{0}
+\renewcommand{\theudrboks}{\arabic{section}.\arabic{udrboks}}
+\renewcommand{\theudrboks}{\arabic{udrboks}}
+\newenvironment{udrboks}[2][]{%
+  \refstepcounter{udrboks}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=blue!20]
+        {\strut Udregninger~\theudrboks};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=blue!20]
+        {\strut Udregninger ~\theudrboks:~#1};}}%
+  }%
+  \mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+
+\newcounter{formelboks}[section]\setcounter{formelboks}{0}
+\renewcommand{\theformelboks}{\arabic{section}.\arabic{formelboks}}
+\renewcommand{\theformelboks}{\arabic{formelboks}}
+\newenvironment{formelboks}[2][]{%
+  \refstepcounter{formelboks}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=blue!20]
+        {\strut Formler~\theformelboks};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=blue!20]
+        {\strut Formler ~\theformelboks:~#1};}}%
+  }%
+  \mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+
+\newcounter{konstboks}[section]\setcounter{konstboks}{0}
+\renewcommand{\thekonstboks}{\arabic{section}.\arabic{konstboks}}
+\newenvironment{konstboks}[2][]{%
+  \refstepcounter{konstboks}%
+  \ifstrempty{#1}%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=green!20]
+        {\strut Konstanter~\thekonstboks};}}
+  }%
+  {\mdfsetup{%
+      frametitle={%
+        \tikz[baseline=(current bounding box.east),outer sep=0pt]
+        \node[anchor=east,rectangle,fill=green!20]
+        {\strut Konstanter~\thekonstboks:~#1};}}%
+  }%
+  \mdfsetup{innertopmargin=10pt,linecolor=green!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+  }
+  \begin{mdframed}[]\relax%
+    \label{#2}}{\end{mdframed}}
+\pgfplotstableread[row sep=\\,col sep=&]{
+  ide & stemmer  \\
+  Paraply & 9  \\
+  Fjernbetjening & 7  \\
+  iAdapt & 2 \\
+}\mydata
+% \setcounter{secnumdepth}{1}
+\maketitle
+\thispagestyle{empty}
+
+\textbf{Deltagere:}
+\begin{figure}[h]
+  \centering
+  % BEGIN RECEIVE ORGTBL delt
+  \begin{tabular}{|p{5cm}p{10cm}|}
+    \hline
+    &\\
+    Stud. nr: 201602094 & Navn: Søren Holm Korsgaard \\
+    \hline
+    &\\
+    Stud.nr.: 201607563 & Navn: Jacob Gustafsson \\
+    \hline
+    &\\
+    % Stud.nr.: 201704859 & Navn: Jonas Buus \\
+    % \hline
+    % &\\
+    Stud.nr.: 20084327 & Navn: Simon Rasmussen \\
+    \hline
+    &\\
+    Stud.nr.: 201704483 & Navn: Thomas Dueholm Jensen \\
+    \hline
+  \end{tabular}
+  % END RECEIVE ORGTBL delt
+
+\end{figure}
+\vspace{-5mm}
+% \clearpage
+\setcounter{tocdepth}{2}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+% \pagenumbering{arabic}
+\setcounter{page}{1}
+
+% \section{Introduktion}
+% \label{sec:introduktion}
+
+\section{Strategy and planning}
+\label{sec:strat-plann-jacob}
+
+
+\section{Aktiv ensretter (Thomas)}
+\label{sec:aktiv-ensretter}
+
+\section{Motorstyring (Simon)}
+\label{sec:motorstyring}
+
+Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne, idet kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling.
+
+På baggrund af tidligere PID-kode, se kode \ref{lst:pid1} udarbejdes der nu et udkast til PID-kontrol software, som også benytter sig af software til kontrol af servomotor samt aflæsning af motorens omdrejninger (se afsnit \ref{sec:rpm-detektering}).
+
+\lstinputlisting[language=c,basicstyle=\scriptsize\ttfamily]{pidkl25cpp.cpp}  
+
+
+% \clearpage
+% \section{Deployment (Alle)}
+% \label{sec:deployment}
+
+% I denne timebox deployes en opnået spændingsregulering fra 22 V til 5,3 V. Herudover deployes udkast til kode der skal aflæse omdrejningstal fra forbrændingsmotoren og desuden deployes de tunede PID-koefficienter.
+
+% Hermed godkender kunderne, Morten Oppbrud Jakobsen og Jan Møller Nielsen, ovenstående i timebox 9.
+
+% Mandag den 13/5-2019
+
+% \begin{minipage}{.5\textwidth}
+%   \begin{center}
+%     \vspace{1.4cm}
+%     \rule{0.8\textwidth}{0.1pt}\\
+%     \small{Morten Opprud Jakobsen\\%\vspace{0.1cm}\textit{Projektansvarlig læge}
+%     }
+%   \end{center}
+% \end{minipage}%
+% \begin{minipage}{0.5\textwidth}
+%   \begin{center}
+%     \vspace{1.4cm}
+%     \rule{0.8\textwidth}{0.1pt}\\
+%     \small{Jan Møller Nielsen\\%\vspace{0.1cm}\textit{Forskningsansvarlig overlæge}
+%     }
+%   \end{center}
+% \end{minipage}
+
+% \printbibliography
+\end{document}

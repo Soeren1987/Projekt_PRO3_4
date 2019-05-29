@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  29 MAY 2019 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.8)  29 MAY 2019 09:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2439,27 +2439,27 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 243.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 250.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 250.
+nput line 248.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 248.
 
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package csquotes Info: Input encoding change on input line 250.
+Package csquotes Info: Input encoding change on input line 248.
 
 (c:/Program Files/texlive/2016/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 )
 (./pidkl25cpp.cpp
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 38.
  [2
 
  <./nt9.png>])
@@ -2486,11 +2486,11 @@ Package logreq Info: Writing requests to 'timebox10.run.xml'.
 Here is how much of TeX's memory you used:
  56597 strings out of 492990
  1306690 string characters out of 6129798
- 1821388 words of memory out of 5000000
+ 1816388 words of memory out of 5000000
  59239 multiletter control sequences out of 15000+600000
  599175 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,96p,10467b,2798s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,11n,96p,10467b,2800s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Program Files/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Pr
 ogram Files/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Progra
 m Files/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Program Files/
@@ -2506,7 +2506,7 @@ blic/lm/lmr17.pfb><c:/Program Files/texlive/2016/texmf-dist/fonts/type1/public/
 lm/lmr5.pfb><c:/Program Files/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr
 7.pfb><c:/Program Files/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
 ><c:/Program Files/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on timebox10.pdf (4 pages, 931403 bytes).
+Output written on timebox10.pdf (4 pages, 931525 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams

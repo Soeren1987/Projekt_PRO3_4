@@ -63,7 +63,7 @@
 		I forbindelse med eksamen i faget\par
 		{\itshape\ Projekt 4\par}
 		\vspace{.05\textheight}
-		Undervisere \textsc{Klaus Kolle} og \textsc{Morten Opprud Jakobsen}\par
+		Vejledere \textsc{Klaus Kolle} og \textsc{Morten Opprud Jakobsen}\par
 		\vspace{.05\textheight}
 		{\Huge\bfseries Professional Drone, Hybrid Power Pack \par}
 		\vspace{.05\textheight}
@@ -239,7 +239,7 @@ Herunder ses vores Rich Picture, som en konstrueret lige efter opgaven er blevet
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/int1.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/int1.png}
   \caption{Rich Picture}
   \label{fig:int1}
 \end{figure}
@@ -303,7 +303,7 @@ På baggrund af alt det ovenstående, samt flere andre overvejelser, som der kan
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{./figurer/int2.png}
+  \includegraphics[width=0.9\textwidth]{./figurer/int22.pdf}
   \caption{Blokdiagram}
   \label{fig:int2}
 \end{figure}
@@ -426,7 +426,7 @@ Leverandøren af LT-4320-1 foreslår kredsløbet\footnote{\url{https://www.analo
 \end{figure}
 
 Simulering, realiseringen og test af kredsløbet vil blive videre beskrevet under afsnittet, metoder.
-
+\clearpage
 % Vi valgte at arbejde videre med den opstilling. De næste afsnit indeholder en opsummering af simulering, realiseringen og test af kredsløbet.
 
 \section{Spændingsregulator (Jacob)}
@@ -537,7 +537,7 @@ En ``electronic speed control'' (ESC) anvendes som fartstyring i fartøjer. En E
 
 Alt efter om en motor er brushed eller brushless kræves forskellige ESC'er. I projektets tilfælde er der tale om en brushless motor. 
 
-ESC'er kan i nogen tilfælde programmeres. Ved programmering kan følgende typisk redigeres:
+ESC'er kan i nogle tilfælde programmeres. Ved programmering kan følgende typisk redigeres:
 \begin{itemize}
 \item Timing
 \item Acceleration
@@ -545,16 +545,16 @@ ESC'er kan i nogen tilfælde programmeres. Ved programmering kan følgende typis
 \item Rotationsretning
 \end{itemize}
 
-ESC'en skal genererer et trefaset signal. Fasen varierer med motor rotation og en Hall sensor bruges til at registrerer omdrejningerne. Brugerens interaktion med starteren er basal og jf. launch fase rapport, er brugerinteraktion med hele HPP minimal.
+ESC'en skal generere et trefaset signal. Fasen varierer med motor rotation, og en Hall sensor bruges til at registrere omdrejningerne. Brugerens interaktion med starteren er basal, og jf. launch fase rapport er brugerinteraktion med hele HPP minimal.
 
-Når der vælges en ESC er der flere ting at tage højde for. For det første brushed vs. brushless motor. Herefter er der spændings- og strømstyrke begrænsninger for ESC for hvor meget den kan håndtere. Spændingsbegrænsningen er oftest udtrykt i antal battericeller. NiMH batterier har 1,2 V pr. celle og Lithium batterier har 3,7 V pr. celle. En markering i datablad kan indeholde grænser for begge batterityper. ESC'en vil skulle kunne håndterer 22 V da dronens batteri leverer denne spænding. Det planlægges at anvende  en ``Turnigy Plush 60a'' (TP60a). TP60a er ratet til 2-6 Li-ion batterier (optil 22,2 V) eller 5-18 (optil 21,6 V) NiMH batterier. Altså en grænse omkring 22 V. Grænsen for kontinuerlig strømstyrke ligger på 60 A.
+Når der vælges en ESC, er der flere ting at tage højde for. For det første brushed vs. brushless motor. Herefter er der spændings- og strømstyrkebegrænsninger for ESC for, hvor meget den kan håndtere. Spændingsbegrænsningen er oftest udtrykt i antal battericeller. NiMH batterier har 1,2 V pr. celle, og Lithium batterier har 3,7 V pr. celle. En markering i databladet kan indeholde grænser for begge batterityper. ESC'en vil skulle kunne håndtere 22 V, da dronens batteri leverer denne spænding. Det planlægges at anvende  en ``Turnigy Plush 60a'' (TP60a). TP60a er ratet til 2-6 Li-ion batterier (optil 22,2 V) eller 5-18 (optil 21,6 V) NiMH batterier. Altså en grænse omkring 22 V. Grænsen for kontinuerlig strømstyrke ligger på 60 A.
 
-Dronebatteriet, et Lithium Poly batteri med 6 celler, vil ved opkobling til ESC'en kunne generere et trefaset signal som sendes til generatoren.
+Dronebatteriet, et Lithium Poly batteri med 6 celler, vil ved opkobling til ESC'en kunne generere et trefaset signal, som sendes til generatoren.
 
 \subsection{Regulering af hastighed (Thomas)}
 \label{sec:regul-af-hast}
 
-Ved regulering af forbrændingsmotorens hastigheder reguleres motorens gasspjæld. Der anvendes en servomotor påsat gasspjældet.
+Ved regulering af forbrændingsmotorens hastigheder, reguleres motorens gasspjæld. Der anvendes en servomotor påsat gasspjældet.
 
 For at kunne udvælge en passende servomotor til systemet, opstilles herunder følgende krav:\\
 \vspace{1em}
@@ -871,15 +871,15 @@ Testen resulterede dog i en defekt transistor.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/nt8.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/nt8.png}
   \caption{Defekt transistor. Markeret med rød firkant.}
   \label{fig:nt8}
 \end{figure}
 
 Årsagen til defekten var på daværende tidpunkt uafklaret, hvorfor det blev besluttet at måle gate spændingerne på samtlige transistorer i forhold til stel, da vi havde en mistanke om, at der var ubalance i kredsløbet. Ubalance kunne muligvis være årsagen til defekten af den ene transistor. 
 
-Figur \ref{fig:nt9} viser målingen af gate spændingen på de tre transistorer, der håndterer den positive del af inputtet. Hvis kredsløbet fungerede korrekt, skulle der gerne være samme spændingsniveau på samtlige \textit{gates}. 
-
+Figur \ref{fig:nt9} viser målingen af gatespændingen på de tre transistorer, der håndterer den positive del af inputtet. Hvis kredsløbet fungerede korrekt, skulle der gerne være samme spændingsniveau på samtlige \textit{gates}. 
+\clearpage
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\textwidth]{./figurer/nt9.png}
@@ -956,10 +956,10 @@ I nævnte værktøj indtastes blot den ønskede input og outputstrøm og spændi
 \end{figure}
 
 Værktøjet indeholder også et analyseværktøj. For at bekræfte at kredsløbet giver den ønskede outputspænding, er  karakteristikken i steady state undersøgt.
-\clearpage
+
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.7\textwidth]{./figurer/j5.png}
+  \includegraphics[width=0.5\textwidth]{./figurer/j5.png}
   \caption{Måling af spænding}
   \label{fig:j5}
 \end{figure}
@@ -972,7 +972,7 @@ Efter analysen kan det konkluderes, at LM78xx-serien er en ineffektiv og ringe l
 \label{sec:impl-af-lm317}
 
 I figur \ref{fig:j6} ses opstillingen realiseret. 
-\clearpage
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.35\textwidth]{./figurer/j6.png}
@@ -1016,7 +1016,7 @@ I figur \ref{fig:j10} ses resultater for testen. Først under almindelige omstæ
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figurer/j10.png}
+  \includegraphics[width=0.8\textwidth]{./figurer/j10.png}
   \caption{Test af BUCK-konverter}
   \label{fig:j10}
 \end{figure}
@@ -1145,7 +1145,7 @@ Herefter blev en funktion til at styre vores servomotor implementeret, se figur 
 \begin{figure}[h]
   \centering
   \lstinputlisting[language=c,firstline=102,lastline=107,basicstyle=\scriptsize\ttfamily]{./kode/servo-driver.cpp}
-  \caption{Servomotor monteret på gasspjæld}
+  \caption{Kode til styring af servomotor}
   \label{fig:kodes2}
 \end{figure}
 
@@ -1306,11 +1306,11 @@ Data fra oscilloskopet bestod i 50.000 målinger som bestod af Hall-sensorens sp
 
 Spændingen fra Hall-sensoren, Volt1, anvendes.
 
-Når data plottes for et kort tidsrum ses støj omkring 5 volt
-\clearpage
+Når data plottes for et kort tidsrum ses støj omkring 5 volt. I figur \ref{fig:mo1} ses spændingsfaldet ved en enkelt omdrejning.
+
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{./figurer/mo1.png}
+  \includegraphics[width=0.7\textwidth]{./figurer/mo1.png}
   \caption{Måling ved en enkelt omdrejning}
   \label{fig:mo1}
 \end{figure}
@@ -1448,7 +1448,7 @@ I Simulink oprettes et system med et steprespons, PID-regulering, overføringsfu
 \end{figure}
 
 Herefter laves autotuning i PID-modulet. Der findes koefficienter svarende til $P=0,0010$, $I=0,0514$, $D=-1,4946$ og følgende respons:
-\clearpage
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{./figurer/sbil2.png}
@@ -1534,7 +1534,7 @@ Det endelig kredsløb kunne ensrette et tre-faset signal til jævnstrøm i den n
 
 % Det viste sig dog, at kredsløbet begyndte at reagere uhensigtsmæssigt, når det blev belastet med en større load. Vi indledte fejlsøgning på kredsløbet og konstaterede, at spændingsniveauerne på MOSFET transistorernes gates varierede meget, hvorefter vi måtte stoppe udviklingen på grund af manglende tid.  
 
-\section{Spændingsregulator}
+\section{Spændingsregulator (Jacob)}
 \label{sec:spandingsregulator}
 
 
@@ -1543,7 +1543,7 @@ Jævnfør metodeafsnittet for spændingsregulatoren, nåede vi frem til, at syst
 \section{Motorstyring (Simon)}
 \label{sec:motorstyring-2} 
 
-Der er blevet lavet kontrol af motoropstart samt justering af gasspjæld og måling af motorens omdrejninger. Ligeledes er der udarbejdet udkast til PID-regulering. Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne, idet kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling.
+Der er blevet lavet kontrol af motoropstart samt justering af gasspjæld og måling af motorens omdrejninger. Ligeledes er der udarbejdet udkast til PID-regulering. Ved implementering af PID-koden sås desværre insufficient kontrol af omdrejningerne, idet kontrollen fremstod invers, sådan at ved øget omdrejningstal blev gasspjældet mere åbent. Der var afslutningsvis på semesteret desværre ikke tid til mere udvikling. Simulink modellen ses at opfylde kravene 2.1.3.9 og 2.1.3.10.
 
 
 % \bibliographystyle{unsrt}
@@ -1702,14 +1702,18 @@ I timebox 6, var vi nødt til at stoppe arbejdet på ensretteren, fordi vi var n
 \section{Diskussion}
 \label{sec:diskussion}
 
-Motorstyringen har fremstået med væsentlige mangler men dog stadig mulighed for at opnå et godt resultat såfremt der bruges mere tid på fejlfinding og test af PID-kontrollen.
+Det er bevist, at en aktiv ensretter er at foretrække fremfor en diodebro pga. forhøjet effektivitet. En aktiv ensretter er en fordel, idet det mindsker den samlede vægt og omdrejningstal og dermed er brændstof besparende. Det har lykkes at ensrette en trefaset spænding til DC niveau i en nedskaleret version, hvor kredsløbet blev belastet med en 1k$\Omega$ modstand. Det har været bekræftende, at se teori stemme overens med praksis i forsøget, men ved opskalering har ukendte faktorer betydet, at kredsløbet ikke har fungeret som tiltænkt. Det er vist at inputtet til ensretteren kan ligge i et frekvensområde fra 0-600 Hz, hvilket er området generatoren/forbrændingsmotoren arbejder indenfor. Dette resultat beror på valget af IC, men er fyldestgørende, såfremt man skulle videreudvikle på systemet. Der er udviklet PCB print, som i udviklingsprocessen og i et færdigt produkt, gør kredsløbet mere stabilt og mindre følsomt overfor støj. Der mangler en fungerende ensretter, men der er skabt et godt grundlag for evt. videreudvikling.
+
+Spændingsregulatoren er prisbillig, men der mangler et kabinet som beskyttelse. Interfacet (input/output) består af connectors af lav kvalitet, som muligvis ved rystelser kan betyde uhensigtmæssig drift. Øvrigt design og valg af komponenter er tilgengæld driftsstabile og fungerer som tiltænkt.
+
+Der er lavet et research arbejde samt motorstyringsværktøjer, som muliggør videreudvikling af regulering og PID-kontrol. Motorstyringen fremstår dog med mangler. Ved videreudvikling vil der være gode muligheder for at opnå tilfredstillende resultater, såfremt der bruges mere tid på fejlfinding og test af PID-kontrollen. I arbejdet med Simulink er der lavet en model, som opfylder kravene vedr. justeringstid og opnåelse af steady-state.
 
 % \addcontentsline{toc}{chapter}{\protect\numberline{\thesection}Konklusion}
 
 \section{Konklusion}
 \label{sec:konklusion}
 
-Der er lavet initielle værktøjer til motorstyring men der mangler fejlfinding og flere tests af PID-kontrollen.
+HPP er ikke færdigudviklet. Det er bevist, at en aktiv ensretter er det rigtige valg til HPP. Designet er udarbejdet, men der mangler fortsat udvikling af et fungerende kredsløb. Spændingsregulatoren fungerer efter hensigten, men der skal laves endelig integrering i det færdige system. Motorstyringen fremstår med initielle værktøjer i form af motorstart, måling af omdrejninger og kontrol af gasspjæld, men der skal laves videreudvikling i form af fejlfinding og flere tests af PID-kontrollen.
 
-
+Alt i alt er der et godt grundlag for videre udvikling.
 \end{document}
